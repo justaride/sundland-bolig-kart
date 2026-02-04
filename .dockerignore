@@ -1,0 +1,7 @@
+node_modules
+dist
+.git
+.claude
+*.local
+.DS_Store
+Sundland Bolig Plaace 04.02.26
