@@ -1,0 +1,190 @@
+[
+  {
+    "orgNumber": "980374505",
+    "name": "Bane NOR Eiendom AS",
+    "address": "Schweigaards gate 33, 0191 Oslo",
+    "industry": "Utvikling og salg av byggeprosjekter",
+    "employees": null,
+    "financials": null,
+    "roles": [
+      { "name": "Jon-Erik Lunøe", "role": "Daglig leder" },
+      { "name": "Anders Riiber", "role": "Styreleder" },
+      { "name": "Hans Kristian Voldstad", "role": "Styremedlem" },
+      { "name": "Helga Nes", "role": "Styremedlem" },
+      { "name": "Martin Mæland", "role": "Styremedlem" },
+      { "name": "Trine-Marie Hagen", "role": "Styremedlem" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "968757954",
+    "name": "OBOS Block Watne AS",
+    "address": "Standardveien 1, 0581 Oslo",
+    "industry": "Oppføring av bygninger",
+    "employees": 87,
+    "financials": null,
+    "roles": [
+      { "name": "Bjørn Einar Skoglund", "role": "Daglig leder" },
+      { "name": "Marianne Gjertsen Ebbesen", "role": "Styreleder" },
+      { "name": "Øystein-Magnus Søvik Høgholen", "role": "Nestleder" },
+      { "name": "Torunn Kverneland Thiemer", "role": "Styremedlem" },
+      { "name": "Trond Stabekk", "role": "Styremedlem" },
+      { "name": "Anders Gogstad", "role": "Styremedlem" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "937052766",
+    "name": "OBOS BBL",
+    "address": "Standardveien 1, 0581 Oslo",
+    "industry": "Utvikling og salg av byggeprosjekter",
+    "employees": 425,
+    "financials": null,
+    "roles": [
+      { "name": "Marianne Gjertsen Ebbesen", "role": "Daglig leder" },
+      { "name": "Roar Engeland", "role": "Styreleder" },
+      { "name": "Daniel Matthias Walter", "role": "Styremedlem" },
+      { "name": "Lars Ørjan Kenneth Reinholdsson", "role": "Styremedlem" },
+      { "name": "Heidi Ulmo", "role": "Styremedlem" },
+      { "name": "Ragnhild Borchgrevink", "role": "Styremedlem" },
+      { "name": "Anne Lise Ryel", "role": "Styremedlem" },
+      { "name": "Thor Gjermund Eriksen", "role": "Styremedlem" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "876820722",
+    "name": "Drammen Eiendom KF",
+    "address": "Hans Kiærs gate 1E, 3041 Drammen",
+    "industry": "Kombinerte tjenester tilknyttet eiendomsdrift",
+    "employees": 145,
+    "financials": null,
+    "roles": [
+      { "name": "Gjermund Riise Brekke", "role": "Daglig leder" },
+      { "name": "George Harold Fulford", "role": "Styreleder" },
+      { "name": "Gerd Barth Thorsby", "role": "Nestleder" },
+      { "name": "Kjell Ole Gjestemoen", "role": "Styremedlem" },
+      { "name": "Astrid Reikvam", "role": "Styremedlem" },
+      { "name": "Linn Bjørhuus Sevre", "role": "Styremedlem" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "829350122",
+    "name": "JM Norge AS",
+    "address": "Mustads vei 1A, 0283 Oslo",
+    "industry": "Oppføring av bygninger",
+    "employees": 273,
+    "financials": null,
+    "roles": [
+      { "name": "Hilde Vatne", "role": "Daglig leder" },
+      { "name": "Pia Susanne Persson", "role": "Styreleder" },
+      { "name": "Jørgen Teige", "role": "Styremedlem" },
+      { "name": "Eirik Wold", "role": "Styremedlem" },
+      { "name": "Nina Pedersen", "role": "Styremedlem" },
+      { "name": "Carl Tobias Bjurling", "role": "Styremedlem" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "921234554",
+    "name": "Drammen Kommune",
+    "address": "Engene 1, 3015 Drammen",
+    "industry": "Generell offentlig administrasjon",
+    "employees": 10413,
+    "financials": null,
+    "roles": [
+      { "name": "Trude Andresen", "role": "Daglig leder" },
+      { "name": "Svein Hilding Aasen", "role": "Forretningsfører" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "992587776",
+    "name": "Selvaag Bolig ASA",
+    "address": "Silurveien 2, 0380 Oslo",
+    "industry": "Utvikling og salg av byggeprosjekter",
+    "employees": 59,
+    "financials": null,
+    "roles": [
+      { "name": "Sverre Molvik", "role": "Daglig leder" },
+      { "name": "Olav Hindahl Selvaag", "role": "Styreleder" },
+      { "name": "Liv Gisele Marchand", "role": "Nestleder" },
+      { "name": "Tore Myrvold", "role": "Styremedlem" },
+      { "name": "Øystein Frederik Thorup", "role": "Styremedlem" },
+      { "name": "Petra Anna Veronica Krüger", "role": "Styremedlem" },
+      { "name": "Andrea Utne Tveter", "role": "Styremedlem" },
+      { "name": "Bengt Patrik Eriksson", "role": "Styremedlem" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "976121562",
+    "name": "DPEND Eiendom AS",
+    "address": "Strømsø torg 4, 3044 Drammen",
+    "industry": "Utvikling og salg av byggeprosjekter",
+    "employees": 16,
+    "financials": null,
+    "roles": [
+      { "name": "Amund Drønen Ringdal", "role": "Daglig leder" },
+      { "name": "Sverre Smedberg", "role": "Styreleder" },
+      { "name": "Ola Semb", "role": "Styremedlem" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "995041650",
+    "name": "Brække Eiendom AS",
+    "address": "Tollbugata 115, 3041 Drammen",
+    "industry": "Utvikling og salg av byggeprosjekter",
+    "employees": 30,
+    "financials": null,
+    "roles": [
+      { "name": "Jan Eirik Berntsen", "role": "Daglig leder" },
+      { "name": "Kristoffer Brække", "role": "Styreleder" },
+      { "name": "Pia Christin Brække Lislerud", "role": "Styremedlem" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "966177810",
+    "name": "Arbo Entreprenør AS",
+    "address": "Sundlandveien 7, 3048 Drammen",
+    "industry": "Oppføring av bygninger",
+    "employees": 12,
+    "financials": null,
+    "roles": [
+      { "name": "Jostein Johansen", "role": "Daglig leder / Styreleder" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "915279724",
+    "name": "Glitre Bolig AS",
+    "address": "Grønland 34, 3045 Drammen",
+    "industry": "Utvikling og salg av byggeprosjekter",
+    "employees": null,
+    "financials": null,
+    "roles": [
+      { "name": "Morten Corneliussen", "role": "Daglig leder / Styremedlem" },
+      { "name": "Per Inge Haugan", "role": "Styreleder" }
+    ],
+    "shareholders": []
+  },
+  {
+    "orgNumber": "830078312",
+    "name": "Eidos Eiendomsutvikling AS",
+    "address": "Ilebergveien 3, 3011 Drammen",
+    "industry": "Utvikling og salg av byggeprosjekter",
+    "employees": 7,
+    "financials": null,
+    "roles": [
+      { "name": "Anders Erling Edbo", "role": "Daglig leder" },
+      { "name": "Eva Hagen", "role": "Styreleder" },
+      { "name": "Morten Austestad", "role": "Styremedlem" },
+      { "name": "Bernt Nordby Skøien", "role": "Styremedlem" },
+      { "name": "Erik Stensli", "role": "Styremedlem" }
+    ],
+    "shareholders": []
+  }
+]

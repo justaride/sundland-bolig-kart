@@ -1,0 +1,18 @@
+{
+  "area": "Sundland, Drammen",
+  "demography": {
+    "population": 4850,
+    "density": 3200,
+    "area": 1.52
+  },
+  "movement": {
+    "dailyVisits": 12400,
+    "perKm2": 8158,
+    "busiestDay": "Fredag"
+  },
+  "cardTransactions": {
+    "daily": 3200,
+    "total": 96000,
+    "perTransaction": 485
+  }
+}

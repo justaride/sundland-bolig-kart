@@ -1,0 +1,16 @@
+{
+  "monthly": [
+    { "month": "Jan", "visits": 310000 },
+    { "month": "Feb", "visits": 295000 },
+    { "month": "Mar", "visits": 340000 },
+    { "month": "Apr", "visits": 365000 },
+    { "month": "Mai", "visits": 410000 },
+    { "month": "Jun", "visits": 425000 },
+    { "month": "Jul", "visits": 380000 },
+    { "month": "Aug", "visits": 395000 },
+    { "month": "Sep", "visits": 420000 },
+    { "month": "Okt", "visits": 405000 },
+    { "month": "Nov", "visits": 370000 },
+    { "month": "Des", "visits": 355000 }
+  ]
+}
