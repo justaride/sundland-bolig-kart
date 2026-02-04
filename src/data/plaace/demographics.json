@@ -1,14 +1,226 @@
 {
   "ageDistribution": [
-    { "group": "0-17", "count": 820, "pct": 16.9 },
-    { "group": "18-29", "count": 970, "pct": 20.0 },
-    { "group": "30-44", "count": 1210, "pct": 24.9 },
-    { "group": "45-64", "count": 1150, "pct": 23.7 },
-    { "group": "65+", "count": 700, "pct": 14.4 }
+    {
+      "group": "0-5",
+      "male": 97,
+      "female": 89
+    },
+    {
+      "group": "6-12",
+      "male": 118,
+      "female": 103
+    },
+    {
+      "group": "13-15",
+      "male": 54,
+      "female": 47
+    },
+    {
+      "group": "16-18",
+      "male": 66,
+      "female": 58
+    },
+    {
+      "group": "19-23",
+      "male": 81,
+      "female": 94
+    },
+    {
+      "group": "23-34",
+      "male": 224,
+      "female": 218
+    },
+    {
+      "group": "35-44",
+      "male": 225,
+      "female": 222
+    },
+    {
+      "group": "45-54",
+      "male": 220,
+      "female": 191
+    },
+    {
+      "group": "55-64",
+      "male": 133,
+      "female": 141
+    },
+    {
+      "group": "65-74",
+      "male": 92,
+      "female": 94
+    },
+    {
+      "group": "75-84",
+      "male": 49,
+      "female": 65
+    },
+    {
+      "group": "85+",
+      "male": 10,
+      "female": 26
+    }
   ],
-  "households": {
-    "total": 2180,
-    "avgSize": 2.2,
-    "withChildren": 680
-  }
+  "buildings": [
+    {
+      "type": "Eneboliger",
+      "count": 336
+    },
+    {
+      "type": "Småhus",
+      "count": 146
+    },
+    {
+      "type": "Leilighetsbygg",
+      "count": 42
+    },
+    {
+      "type": "Næringsbygg",
+      "count": 139
+    },
+    {
+      "type": "Andre bygg",
+      "count": 8
+    },
+    {
+      "type": "Hytter",
+      "count": 0
+    }
+  ],
+  "households": [
+    {
+      "type": "Par uten hjemmeboende barn",
+      "count": 210
+    },
+    {
+      "type": "Par med barn",
+      "count": 253
+    },
+    {
+      "type": "Aleneboende",
+      "count": 492
+    },
+    {
+      "type": "Enslig forelder med barn",
+      "count": 81
+    },
+    {
+      "type": "Andre husholdninger",
+      "count": 70
+    }
+  ],
+  "incomeDistribution": [
+    {
+      "bracket": "0 NOK",
+      "count": 221
+    },
+    {
+      "bracket": "0 NOK - NOK 100k",
+      "count": 228
+    },
+    {
+      "bracket": "NOK 100k - NOK 200k",
+      "count": 301
+    },
+    {
+      "bracket": "NOK 200k - NOK 300k",
+      "count": 318
+    },
+    {
+      "bracket": "NOK 300k - NOK 400k",
+      "count": 368
+    },
+    {
+      "bracket": "NOK 400k - NOK 500k",
+      "count": 256
+    },
+    {
+      "bracket": "NOK 500k - NOK 600k",
+      "count": 177
+    },
+    {
+      "bracket": "NOK 600k - NOK 700k",
+      "count": 104
+    },
+    {
+      "bracket": "NOK 700k - NOK 800k",
+      "count": 68
+    },
+    {
+      "bracket": "NOK 800k - NOK 1 mill.",
+      "count": 119
+    },
+    {
+      "bracket": "NOK 1 mill. - NOK 1,5 mill.",
+      "count": 14
+    },
+    {
+      "bracket": "NOK 1,5 mill.+",
+      "count": 9
+    }
+  ],
+  "medianIncome": [
+    {
+      "type": "Alle husholdninger",
+      "amount": 570268
+    },
+    {
+      "type": "Par uten hjemmeboende barn",
+      "amount": 728119
+    },
+    {
+      "type": "Par med barn",
+      "amount": 892089
+    },
+    {
+      "type": "Aleneboende",
+      "amount": 339254
+    },
+    {
+      "type": "Enslig forelder med barn",
+      "amount": 491119
+    }
+  ],
+  "populationTrend": [
+    {
+      "year": 2017,
+      "population": 2432,
+      "trendline": 2918.4
+    },
+    {
+      "year": 2018,
+      "population": 2358,
+      "trendline": 2829.6
+    },
+    {
+      "year": 2019,
+      "population": 2378,
+      "trendline": 2853.6
+    },
+    {
+      "year": 2020,
+      "population": 2373,
+      "trendline": 2847.6
+    },
+    {
+      "year": 2021,
+      "population": 2399,
+      "trendline": 2878.8
+    },
+    {
+      "year": 2022,
+      "population": 2429,
+      "trendline": 2914.8
+    },
+    {
+      "year": 2023,
+      "population": 2612,
+      "trendline": 3134.4
+    },
+    {
+      "year": 2024,
+      "population": 2708,
+      "trendline": 3249.6
+    }
+  ]
 }

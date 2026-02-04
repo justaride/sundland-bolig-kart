@@ -1,18 +1,18 @@
 {
-  "area": "Sundland, Drammen",
+  "area": "Gulskogen stasjon / Sundland, Drammen",
   "demography": {
-    "population": 4850,
-    "density": 3200,
-    "area": 1.52
+    "population": 2708,
+    "density": 1214,
+    "area": 2.23
   },
   "movement": {
-    "dailyVisits": 12400,
-    "perKm2": 8158,
-    "busiestDay": "Fredag"
+    "dailyVisits": 33258,
+    "perKm2": 14914,
+    "busiestDay": "fre."
   },
   "cardTransactions": {
-    "daily": 3200,
-    "total": 96000,
-    "perTransaction": 485
+    "weeklyAvg": 16.29,
+    "totalStores": 127,
+    "totalRevenue": 2043230000
   }
 }

@@ -1,16 +1,2346 @@
 {
-  "monthly": [
-    { "month": "Jan", "visits": 310000 },
-    { "month": "Feb", "visits": 295000 },
-    { "month": "Mar", "visits": 340000 },
-    { "month": "Apr", "visits": 365000 },
-    { "month": "Mai", "visits": 410000 },
-    { "month": "Jun", "visits": 425000 },
-    { "month": "Jul", "visits": 380000 },
-    { "month": "Aug", "visits": 395000 },
-    { "month": "Sep", "visits": 420000 },
-    { "month": "Okt", "visits": 405000 },
-    { "month": "Nov", "visits": 370000 },
-    { "month": "Des", "visits": 355000 }
+  "ageDistribution": [
+    {
+      "group": "0-5",
+      "male": 2443,
+      "female": 2242
+    },
+    {
+      "group": "6-12",
+      "male": 3092,
+      "female": 2952
+    },
+    {
+      "group": "13-15",
+      "male": 1465,
+      "female": 1384
+    },
+    {
+      "group": "16-18",
+      "male": 1487,
+      "female": 1406
+    },
+    {
+      "group": "19-23",
+      "male": 2393,
+      "female": 2275
+    },
+    {
+      "group": "23-34",
+      "male": 6485,
+      "female": 6141
+    },
+    {
+      "group": "35-44",
+      "male": 5982,
+      "female": 5484
+    },
+    {
+      "group": "45-54",
+      "male": 5771,
+      "female": 5333
+    },
+    {
+      "group": "55-64",
+      "male": 4824,
+      "female": 4700
+    },
+    {
+      "group": "65-74",
+      "male": 3487,
+      "female": 3815
+    },
+    {
+      "group": "75-84",
+      "male": 2324,
+      "female": 2886
+    },
+    {
+      "group": "85+",
+      "male": 637,
+      "female": 1121
+    }
+  ],
+  "buildings": [
+    {
+      "type": "Eneboliger",
+      "count": 14416
+    },
+    {
+      "type": "Småhus",
+      "count": 2281
+    },
+    {
+      "type": "Leilighetsbygg",
+      "count": 830
+    },
+    {
+      "type": "Næringsbygg",
+      "count": 1823
+    },
+    {
+      "type": "Andre bygg",
+      "count": 182
+    },
+    {
+      "type": "Hytter",
+      "count": 3950
+    }
+  ],
+  "households": [
+    {
+      "type": "Par uten hjemmeboende barn",
+      "count": 8384
+    },
+    {
+      "type": "Par med barn",
+      "count": 6884
+    },
+    {
+      "type": "Aleneboende",
+      "count": 15718
+    },
+    {
+      "type": "Enslig forelder med barn",
+      "count": 4063
+    },
+    {
+      "type": "Andre husholdninger",
+      "count": 905
+    }
+  ],
+  "income": [
+    {
+      "bracket": "0 NOK",
+      "count": 7688
+    },
+    {
+      "bracket": "0 NOK - NOK 100k",
+      "count": 8269
+    },
+    {
+      "bracket": "NOK 100k - NOK 200k",
+      "count": 10568
+    },
+    {
+      "bracket": "NOK 200k - NOK 300k",
+      "count": 12925
+    },
+    {
+      "bracket": "NOK 300k - NOK 400k",
+      "count": 12422
+    },
+    {
+      "bracket": "NOK 400k - NOK 500k",
+      "count": 9275
+    },
+    {
+      "bracket": "NOK 500k - NOK 600k",
+      "count": 6018
+    },
+    {
+      "bracket": "NOK 600k - NOK 700k",
+      "count": 3922
+    },
+    {
+      "bracket": "NOK 700k - NOK 800k",
+      "count": 2415
+    },
+    {
+      "bracket": "NOK 800k - NOK 1 mill.",
+      "count": 5175
+    },
+    {
+      "bracket": "NOK 1 mill. - NOK 1,5 mill.",
+      "count": 712
+    },
+    {
+      "bracket": "NOK 1,5 mill.+",
+      "count": 738
+    }
+  ],
+  "medianIncome": [
+    {
+      "type": "Alle husholdninger",
+      "amount": 586328
+    },
+    {
+      "type": "Par uten hjemmeboende barn",
+      "amount": 747691
+    },
+    {
+      "type": "Par med barn",
+      "amount": 949478
+    },
+    {
+      "type": "Aleneboende",
+      "amount": 346003
+    },
+    {
+      "type": "Enslig forelder med barn",
+      "amount": 485550
+    }
+  ],
+  "hourly": [
+    {
+      "hour": "00:00",
+      "visitors": 944,
+      "work": 490,
+      "home": 6251
+    },
+    {
+      "hour": "01:00",
+      "visitors": 929,
+      "work": 633,
+      "home": 5754
+    },
+    {
+      "hour": "02:00",
+      "visitors": 1265,
+      "work": 1081,
+      "home": 6137
+    },
+    {
+      "hour": "03:00",
+      "visitors": 1176,
+      "work": 1101,
+      "home": 6171
+    },
+    {
+      "hour": "04:00",
+      "visitors": 1166,
+      "work": 1126,
+      "home": 6178
+    },
+    {
+      "hour": "05:00",
+      "visitors": 1188,
+      "work": 1204,
+      "home": 6157
+    },
+    {
+      "hour": "06:00",
+      "visitors": 1232,
+      "work": 1527,
+      "home": 6031
+    },
+    {
+      "hour": "07:00",
+      "visitors": 1354,
+      "work": 2330,
+      "home": 5748
+    },
+    {
+      "hour": "08:00",
+      "visitors": 1364,
+      "work": 3201,
+      "home": 5236
+    },
+    {
+      "hour": "09:00",
+      "visitors": 1395,
+      "work": 3665,
+      "home": 4836
+    },
+    {
+      "hour": "10:00",
+      "visitors": 1580,
+      "work": 4127,
+      "home": 4599
+    },
+    {
+      "hour": "11:00",
+      "visitors": 1756,
+      "work": 4538,
+      "home": 4414
+    },
+    {
+      "hour": "12:00",
+      "visitors": 2029,
+      "work": 4546,
+      "home": 4297
+    },
+    {
+      "hour": "13:00",
+      "visitors": 2397,
+      "work": 4188,
+      "home": 4379
+    },
+    {
+      "hour": "14:00",
+      "visitors": 2705,
+      "work": 3590,
+      "home": 4710
+    },
+    {
+      "hour": "15:00",
+      "visitors": 2914,
+      "work": 2655,
+      "home": 5263
+    },
+    {
+      "hour": "16:00",
+      "visitors": 2893,
+      "work": 1747,
+      "home": 5782
+    },
+    {
+      "hour": "17:00",
+      "visitors": 2873,
+      "work": 1250,
+      "home": 6107
+    },
+    {
+      "hour": "18:00",
+      "visitors": 2725,
+      "work": 935,
+      "home": 6402
+    },
+    {
+      "hour": "19:00",
+      "visitors": 2277,
+      "work": 723,
+      "home": 6692
+    },
+    {
+      "hour": "20:00",
+      "visitors": 1769,
+      "work": 589,
+      "home": 6943
+    },
+    {
+      "hour": "21:00",
+      "visitors": 1261,
+      "work": 505,
+      "home": 7086
+    },
+    {
+      "hour": "22:00",
+      "visitors": 1076,
+      "work": 499,
+      "home": 7049
+    },
+    {
+      "hour": "23:00",
+      "visitors": 1002,
+      "work": 521,
+      "home": 6905
+    }
+  ],
+  "weekday": [
+    {
+      "day": "man.",
+      "visitors": 18372,
+      "work": 7238,
+      "home": 10235
+    },
+    {
+      "day": "tir.",
+      "visitors": 18161,
+      "work": 7026,
+      "home": 10131
+    },
+    {
+      "day": "ons.",
+      "visitors": 17740,
+      "work": 6971,
+      "home": 10075
+    },
+    {
+      "day": "tor.",
+      "visitors": 17940,
+      "work": 6962,
+      "home": 10057
+    },
+    {
+      "day": "fre.",
+      "visitors": 19024,
+      "work": 7024,
+      "home": 9931
+    },
+    {
+      "day": "lør.",
+      "visitors": 16945,
+      "work": 5688,
+      "home": 9426
+    },
+    {
+      "day": "søn.",
+      "visitors": 10820,
+      "work": 3596,
+      "home": 9447
+    }
+  ],
+  "quarterly": [
+    {
+      "quarter": "Q1",
+      "visitors2023": 15676,
+      "visitors2024": 15393,
+      "visitors2025": 15931,
+      "work2023": 7505,
+      "work2024": 6977,
+      "work2025": 7051,
+      "home2023": 10552,
+      "home2024": 10670,
+      "home2025": 10354
+    },
+    {
+      "quarter": "Q2",
+      "visitors2023": 17198,
+      "visitors2024": 17422,
+      "visitors2025": 17522,
+      "work2023": 6613,
+      "work2024": 6536,
+      "work2025": 6248,
+      "home2023": 10182,
+      "home2024": 10424,
+      "home2025": 10225
+    },
+    {
+      "quarter": "Q3",
+      "visitors2023": 17009,
+      "visitors2024": 15462,
+      "visitors2025": 16184,
+      "work2023": 6424,
+      "work2024": 5694,
+      "work2025": 5601,
+      "home2023": 10108,
+      "home2024": 9451,
+      "home2025": 9333
+    },
+    {
+      "quarter": "Q4",
+      "visitors2023": 17122,
+      "visitors2024": 17245,
+      "visitors2025": 17833,
+      "work2023": 7352,
+      "work2024": 7278,
+      "work2025": 7128,
+      "home2023": 10897,
+      "home2024": 10437,
+      "home2025": 10473
+    }
+  ],
+  "origins": [
+    {
+      "area": "Henrik Ibsens gate (1)",
+      "visits": 418008,
+      "percentage": 5.15
+    },
+    {
+      "area": "Konnerudgata 102 (1)",
+      "visits": 284113,
+      "percentage": 3.37
+    },
+    {
+      "area": "Olaf Bergers vei (1)",
+      "visits": 173849,
+      "percentage": 2.16
+    },
+    {
+      "area": "Austadtjernet",
+      "visits": 149098,
+      "percentage": 1.57
+    },
+    {
+      "area": "Brattli",
+      "visits": 147010,
+      "percentage": 1.69
+    },
+    {
+      "area": "Hallermoen (1)",
+      "visits": 139267,
+      "percentage": 1.73
+    },
+    {
+      "area": "Store Landfall (1)",
+      "visits": 136081,
+      "percentage": 1.68
+    },
+    {
+      "area": "Torgeir Vraas plass",
+      "visits": 129517,
+      "percentage": 1.74
+    },
+    {
+      "area": "Skjelsbekk øvre (1)",
+      "visits": 121897,
+      "percentage": 1.33
+    },
+    {
+      "area": "Valbrottveien (1)",
+      "visits": 109265,
+      "percentage": 1.21
+    },
+    {
+      "area": "Klopptjern",
+      "visits": 107495,
+      "percentage": 1.37
+    },
+    {
+      "area": "Haukås (1)",
+      "visits": 107028,
+      "percentage": 1.26
+    },
+    {
+      "area": "Åssiden Idrettsforening",
+      "visits": 106145,
+      "percentage": 1.32
+    },
+    {
+      "area": "Kastanjesletta (1)",
+      "visits": 101012,
+      "percentage": 1.13
+    },
+    {
+      "area": "Aslaksrudtjennet",
+      "visits": 97978,
+      "percentage": 1.29
+    },
+    {
+      "area": "Jarlsbergsenteret (1)",
+      "visits": 95163,
+      "percentage": 1.03
+    },
+    {
+      "area": "Tunveien (1)",
+      "visits": 92607,
+      "percentage": 1.05
+    },
+    {
+      "area": "Drafnkollen barnehage",
+      "visits": 92087,
+      "percentage": 1.06
+    },
+    {
+      "area": "Frydenhaug gård",
+      "visits": 90058,
+      "percentage": 1.09
+    },
+    {
+      "area": "Kjøsterud skole (1)",
+      "visits": 87649,
+      "percentage": 1.19
+    },
+    {
+      "area": "Danvik skole",
+      "visits": 77952,
+      "percentage": 0.92
+    },
+    {
+      "area": "Igletjern",
+      "visits": 76333,
+      "percentage": 0.97
+    },
+    {
+      "area": "Wildhagens vei (1)",
+      "visits": 71724,
+      "percentage": 1.06
+    },
+    {
+      "area": "Slaggveien (1)",
+      "visits": 68192,
+      "percentage": 0.8
+    },
+    {
+      "area": "Drammensbadet",
+      "visits": 66983,
+      "percentage": 1.13
+    },
+    {
+      "area": "Svartkulp",
+      "visits": 60403,
+      "percentage": 0.8
+    },
+    {
+      "area": "Osbakken (1)",
+      "visits": 59436,
+      "percentage": 0.79
+    },
+    {
+      "area": "Åsveien (1)",
+      "visits": 58880,
+      "percentage": 0.69
+    },
+    {
+      "area": "Konggata (1)",
+      "visits": 57035,
+      "percentage": 0.81
+    },
+    {
+      "area": "Tjernsøyet",
+      "visits": 56930,
+      "percentage": 0.78
+    },
+    {
+      "area": "Nerdamsveien (1)",
+      "visits": 52791,
+      "percentage": 0.74
+    },
+    {
+      "area": "Kobbervikveien (1)",
+      "visits": 51983,
+      "percentage": 0.66
+    },
+    {
+      "area": "Venusfaret (1)",
+      "visits": 50850,
+      "percentage": 0.57
+    },
+    {
+      "area": "Soterudtjenna",
+      "visits": 50192,
+      "percentage": 0.8
+    },
+    {
+      "area": "Austad gård",
+      "visits": 48717,
+      "percentage": 0.75
+    },
+    {
+      "area": "Tuftdammen",
+      "visits": 42379,
+      "percentage": 0.6
+    },
+    {
+      "area": "Eriksrudtjern",
+      "visits": 41764,
+      "percentage": 0.67
+    },
+    {
+      "area": "Underlia blokkene (1)",
+      "visits": 40564,
+      "percentage": 0.57
+    },
+    {
+      "area": "Drammen politistasjon (2)",
+      "visits": 40437,
+      "percentage": 0.98
+    },
+    {
+      "area": "Skur 4",
+      "visits": 38829,
+      "percentage": 0.57
+    },
+    {
+      "area": "Lierstranda (1)",
+      "visits": 38475,
+      "percentage": 0.61
+    },
+    {
+      "area": "Andedammen",
+      "visits": 35822,
+      "percentage": 0.53
+    },
+    {
+      "area": "Gleda (2)",
+      "visits": 35672,
+      "percentage": 0.68
+    },
+    {
+      "area": "Kanonveien (1)",
+      "visits": 34390,
+      "percentage": 0.45
+    },
+    {
+      "area": "Gamle Riksvei (1)",
+      "visits": 34238,
+      "percentage": 0.47
+    },
+    {
+      "area": "Solberg skole (1)",
+      "visits": 33775,
+      "percentage": 0.47
+    },
+    {
+      "area": "Underlia snuplass (1)",
+      "visits": 33386,
+      "percentage": 0.47
+    },
+    {
+      "area": "Bera midtre (1)",
+      "visits": 32716,
+      "percentage": 0.42
+    },
+    {
+      "area": "Fevang (1)",
+      "visits": 31422,
+      "percentage": 0.44
+    },
+    {
+      "area": "Bunker 4 #7",
+      "visits": 31328,
+      "percentage": 0.58
+    },
+    {
+      "area": "Solås (1)",
+      "visits": 31312,
+      "percentage": 0.36
+    },
+    {
+      "area": "NAF",
+      "visits": 31199,
+      "percentage": 0.41
+    },
+    {
+      "area": "Pukerud (4)",
+      "visits": 31187,
+      "percentage": 0.37
+    },
+    {
+      "area": "Runningen",
+      "visits": 30848,
+      "percentage": 0.39
+    },
+    {
+      "area": "Roligheten (1)",
+      "visits": 30597,
+      "percentage": 0.37
+    },
+    {
+      "area": "Brakerøya (1)",
+      "visits": 29891,
+      "percentage": 1.07
+    },
+    {
+      "area": "Hansens røkeri",
+      "visits": 29515,
+      "percentage": 0.58
+    },
+    {
+      "area": "Drammen politistasjon (1)",
+      "visits": 29059,
+      "percentage": 0.63
+    },
+    {
+      "area": "Tverkenveien (1)",
+      "visits": 29001,
+      "percentage": 0.36
+    },
+    {
+      "area": "Langemyr",
+      "visits": 27484,
+      "percentage": 0.41
+    },
+    {
+      "area": "Inntaksdammen",
+      "visits": 27199,
+      "percentage": 0.42
+    },
+    {
+      "area": "Narvesen",
+      "visits": 26839,
+      "percentage": 0.74
+    },
+    {
+      "area": "CC Drammen (1)",
+      "visits": 26538,
+      "percentage": 0.65
+    },
+    {
+      "area": "Ltz. Hervigs vei 51 (1)",
+      "visits": 26390,
+      "percentage": 0.36
+    },
+    {
+      "area": "Fjell bo- og servicesenter (1)",
+      "visits": 26352,
+      "percentage": 0.35
+    },
+    {
+      "area": "Misjonskirken Drammen",
+      "visits": 26262,
+      "percentage": 0.57
+    },
+    {
+      "area": "Drammen politistasjon (4)",
+      "visits": 24673,
+      "percentage": 0.56
+    },
+    {
+      "area": "Farmen nedre (2)",
+      "visits": 24236,
+      "percentage": 0.34
+    },
+    {
+      "area": "Prestebråtveien (1)",
+      "visits": 24201,
+      "percentage": 0.38
+    },
+    {
+      "area": "Skogvangen (1)",
+      "visits": 23578,
+      "percentage": 0.36
+    },
+    {
+      "area": "Andorsrud (6)",
+      "visits": 23275,
+      "percentage": 0.37
+    },
+    {
+      "area": "Spiralen Cafe og Restaurant (1)",
+      "visits": 21531,
+      "percentage": 0.48
+    },
+    {
+      "area": "Gleda (1)",
+      "visits": 21493,
+      "percentage": 0.45
+    },
+    {
+      "area": "Andorsrud (3)",
+      "visits": 21167,
+      "percentage": 0.3
+    },
+    {
+      "area": "Brøttet (1)",
+      "visits": 20902,
+      "percentage": 0.41
+    },
+    {
+      "area": "Konnerud skole (1)",
+      "visits": 20040,
+      "percentage": 0.29
+    },
+    {
+      "area": "Mariskoveien (1)",
+      "visits": 19972,
+      "percentage": 0.28
+    },
+    {
+      "area": "Fallingsøya (1)",
+      "visits": 19785,
+      "percentage": 0.36
+    },
+    {
+      "area": "Nerdammen",
+      "visits": 19560,
+      "percentage": 0.31
+    },
+    {
+      "area": "Nordre Øksnevann",
+      "visits": 19194,
+      "percentage": 0.31
+    },
+    {
+      "area": "Halvdagsbarnehagen (Hovjordet barnehage)",
+      "visits": 19032,
+      "percentage": 0.33
+    },
+    {
+      "area": "Langemyr",
+      "visits": 18961,
+      "percentage": 0.33
+    },
+    {
+      "area": "Harakollen FUS aktivitetsbarnehage",
+      "visits": 18224,
+      "percentage": 0.3
+    },
+    {
+      "area": "Grøv (1)",
+      "visits": 18122,
+      "percentage": 0.29
+    },
+    {
+      "area": "Stordammen",
+      "visits": 18062,
+      "percentage": 0.36
+    },
+    {
+      "area": "Åleputten",
+      "visits": 17387,
+      "percentage": 0.3
+    },
+    {
+      "area": "LSI Welding AS",
+      "visits": 16649,
+      "percentage": 0.47
+    },
+    {
+      "area": "Losjeplassen (1)",
+      "visits": 15464,
+      "percentage": 0.35
+    },
+    {
+      "area": "Pukerud (3)",
+      "visits": 15061,
+      "percentage": 0.25
+    },
+    {
+      "area": "Bekkevannet",
+      "visits": 14948,
+      "percentage": 0.29
+    },
+    {
+      "area": "Elveveien (1)",
+      "visits": 14946,
+      "percentage": 0.31
+    },
+    {
+      "area": "Ltz. Hervigs vei 100 (1)",
+      "visits": 14819,
+      "percentage": 0.25
+    },
+    {
+      "area": "Strømsø Senter",
+      "visits": 14415,
+      "percentage": 0.47
+    },
+    {
+      "area": "Metodistkirken",
+      "visits": 14403,
+      "percentage": 0.34
+    },
+    {
+      "area": "Dammen",
+      "visits": 14252,
+      "percentage": 0.27
+    },
+    {
+      "area": "Våningshus",
+      "visits": 14085,
+      "percentage": 0.3
+    },
+    {
+      "area": "Kolbergtjern",
+      "visits": 13777,
+      "percentage": 0.3
+    },
+    {
+      "area": "Hallermoen (1)",
+      "visits": 13575,
+      "percentage": 0.23
+    },
+    {
+      "area": "Grams allé (1)",
+      "visits": 13357,
+      "percentage": 0.26
+    },
+    {
+      "area": "Neptunveien (1)",
+      "visits": 12998,
+      "percentage": 0.24
+    },
+    {
+      "area": "Tord Pedersens gate 83 (1)",
+      "visits": 12991,
+      "percentage": 0.37
+    },
+    {
+      "area": "Tors vei 5 (1)",
+      "visits": 12790,
+      "percentage": 0.24
+    },
+    {
+      "area": "Klevstuen",
+      "visits": 11997,
+      "percentage": 0.24
+    },
+    {
+      "area": "Fløyta",
+      "visits": 11834,
+      "percentage": 0.24
+    },
+    {
+      "area": "Glassverkethallen (1)",
+      "visits": 11679,
+      "percentage": 0.29
+    },
+    {
+      "area": "Fruestien (1)",
+      "visits": 11448,
+      "percentage": 0.2
+    },
+    {
+      "area": "Lønnerud (1)",
+      "visits": 11434,
+      "percentage": 0.22
+    },
+    {
+      "area": "Akebakken Barnehage",
+      "visits": 11232,
+      "percentage": 0.34
+    },
+    {
+      "area": "Lundaveien (1)",
+      "visits": 10475,
+      "percentage": 0.18
+    },
+    {
+      "area": "Skarsvingen (1)",
+      "visits": 10407,
+      "percentage": 0.27
+    },
+    {
+      "area": "Knoffs gate (4)",
+      "visits": 10296,
+      "percentage": 0.33
+    },
+    {
+      "area": "Tord Pedersens gate 83 (2)",
+      "visits": 10260,
+      "percentage": 0.28
+    },
+    {
+      "area": "Bragernestunnelen (1)",
+      "visits": 9990,
+      "percentage": 0.2
+    },
+    {
+      "area": "Svenskeåsen (1)",
+      "visits": 9670,
+      "percentage": 0.17
+    },
+    {
+      "area": "Buddetjern",
+      "visits": 9602,
+      "percentage": 0.17
+    },
+    {
+      "area": "Gleda (4)",
+      "visits": 9394,
+      "percentage": 0.17
+    },
+    {
+      "area": "Andorsrud (5)",
+      "visits": 9232,
+      "percentage": 0.17
+    },
+    {
+      "area": "Teglverksveien (1)",
+      "visits": 9214,
+      "percentage": 0.2
+    },
+    {
+      "area": "Tusenårstedet (1)",
+      "visits": 9011,
+      "percentage": 0.21
+    },
+    {
+      "area": "Andorsrud (7)",
+      "visits": 8808,
+      "percentage": 0.17
+    },
+    {
+      "area": "Drammen politistasjon (3)",
+      "visits": 8258,
+      "percentage": 0.18
+    },
+    {
+      "area": "Fruestien (1)",
+      "visits": 7593,
+      "percentage": 0.12
+    },
+    {
+      "area": "Tord Pedersens gate 83 (4)",
+      "visits": 7593,
+      "percentage": 0.33
+    },
+    {
+      "area": "Farmen nedre (5)",
+      "visits": 7565,
+      "percentage": 0.13
+    },
+    {
+      "area": "Clarion Collection Hotel Tollboden",
+      "visits": 7530,
+      "percentage": 0.17
+    },
+    {
+      "area": "Pukerud (1)",
+      "visits": 7162,
+      "percentage": 0.25
+    },
+    {
+      "area": "Frydenlund (1)",
+      "visits": 6937,
+      "percentage": 0.28
+    },
+    {
+      "area": "Heggtoppen øst (1)",
+      "visits": 6896,
+      "percentage": 0.22
+    },
+    {
+      "area": "Nordre Hellumsetervann",
+      "visits": 6808,
+      "percentage": 0.13
+    },
+    {
+      "area": "Pintleiken",
+      "visits": 6409,
+      "percentage": 0.17
+    },
+    {
+      "area": "Heimansåsen",
+      "visits": 6165,
+      "percentage": 0.29
+    },
+    {
+      "area": "Sande rådhus (1)",
+      "visits": 5892,
+      "percentage": 0.16
+    },
+    {
+      "area": "Himmelvannet",
+      "visits": 5866,
+      "percentage": 0.17
+    },
+    {
+      "area": "Telesletta (1)",
+      "visits": 5832,
+      "percentage": 0.14
+    },
+    {
+      "area": "Åsendammen (1)",
+      "visits": 5537,
+      "percentage": 0.12
+    },
+    {
+      "area": "Haugfoss Stadion (1)",
+      "visits": 5460,
+      "percentage": 0.16
+    },
+    {
+      "area": "Solbergdammen",
+      "visits": 5137,
+      "percentage": 0.12
+    },
+    {
+      "area": "Merket (1)",
+      "visits": 5134,
+      "percentage": 0.12
+    },
+    {
+      "area": "Nordal skole",
+      "visits": 5042,
+      "percentage": 0.22
+    },
+    {
+      "area": "Kobbervikdalen 86 (1)",
+      "visits": 5021,
+      "percentage": 0.07
+    },
+    {
+      "area": "Losjeplassen (3)",
+      "visits": 4754,
+      "percentage": 0.11
+    },
+    {
+      "area": "Langebru (1)",
+      "visits": 4754,
+      "percentage": 0.25
+    },
+    {
+      "area": "Gilhus (3)",
+      "visits": 4715,
+      "percentage": 0.17
+    },
+    {
+      "area": "Langmyr",
+      "visits": 4510,
+      "percentage": 0.12
+    },
+    {
+      "area": "Huringen",
+      "visits": 4457,
+      "percentage": 0.11
+    },
+    {
+      "area": "Drammen (2)",
+      "visits": 4322,
+      "percentage": 0.15
+    },
+    {
+      "area": "Gullaug stasjon (4)",
+      "visits": 4315,
+      "percentage": 0.18
+    },
+    {
+      "area": "Tangen kirke (3)",
+      "visits": 4283,
+      "percentage": 0.19
+    },
+    {
+      "area": "Vestbygda skole",
+      "visits": 4245,
+      "percentage": 0.05
+    },
+    {
+      "area": "Lensmannsløkka (1)",
+      "visits": 4238,
+      "percentage": 0.07
+    },
+    {
+      "area": "Kobbervikdalen 86 (3)",
+      "visits": 4183,
+      "percentage": 0.06
+    },
+    {
+      "area": "Drammen (1)",
+      "visits": 4091,
+      "percentage": 0.28
+    },
+    {
+      "area": "Sandakerkrysset (1)",
+      "visits": 4037,
+      "percentage": 0.23
+    },
+    {
+      "area": "Ormetjern",
+      "visits": 4035,
+      "percentage": 0.12
+    },
+    {
+      "area": "Bjørkeløkka (3)",
+      "visits": 3975,
+      "percentage": 0.07
+    },
+    {
+      "area": "Oreberg",
+      "visits": 3831,
+      "percentage": 0.1
+    },
+    {
+      "area": "Revefaret (1)",
+      "visits": 3807,
+      "percentage": 0.09
+    },
+    {
+      "area": "Rognekollen",
+      "visits": 3737,
+      "percentage": 0.06
+    },
+    {
+      "area": "Spikkestad (1)",
+      "visits": 3586,
+      "percentage": 0.1
+    },
+    {
+      "area": "B (4)",
+      "visits": 3562,
+      "percentage": 0.16
+    },
+    {
+      "area": "Brakerøya (1)",
+      "visits": 3548,
+      "percentage": 0.09
+    },
+    {
+      "area": "Sjøl (1)",
+      "visits": 3459,
+      "percentage": 0.06
+    },
+    {
+      "area": "Kløversvingen (1)",
+      "visits": 3444,
+      "percentage": 0.11
+    },
+    {
+      "area": "Krokstadelva (1)",
+      "visits": 3399,
+      "percentage": 0.08
+    },
+    {
+      "area": "Gilhus (6)",
+      "visits": 3385,
+      "percentage": 0.15
+    },
+    {
+      "area": "Hyggen Mellom dyrefredningsområde",
+      "visits": 3359,
+      "percentage": 0.08
+    },
+    {
+      "area": "Gullaug stasjon (3)",
+      "visits": 3326,
+      "percentage": 0.05
+    },
+    {
+      "area": "Speiderhuset 1. Skoger speidergruppe",
+      "visits": 3305,
+      "percentage": 0.09
+    },
+    {
+      "area": "Bergdamtjern",
+      "visits": 3299,
+      "percentage": 0.08
+    },
+    {
+      "area": "Gørrmyra-Torvmyra",
+      "visits": 3272,
+      "percentage": 0.07
+    },
+    {
+      "area": "Kjellstad stasjon (1)",
+      "visits": 3207,
+      "percentage": 0.3
+    },
+    {
+      "area": "Småskjær (3)",
+      "visits": 3131,
+      "percentage": 0.1
+    },
+    {
+      "area": "Vesle Svarttjern",
+      "visits": 3083,
+      "percentage": 0.12
+    },
+    {
+      "area": "Thamsgaten P-hus",
+      "visits": 3073,
+      "percentage": 0.1
+    },
+    {
+      "area": "Damvann",
+      "visits": 2893,
+      "percentage": 0.05
+    },
+    {
+      "area": "Øvre Lindum (1)",
+      "visits": 2856,
+      "percentage": 0.05
+    },
+    {
+      "area": "Losjeplassen (2)",
+      "visits": 2780,
+      "percentage": 0.08
+    },
+    {
+      "area": "Skjervikbukta",
+      "visits": 2771,
+      "percentage": 0.07
+    },
+    {
+      "area": "B (3)",
+      "visits": 2759,
+      "percentage": 0.08
+    },
+    {
+      "area": "Rødtangen Camping",
+      "visits": 2743,
+      "percentage": 0.06
+    },
+    {
+      "area": "Nedre Eiker lensmannskontor (3)",
+      "visits": 2628,
+      "percentage": 0.29
+    },
+    {
+      "area": "Smørgravkrysset (1)",
+      "visits": 2605,
+      "percentage": 0.08
+    },
+    {
+      "area": "Markveien (1)",
+      "visits": 2576,
+      "percentage": 0.06
+    },
+    {
+      "area": "Svingen (2)",
+      "visits": 2434,
+      "percentage": 0.09
+    },
+    {
+      "area": "Skoger kirke",
+      "visits": 2394,
+      "percentage": 0.04
+    },
+    {
+      "area": "Dramstadfjellet (1)",
+      "visits": 2380,
+      "percentage": 0.05
+    },
+    {
+      "area": "Svelvik rådhus (1)",
+      "visits": 2371,
+      "percentage": 0.06
+    },
+    {
+      "area": "Hagaøya",
+      "visits": 2348,
+      "percentage": 0.12
+    },
+    {
+      "area": "Voldenveien (1)",
+      "visits": 2305,
+      "percentage": 0.04
+    },
+    {
+      "area": "Solli (4)",
+      "visits": 2286,
+      "percentage": 0.22
+    },
+    {
+      "area": "Svelvik Nærsenter (1)",
+      "visits": 2265,
+      "percentage": 0.05
+    },
+    {
+      "area": "Aurstjønn",
+      "visits": 2261,
+      "percentage": 0.06
+    },
+    {
+      "area": "Skettjern",
+      "visits": 2159,
+      "percentage": 0.1
+    },
+    {
+      "area": "Ertstjønn",
+      "visits": 2117,
+      "percentage": 0.05
+    },
+    {
+      "area": "Steinberg",
+      "visits": 2098,
+      "percentage": 0.08
+    },
+    {
+      "area": "Losjeplassen (4)",
+      "visits": 2097,
+      "percentage": 0.07
+    },
+    {
+      "area": "Reistad stasjon (2)",
+      "visits": 2027,
+      "percentage": 0.09
+    },
+    {
+      "area": "Statsarkivet i Kongsberg",
+      "visits": 1999,
+      "percentage": 0.11
+    },
+    {
+      "area": "Lier gamle stasjon (1)",
+      "visits": 1995,
+      "percentage": 0.04
+    },
+    {
+      "area": "Drammen (3)",
+      "visits": 1986,
+      "percentage": 0.1
+    },
+    {
+      "area": "Lille Sandungen",
+      "visits": 1960,
+      "percentage": 0.15
+    },
+    {
+      "area": "Tangen kirke (4)",
+      "visits": 1957,
+      "percentage": 0.04
+    },
+    {
+      "area": "Mjøndalen E134 (1)",
+      "visits": 1948,
+      "percentage": 0.06
+    },
+    {
+      "area": "Landfallsletta (1)",
+      "visits": 1938,
+      "percentage": 0.05
+    },
+    {
+      "area": "Svartetjern",
+      "visits": 1910,
+      "percentage": 0.07
+    },
+    {
+      "area": "Thorrud Camping",
+      "visits": 1909,
+      "percentage": 0.05
+    },
+    {
+      "area": "Dælatjern",
+      "visits": 1890,
+      "percentage": 0.05
+    },
+    {
+      "area": "Gluggen (1)",
+      "visits": 1848,
+      "percentage": 0.04
+    },
+    {
+      "area": "Øvre Badhusdammen",
+      "visits": 1843,
+      "percentage": 0.08
+    },
+    {
+      "area": "Langebru (6)",
+      "visits": 1756,
+      "percentage": 0.06
+    },
+    {
+      "area": "Skartumholmen",
+      "visits": 1736,
+      "percentage": 0.11
+    },
+    {
+      "area": "Løkkebergveien 1 (4)",
+      "visits": 1703,
+      "percentage": 0.04
+    },
+    {
+      "area": "Løkkebergveien 1 (1)",
+      "visits": 1696,
+      "percentage": 0.04
+    },
+    {
+      "area": "Årkvislaveien (1)",
+      "visits": 1693,
+      "percentage": 0.08
+    },
+    {
+      "area": "Hotel 1624",
+      "visits": 1671,
+      "percentage": 0.12
+    },
+    {
+      "area": "Siljukollvannet",
+      "visits": 1659,
+      "percentage": 0.04
+    },
+    {
+      "area": "Hokksund turnforening",
+      "visits": 1571,
+      "percentage": 0.05
+    },
+    {
+      "area": "Fabrikkdammen",
+      "visits": 1546,
+      "percentage": 0.08
+    },
+    {
+      "area": "Holmestrand stasjon, inngang Rove (1)",
+      "visits": 1468,
+      "percentage": 0.05
+    },
+    {
+      "area": "Meheia (1)",
+      "visits": 1432,
+      "percentage": 0.07
+    },
+    {
+      "area": "Langebru (4)",
+      "visits": 1422,
+      "percentage": 0.13
+    },
+    {
+      "area": "Brurbergveien (1)",
+      "visits": 1413,
+      "percentage": 0.17
+    },
+    {
+      "area": "Røed (1)",
+      "visits": 1409,
+      "percentage": 0.04
+    },
+    {
+      "area": "Lahellholmen",
+      "visits": 1398,
+      "percentage": 0.04
+    },
+    {
+      "area": "Thai Town Takeaway",
+      "visits": 1390,
+      "percentage": 0.13
+    },
+    {
+      "area": "Svarttjern",
+      "visits": 1293,
+      "percentage": 0.04
+    },
+    {
+      "area": "Helgeroa (1)",
+      "visits": 1288,
+      "percentage": 0.04
+    },
+    {
+      "area": "Gulden kunstverk (1)",
+      "visits": 1286,
+      "percentage": 0.06
+    },
+    {
+      "area": "Grønnmørk (1)",
+      "visits": 1267,
+      "percentage": 0.06
+    },
+    {
+      "area": "Borge Fjellhandel Og Camping",
+      "visits": 1262,
+      "percentage": 0.04
+    },
+    {
+      "area": "Hyttemesterveien (3)",
+      "visits": 1242,
+      "percentage": 0.04
+    },
+    {
+      "area": "Stoppen (1)",
+      "visits": 1209,
+      "percentage": 0.08
+    },
+    {
+      "area": "Eiker videregående skole",
+      "visits": 1206,
+      "percentage": 0.04
+    },
+    {
+      "area": "Glassverket",
+      "visits": 1202,
+      "percentage": 0.06
+    },
+    {
+      "area": "Tors vei snuplass (1)",
+      "visits": 1200,
+      "percentage": 0.04
+    },
+    {
+      "area": "Skalpe (1)",
+      "visits": 1195,
+      "percentage": 0.08
+    },
+    {
+      "area": "Djupdalstjern",
+      "visits": 1167,
+      "percentage": 0.06
+    },
+    {
+      "area": "Hyttemesterveien (4)",
+      "visits": 1157,
+      "percentage": 0.04
+    },
+    {
+      "area": "Tord Pedersens gate 83 (3)",
+      "visits": 1155,
+      "percentage": 0.04
+    },
+    {
+      "area": "Solvangveien (1)",
+      "visits": 1145,
+      "percentage": 0.25
+    },
+    {
+      "area": "Butjern",
+      "visits": 1082,
+      "percentage": 0.04
+    },
+    {
+      "area": "Støperigata (1)",
+      "visits": 1015,
+      "percentage": 0.04
+    },
+    {
+      "area": "Reistad stasjon (1)",
+      "visits": 973,
+      "percentage": 0.04
+    },
+    {
+      "area": "Kongsberg (1)",
+      "visits": 941,
+      "percentage": 0.06
+    },
+    {
+      "area": "Stokkestua",
+      "visits": 920,
+      "percentage": 0.18
+    },
+    {
+      "area": "Grams allé (2)",
+      "visits": 885,
+      "percentage": 0.04
+    },
+    {
+      "area": "Gaupås (1)",
+      "visits": 873,
+      "percentage": 0.04
+    },
+    {
+      "area": "Stuvstjern",
+      "visits": 856,
+      "percentage": 0.04
+    },
+    {
+      "area": "Hokksund barneskole",
+      "visits": 856,
+      "percentage": 0.04
+    },
+    {
+      "area": "Egge skole",
+      "visits": 844,
+      "percentage": 0.04
+    },
+    {
+      "area": "Akerkvartalet",
+      "visits": 801,
+      "percentage": 0.22
+    },
+    {
+      "area": "Stalsbergkrysset (1)",
+      "visits": 767,
+      "percentage": 0.09
+    },
+    {
+      "area": "Setertjennet",
+      "visits": 757,
+      "percentage": 0.08
+    },
+    {
+      "area": "Kjærlighetsstien (1)",
+      "visits": 726,
+      "percentage": 0.04
+    },
+    {
+      "area": "Sandvika storsenter (4)",
+      "visits": 725,
+      "percentage": 0.13
+    },
+    {
+      "area": "Lahelldammen (3)",
+      "visits": 717,
+      "percentage": 0.03
+    },
+    {
+      "area": "Gjellebekk (6)",
+      "visits": 690,
+      "percentage": 0.15
+    },
+    {
+      "area": "Askestad (1)",
+      "visits": 632,
+      "percentage": 0.04
+    },
+    {
+      "area": "Auke (3)",
+      "visits": 621,
+      "percentage": 0.03
+    },
+    {
+      "area": "Nøsted Bruk (1)",
+      "visits": 607,
+      "percentage": 0.04
+    },
+    {
+      "area": "H. Stordalens vei (1)",
+      "visits": 601,
+      "percentage": 0.06
+    },
+    {
+      "area": "Smart Club (1)",
+      "visits": 600,
+      "percentage": 0.19
+    },
+    {
+      "area": "Solli (1)",
+      "visits": 596,
+      "percentage": 0.08
+    },
+    {
+      "area": "Tollerud øst (1)",
+      "visits": 582,
+      "percentage": 0.04
+    },
+    {
+      "area": "Hokksund stasjon",
+      "visits": 559,
+      "percentage": 0.03
+    },
+    {
+      "area": "Reistad stasjon (3)",
+      "visits": 551,
+      "percentage": 0.03
+    },
+    {
+      "area": "Beck (4)",
+      "visits": 530,
+      "percentage": 0.03
+    },
+    {
+      "area": "Norgips",
+      "visits": 526,
+      "percentage": 0.04
+    },
+    {
+      "area": "Drammen (4)",
+      "visits": 518,
+      "percentage": 0.04
+    },
+    {
+      "area": "Mjøndalen (1)",
+      "visits": 502,
+      "percentage": 0.03
+    },
+    {
+      "area": "Saasen (1)",
+      "visits": 486,
+      "percentage": 0.04
+    },
+    {
+      "area": "Gullaug stasjon (2)",
+      "visits": 479,
+      "percentage": 0.04
+    },
+    {
+      "area": "Løkkebergveien 1 (2)",
+      "visits": 474,
+      "percentage": 0.03
+    },
+    {
+      "area": "Hokksund trafostasjon",
+      "visits": 425,
+      "percentage": 0.02
+    },
+    {
+      "area": "Klevstua",
+      "visits": 423,
+      "percentage": 0.03
+    },
+    {
+      "area": "Gilhus (7)",
+      "visits": 420,
+      "percentage": 0.05
+    },
+    {
+      "area": "Solli (5)",
+      "visits": 419,
+      "percentage": 0.07
+    },
+    {
+      "area": "Måsan (1)",
+      "visits": 387,
+      "percentage": 0.12
+    },
+    {
+      "area": "Svangstrand",
+      "visits": 372,
+      "percentage": 0.04
+    },
+    {
+      "area": "Holmen kirke",
+      "visits": 371,
+      "percentage": 0.06
+    },
+    {
+      "area": "Åros kirkegård",
+      "visits": 370,
+      "percentage": 0.03
+    },
+    {
+      "area": "Båsebakken (2)",
+      "visits": 356,
+      "percentage": 0.03
+    },
+    {
+      "area": "Klevjerhagen (1)",
+      "visits": 348,
+      "percentage": 0.03
+    },
+    {
+      "area": "Haslestad (1)",
+      "visits": 345,
+      "percentage": 0.02
+    },
+    {
+      "area": "Bilet (1)",
+      "visits": 327,
+      "percentage": 0.05
+    },
+    {
+      "area": "Hillestadvannet",
+      "visits": 323,
+      "percentage": 0.03
+    },
+    {
+      "area": "Vardåsen",
+      "visits": 315,
+      "percentage": 0.03
+    },
+    {
+      "area": "Vanntårnet Åsen (1)",
+      "visits": 310,
+      "percentage": 0.02
+    },
+    {
+      "area": "Gomsrudveien (1)",
+      "visits": 308,
+      "percentage": 0.02
+    },
+    {
+      "area": "Bråtasvingen (1)",
+      "visits": 307,
+      "percentage": 0.06
+    },
+    {
+      "area": "Erlands vei (1)",
+      "visits": 305,
+      "percentage": 0.04
+    },
+    {
+      "area": "Bjørkeløkka (4)",
+      "visits": 303,
+      "percentage": 0.04
+    },
+    {
+      "area": "Saga (1)",
+      "visits": 280,
+      "percentage": 0.02
+    },
+    {
+      "area": "Royal Gastropub",
+      "visits": 274,
+      "percentage": 0.12
+    },
+    {
+      "area": "Lomtjenna",
+      "visits": 264,
+      "percentage": 0.02
+    },
+    {
+      "area": "Stupengdammen",
+      "visits": 259,
+      "percentage": 0.06
+    },
+    {
+      "area": "Løkkebergveien 1 (3)",
+      "visits": 256,
+      "percentage": 0.02
+    },
+    {
+      "area": "Teige (1)",
+      "visits": 253,
+      "percentage": 0.03
+    },
+    {
+      "area": "Langebru (7)",
+      "visits": 247,
+      "percentage": 0.02
+    },
+    {
+      "area": "Ødegården Eknes (1)",
+      "visits": 237,
+      "percentage": 0.03
+    },
+    {
+      "area": "Holo (1)",
+      "visits": 236,
+      "percentage": 0.02
+    },
+    {
+      "area": "Nedre Eiker lensmannskontor (5)",
+      "visits": 236,
+      "percentage": 0.04
+    },
+    {
+      "area": "Roaldsrudveien (1)",
+      "visits": 232,
+      "percentage": 0.03
+    },
+    {
+      "area": "Lier Bygdetun (1)",
+      "visits": 228,
+      "percentage": 0.06
+    },
+    {
+      "area": "Angerstveien (1)",
+      "visits": 226,
+      "percentage": 0.05
+    },
+    {
+      "area": "Nesbru videregående skole",
+      "visits": 224,
+      "percentage": 0.04
+    },
+    {
+      "area": "Svinetjern",
+      "visits": 219,
+      "percentage": 0.02
+    },
+    {
+      "area": "Toftejordet (4)",
+      "visits": 217,
+      "percentage": 0.03
+    },
+    {
+      "area": "Svensketjern",
+      "visits": 216,
+      "percentage": 0.02
+    },
+    {
+      "area": "Nordbruddet",
+      "visits": 211,
+      "percentage": 0.03
+    },
+    {
+      "area": "Hygga (1)",
+      "visits": 203,
+      "percentage": 0.02
+    },
+    {
+      "area": "Smia (1)",
+      "visits": 196,
+      "percentage": 0.02
+    },
+    {
+      "area": "Selvik gård (1)",
+      "visits": 195,
+      "percentage": 0.03
+    },
+    {
+      "area": "Gullaug stasjon (1)",
+      "visits": 191,
+      "percentage": 0.04
+    },
+    {
+      "area": "Rødhettes vei (1)",
+      "visits": 184,
+      "percentage": 0.04
+    },
+    {
+      "area": "Felt B",
+      "visits": 184,
+      "percentage": 0.23
+    },
+    {
+      "area": "Gamlebrofoss kraftverk",
+      "visits": 175,
+      "percentage": 0.02
+    },
+    {
+      "area": "Grini Mølle",
+      "visits": 172,
+      "percentage": 0.03
+    },
+    {
+      "area": "Sønsteby Natur og Kultursenter",
+      "visits": 169,
+      "percentage": 0.02
+    },
+    {
+      "area": "Gjellebekk (5)",
+      "visits": 165,
+      "percentage": 0.06
+    },
+    {
+      "area": "Sølvkrona",
+      "visits": 162,
+      "percentage": 0.05
+    },
+    {
+      "area": "Sommero (4)",
+      "visits": 159,
+      "percentage": 0.03
+    },
+    {
+      "area": "Jernbanetorget",
+      "visits": 157,
+      "percentage": 0.04
+    },
+    {
+      "area": "Klevjerdammen",
+      "visits": 156,
+      "percentage": 0.04
+    },
+    {
+      "area": "Solli (6)",
+      "visits": 154,
+      "percentage": 0.03
+    },
+    {
+      "area": "Lysaker (2)",
+      "visits": 153,
+      "percentage": 0.06
+    },
+    {
+      "area": "Bondivann (1)",
+      "visits": 144,
+      "percentage": 0.03
+    },
+    {
+      "area": "Rødberg vokterbolig (3)",
+      "visits": 137,
+      "percentage": 0.03
+    },
+    {
+      "area": "Kudalsmyr",
+      "visits": 137,
+      "percentage": 0.03
+    },
+    {
+      "area": "Strøtvet snuplass (1)",
+      "visits": 133,
+      "percentage": 0.03
+    },
+    {
+      "area": "Haugmyrane",
+      "visits": 131,
+      "percentage": 0.02
+    },
+    {
+      "area": "Bjerkliveien (6)",
+      "visits": 130,
+      "percentage": 0.04
+    },
+    {
+      "area": "Jacob Langes vei (1)",
+      "visits": 129,
+      "percentage": 0.02
+    },
+    {
+      "area": "Krona (7)",
+      "visits": 127,
+      "percentage": 0.04
+    },
+    {
+      "area": "Hennumkrysset (1)",
+      "visits": 126,
+      "percentage": 0.1
+    },
+    {
+      "area": "Tinnsjø kro & camping",
+      "visits": 124,
+      "percentage": 0.02
+    },
+    {
+      "area": "Hillestad kirke",
+      "visits": 116,
+      "percentage": 0.03
+    },
+    {
+      "area": "Sølvfast",
+      "visits": 116,
+      "percentage": 0.02
+    },
+    {
+      "area": "Hukumyrane",
+      "visits": 113,
+      "percentage": 0.03
+    },
+    {
+      "area": "Setermyrene",
+      "visits": 112,
+      "percentage": 0.04
+    },
+    {
+      "area": "Halsjordet (1)",
+      "visits": 105,
+      "percentage": 0.02
+    },
+    {
+      "area": "Hyttemesterveien (1)",
+      "visits": 104,
+      "percentage": 0.03
+    },
+    {
+      "area": "Langhuset",
+      "visits": 99,
+      "percentage": 0.05
+    },
+    {
+      "area": "Gallebergveien Tandbergåsen (1)",
+      "visits": 98,
+      "percentage": 0.04
+    },
+    {
+      "area": "Øvre Lindum (4)",
+      "visits": 94,
+      "percentage": 0.02
+    },
+    {
+      "area": "Knutseskogen (1)",
+      "visits": 94,
+      "percentage": 0.03
+    },
+    {
+      "area": "Bjerkliveien (4)",
+      "visits": 91,
+      "percentage": 0.02
+    },
+    {
+      "area": "Torespæren øst (3)",
+      "visits": 90,
+      "percentage": 0.02
+    },
+    {
+      "area": "Tandbergveien kryss (1)",
+      "visits": 89,
+      "percentage": 0.03
+    },
+    {
+      "area": "Oslo postgård",
+      "visits": 89,
+      "percentage": 0.04
+    },
+    {
+      "area": "Jørgen Moes gate (1)",
+      "visits": 86,
+      "percentage": 0.02
+    },
+    {
+      "area": "Solli (2)",
+      "visits": 85,
+      "percentage": 0.02
+    },
+    {
+      "area": "Voksenlia (2)",
+      "visits": 84,
+      "percentage": 0.05
+    },
+    {
+      "area": "Høn (1)",
+      "visits": 83,
+      "percentage": 0.02
+    },
+    {
+      "area": "Johs. Haugeruds vei (1)",
+      "visits": 83,
+      "percentage": 0.03
+    },
+    {
+      "area": "Slependen kalkovn",
+      "visits": 83,
+      "percentage": 0.03
+    },
+    {
+      "area": "Rosteds vei (1)",
+      "visits": 83,
+      "percentage": 0.02
+    },
+    {
+      "area": "Sommero (1)",
+      "visits": 81,
+      "percentage": 0.03
+    },
+    {
+      "area": "Wennersborg skole (1)",
+      "visits": 80,
+      "percentage": 0.02
+    },
+    {
+      "area": "Ritazza",
+      "visits": 79,
+      "percentage": 0.06
+    },
+    {
+      "area": "Gjevden",
+      "visits": 78,
+      "percentage": 0.09
+    },
+    {
+      "area": "Hannibalbakken",
+      "visits": 78,
+      "percentage": 0.03
+    },
+    {
+      "area": "Skoglund barnehage",
+      "visits": 76,
+      "percentage": 0.05
+    },
+    {
+      "area": "Sagmyra",
+      "visits": 72,
+      "percentage": 0.02
+    },
+    {
+      "area": "Blakstad hageby (1)",
+      "visits": 72,
+      "percentage": 0.03
+    },
+    {
+      "area": "Mellom Sulutjenn",
+      "visits": 71,
+      "percentage": 0.05
+    },
+    {
+      "area": "Båsebakken (4)",
+      "visits": 70,
+      "percentage": 0.02
+    },
+    {
+      "area": "Kongsberg brannstasjon (3)",
+      "visits": 69,
+      "percentage": 0.02
+    },
+    {
+      "area": "Hyttemesterveien (2)",
+      "visits": 69,
+      "percentage": 0.03
+    },
+    {
+      "area": "Lierskogen samfunnshus",
+      "visits": 68,
+      "percentage": 0.03
+    },
+    {
+      "area": "Sommero (2)",
+      "visits": 67,
+      "percentage": 0.04
+    },
+    {
+      "area": "Uppsjø",
+      "visits": 66,
+      "percentage": 0.03
+    },
+    {
+      "area": "Hokksund brannstasjon (1)",
+      "visits": 65,
+      "percentage": 0.02
+    },
+    {
+      "area": "Store Sachsendam",
+      "visits": 63,
+      "percentage": 0.04
+    },
+    {
+      "area": "Ove Jensens vei (1)",
+      "visits": 63,
+      "percentage": 0.03
+    },
+    {
+      "area": "Kornmagasinet",
+      "visits": 62,
+      "percentage": 0.02
+    },
+    {
+      "area": "Kemner Ruuds vei (7)",
+      "visits": 62,
+      "percentage": 0.02
+    },
+    {
+      "area": "Telefon",
+      "visits": 59,
+      "percentage": 0.02
+    },
+    {
+      "area": "Søndre Synken",
+      "visits": 59,
+      "percentage": 0.07
+    },
+    {
+      "area": "Båntjern",
+      "visits": 58,
+      "percentage": 0.02
+    },
+    {
+      "area": "Kongsberg rådhus (2)",
+      "visits": 58,
+      "percentage": 0.02
+    },
+    {
+      "area": "Nedre Eiker lensmannskontor (2)",
+      "visits": 58,
+      "percentage": 0.02
+    },
+    {
+      "area": "Løkke",
+      "visits": 57,
+      "percentage": 0.04
+    },
+    {
+      "area": "Store Stang (1)",
+      "visits": 57,
+      "percentage": 0.02
+    }
   ]
 }
