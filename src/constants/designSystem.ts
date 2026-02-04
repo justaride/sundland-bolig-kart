@@ -9,7 +9,7 @@ export const CATEGORY_COLORS: Record<PropertyCategory, string> = {
   "Under utvikling": "#dc2626",
 };
 
-export const MAP_CENTER: [number, number] = [59.738, 10.205];
+export const MAP_CENTER: [number, number] = [59.742, 10.167];
 export const MAP_ZOOM = 14;
 export const MAX_CLUSTER_RADIUS = 30;
 

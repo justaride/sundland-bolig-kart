@@ -6,9 +6,12 @@
     "bydel": "Sundland",
     "category": "Under utvikling",
     "status": "Regulering",
-    "lat": 59.7365,
-    "lng": 10.2005,
-    "developer": { "name": "Bane NOR Eiendom", "orgNumber": "980374505" },
+    "lat": 59.746208,
+    "lng": 10.155323,
+    "developer": {
+      "name": "Bane NOR Eiendom",
+      "orgNumber": "980374505"
+    },
     "units": 800,
     "sqmTotal": 260000,
     "sqmPerUnit": null,
@@ -30,14 +33,23 @@
     "bydel": "Sundland",
     "category": "Rekkehus",
     "status": "Under bygging",
-    "lat": 59.7348,
-    "lng": 10.1965,
-    "developer": { "name": "Bane NOR Eiendom", "orgNumber": "980374505" },
+    "lat": 59.7415,
+    "lng": 10.1635,
+    "developer": {
+      "name": "Bane NOR Eiendom",
+      "orgNumber": "980374505"
+    },
     "units": 300,
     "sqmTotal": 24000,
-    "sqmPerUnit": { "min": 55, "max": 145 },
+    "sqmPerUnit": {
+      "min": 55,
+      "max": 145
+    },
     "pricePerSqm": 55000,
-    "estimatedPrice": { "min": 3000000, "max": 7900000 },
+    "estimatedPrice": {
+      "min": 3000000,
+      "max": 7900000
+    },
     "yearCompleted": null,
     "yearPlanned": 2028,
     "floors": 3,
@@ -54,14 +66,23 @@
     "bydel": "Stromsoe",
     "category": "Leilighet",
     "status": "Ferdigstilt",
-    "lat": 59.7405,
-    "lng": 10.2085,
-    "developer": { "name": "OBOS", "orgNumber": "937052766" },
+    "lat": 59.74,
+    "lng": 10.209,
+    "developer": {
+      "name": "OBOS",
+      "orgNumber": "937052766"
+    },
     "units": 120,
     "sqmTotal": 9600,
-    "sqmPerUnit": { "min": 55, "max": 110 },
+    "sqmPerUnit": {
+      "min": 55,
+      "max": 110
+    },
     "pricePerSqm": 62000,
-    "estimatedPrice": { "min": 3400000, "max": 6800000 },
+    "estimatedPrice": {
+      "min": 3400000,
+      "max": 6800000
+    },
     "yearCompleted": 2023,
     "yearPlanned": null,
     "floors": 6,
@@ -78,9 +99,12 @@
     "bydel": "Groenland",
     "category": "Naering",
     "status": "Planlagt",
-    "lat": 59.742,
-    "lng": 10.204,
-    "developer": { "name": "Drammen Eiendom", "orgNumber": "876820722" },
+    "lat": 59.743194,
+    "lng": 10.196017,
+    "developer": {
+      "name": "Drammen Eiendom",
+      "orgNumber": "876820722"
+    },
     "units": null,
     "sqmTotal": 15000,
     "sqmPerUnit": null,
@@ -102,14 +126,23 @@
     "bydel": "Tangen",
     "category": "Leilighet",
     "status": "Under bygging",
-    "lat": 59.7335,
-    "lng": 10.212,
-    "developer": { "name": "JM Norge", "orgNumber": "829350122" },
+    "lat": 59.731,
+    "lng": 10.236,
+    "developer": {
+      "name": "JM Norge",
+      "orgNumber": "829350122"
+    },
     "units": 64,
     "sqmTotal": 5100,
-    "sqmPerUnit": { "min": 50, "max": 95 },
+    "sqmPerUnit": {
+      "min": 50,
+      "max": 95
+    },
     "pricePerSqm": 58000,
-    "estimatedPrice": { "min": 2900000, "max": 5500000 },
+    "estimatedPrice": {
+      "min": 2900000,
+      "max": 5500000
+    },
     "yearCompleted": null,
     "yearPlanned": 2027,
     "floors": 4,
@@ -126,12 +159,15 @@
     "bydel": "Sundland",
     "category": "Leilighet",
     "status": "Konsept",
-    "lat": 59.737,
-    "lng": 10.198,
+    "lat": 59.740986,
+    "lng": 10.170719,
     "developer": null,
     "units": 30,
     "sqmTotal": 2400,
-    "sqmPerUnit": { "min": 60, "max": 90 },
+    "sqmPerUnit": {
+      "min": 60,
+      "max": 90
+    },
     "pricePerSqm": null,
     "estimatedPrice": null,
     "yearCompleted": null,
@@ -150,9 +186,12 @@
     "bydel": "Stromsoe",
     "category": "Offentlig",
     "status": "Ferdigstilt",
-    "lat": 59.7398,
-    "lng": 10.2055,
-    "developer": { "name": "Drammen Kommune", "orgNumber": "921234554" },
+    "lat": 59.7355,
+    "lng": 10.206,
+    "developer": {
+      "name": "Drammen Kommune",
+      "orgNumber": "921234554"
+    },
     "units": null,
     "sqmTotal": 3200,
     "sqmPerUnit": null,
@@ -174,14 +213,23 @@
     "bydel": "Groenland",
     "category": "Enebolig",
     "status": "Planlagt",
-    "lat": 59.743,
-    "lng": 10.201,
-    "developer": { "name": "Selvaag Bolig", "orgNumber": "992587776" },
+    "lat": 59.74,
+    "lng": 10.202,
+    "developer": {
+      "name": "Selvaag Bolig",
+      "orgNumber": "992587776"
+    },
     "units": 12,
     "sqmTotal": 2800,
-    "sqmPerUnit": { "min": 180, "max": 240 },
+    "sqmPerUnit": {
+      "min": 180,
+      "max": 240
+    },
     "pricePerSqm": 48000,
-    "estimatedPrice": { "min": 8600000, "max": 11500000 },
+    "estimatedPrice": {
+      "min": 8600000,
+      "max": 11500000
+    },
     "yearCompleted": null,
     "yearPlanned": 2028,
     "floors": 2,
@@ -198,9 +246,12 @@
     "bydel": "Stromsoe",
     "category": "Naering",
     "status": "Regulering",
-    "lat": 59.7392,
-    "lng": 10.2068,
-    "developer": { "name": "DPEND Eiendom", "orgNumber": "976121562" },
+    "lat": 59.7352,
+    "lng": 10.2065,
+    "developer": {
+      "name": "DPEND Eiendom",
+      "orgNumber": "976121562"
+    },
     "units": null,
     "sqmTotal": 8500,
     "sqmPerUnit": null,
@@ -222,12 +273,18 @@
     "bydel": "Groenland",
     "category": "Leilighet",
     "status": "Planlagt",
-    "lat": 59.7415,
-    "lng": 10.2025,
-    "developer": { "name": "Brække Eiendom", "orgNumber": "995041650" },
+    "lat": 59.730913,
+    "lng": 10.22288,
+    "developer": {
+      "name": "Brække Eiendom",
+      "orgNumber": "995041650"
+    },
     "units": 24,
     "sqmTotal": 2200,
-    "sqmPerUnit": { "min": 55, "max": 95 },
+    "sqmPerUnit": {
+      "min": 55,
+      "max": 95
+    },
     "pricePerSqm": null,
     "estimatedPrice": null,
     "yearCompleted": null,
@@ -246,12 +303,18 @@
     "bydel": "Sundland",
     "category": "Rekkehus",
     "status": "Konsept",
-    "lat": 59.7358,
-    "lng": 10.1988,
-    "developer": { "name": "Arbo Entreprenør", "orgNumber": "966177810" },
+    "lat": 59.742641,
+    "lng": 10.162637,
+    "developer": {
+      "name": "Arbo Entreprenør",
+      "orgNumber": "966177810"
+    },
     "units": 16,
     "sqmTotal": 1800,
-    "sqmPerUnit": { "min": 90, "max": 130 },
+    "sqmPerUnit": {
+      "min": 90,
+      "max": 130
+    },
     "pricePerSqm": null,
     "estimatedPrice": null,
     "yearCompleted": null,
@@ -270,12 +333,18 @@
     "bydel": "Groenland",
     "category": "Leilighet",
     "status": "Planlagt",
-    "lat": 59.7425,
-    "lng": 10.2032,
-    "developer": { "name": "Glitre Bolig", "orgNumber": "915279724" },
+    "lat": 59.742417,
+    "lng": 10.196594,
+    "developer": {
+      "name": "Glitre Bolig",
+      "orgNumber": "915279724"
+    },
     "units": 18,
     "sqmTotal": 1500,
-    "sqmPerUnit": { "min": 50, "max": 85 },
+    "sqmPerUnit": {
+      "min": 50,
+      "max": 85
+    },
     "pricePerSqm": null,
     "estimatedPrice": null,
     "yearCompleted": null,
@@ -294,12 +363,18 @@
     "bydel": "Stromsoe",
     "category": "Leilighet",
     "status": "Under bygging",
-    "lat": 59.7395,
-    "lng": 10.207,
-    "developer": { "name": "NBBO / Fevang AS", "orgNumber": null },
+    "lat": 59.7384,
+    "lng": 10.208,
+    "developer": {
+      "name": "NBBO / Fevang AS",
+      "orgNumber": null
+    },
     "units": 102,
     "sqmTotal": 7000,
-    "sqmPerUnit": { "min": 41, "max": 114 },
+    "sqmPerUnit": {
+      "min": 41,
+      "max": 114
+    },
     "pricePerSqm": null,
     "estimatedPrice": null,
     "yearCompleted": null,
@@ -318,12 +393,18 @@
     "bydel": "Tangen",
     "category": "Leilighet",
     "status": "Under bygging",
-    "lat": 59.728,
-    "lng": 10.225,
-    "developer": { "name": "Scandinavian Property Group", "orgNumber": null },
+    "lat": 59.7305,
+    "lng": 10.235,
+    "developer": {
+      "name": "Scandinavian Property Group",
+      "orgNumber": null
+    },
     "units": 500,
     "sqmTotal": 45000,
-    "sqmPerUnit": { "min": 40, "max": 130 },
+    "sqmPerUnit": {
+      "min": 40,
+      "max": 130
+    },
     "pricePerSqm": null,
     "estimatedPrice": null,
     "yearCompleted": null,
@@ -342,12 +423,18 @@
     "bydel": "Sundland",
     "category": "Leilighet",
     "status": "Planlagt",
-    "lat": 59.734,
-    "lng": 10.195,
-    "developer": { "name": "Barlindhaug Eiendom", "orgNumber": null },
+    "lat": 59.748329,
+    "lng": 10.170397,
+    "developer": {
+      "name": "Barlindhaug Eiendom",
+      "orgNumber": null
+    },
     "units": 28,
     "sqmTotal": 2800,
-    "sqmPerUnit": { "min": 75, "max": 146 },
+    "sqmPerUnit": {
+      "min": 75,
+      "max": 146
+    },
     "pricePerSqm": null,
     "estimatedPrice": null,
     "yearCompleted": null,
@@ -366,9 +453,12 @@
     "bydel": "Stromsoe",
     "category": "Under utvikling",
     "status": "Regulering",
-    "lat": 59.7408,
-    "lng": 10.2045,
-    "developer": { "name": "Strømsø Utvikling AS", "orgNumber": null },
+    "lat": 59.7316,
+    "lng": 10.2112,
+    "developer": {
+      "name": "Strømsø Utvikling AS",
+      "orgNumber": null
+    },
     "units": null,
     "sqmTotal": null,
     "sqmPerUnit": null,
