@@ -17,3 +17,32 @@ export const TILE_URL =
   "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
 export const TILE_ATTRIBUTION =
   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>';
+
+export const STORE_CATEGORY_COLORS: Record<string, string> = {
+  "Mat og drikke": "#ef4444",
+  "Hus og bygg": "#f97316",
+  Elektrobutikker: "#06b6d4",
+  Klesbutikker: "#ec4899",
+  "Sport og fritid": "#10b981",
+  "Smykker og parfyme": "#a855f7",
+  "Hjem og interiør": "#f59e0b",
+  "Annen handel": "#6b7280",
+  "Bil og Båt": "#475569",
+  Restaurant: "#dc2626",
+  "Bakeri og kafé": "#b45309",
+  Barer: "#7c3aed",
+  Profesjoner: "#0284c7",
+  "Skjønnhet og velvære": "#db2777",
+  Treningssentre: "#059669",
+  Byråer: "#4f46e5",
+  "Andre tjenester": "#71717a",
+};
+
+export const STORE_TOP_CATEGORIES = [
+  "Handel",
+  "Mat og opplevelser",
+  "Tjenester",
+] as const;
+
+export const MIN_REVENUE_DEFAULT = 0;
+export const MAX_REVENUE = 140000000;

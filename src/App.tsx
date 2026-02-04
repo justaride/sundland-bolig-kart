@@ -5,16 +5,24 @@ import FloatingStats from "./components/FloatingStats";
 import PropertyTable from "./components/PropertyTable";
 import StatsPanel from "./components/StatsPanel";
 import properties from "./data/properties.json";
+import storeLocations from "./data/storeLocations.json";
 import type { Property } from "./types/property";
+import type { StoreLocation } from "./types/store";
 import { CATEGORY_COLORS } from "./constants/designSystem";
 import {
   useFilteredProperties,
   EMPTY_FILTERS,
 } from "./hooks/useFilteredProperties";
 import type { Filters } from "./hooks/useFilteredProperties";
+import {
+  useFilteredStores,
+  EMPTY_STORE_FILTERS,
+} from "./hooks/useFilteredStores";
+import type { StoreFilters } from "./types/store";
 import { MapPin, Table, ChartBar } from "@phosphor-icons/react";
 
 const typedProperties = properties as Property[];
+const typedStores = storeLocations as StoreLocation[];
 
 type View = "kart" | "tabell" | "dashboard";
 
@@ -29,8 +37,11 @@ const categories = Object.entries(CATEGORY_COLORS) as [string, string][];
 export default function App() {
   const [view, setView] = useState<View>("kart");
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
+  const [storeFilters, setStoreFilters] =
+    useState<StoreFilters>(EMPTY_STORE_FILTERS);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const filtered = useFilteredProperties(typedProperties, filters);
+  const filteredStores = useFilteredStores(typedStores, storeFilters);
 
   const handleSelectProperty = useCallback((_id: string) => {
     setView("kart");
@@ -87,7 +98,12 @@ export default function App() {
       <div className="flex-1 flex overflow-hidden">
         {sidebarOpen && (
           <aside className="w-56 border-r border-gray-200 bg-white overflow-y-auto shrink-0">
-            <FilterPanel filters={filters} onChange={setFilters} />
+            <FilterPanel
+              filters={filters}
+              onChange={setFilters}
+              storeFilters={storeFilters}
+              onStoreFiltersChange={setStoreFilters}
+            />
           </aside>
         )}
 
@@ -95,7 +111,7 @@ export default function App() {
           {view === "kart" && (
             <>
               <FloatingStats properties={filtered} />
-              <PropertyMap properties={filtered} />
+              <PropertyMap properties={filtered} stores={filteredStores} />
             </>
           )}
           {view === "tabell" && (

@@ -3,8 +3,10 @@ import MarkerClusterGroup from "react-leaflet-cluster";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import type { Property } from "../../types/property";
+import type { StoreLocation } from "../../types/store";
 import {
   CATEGORY_COLORS,
+  STORE_CATEGORY_COLORS,
   MAP_CENTER,
   MAP_ZOOM,
   MAX_CLUSTER_RADIUS,
@@ -15,6 +17,7 @@ import { formatNumber, formatCurrency, formatSqm } from "../../utils/format";
 
 type Props = {
   properties: Property[];
+  stores: StoreLocation[];
 };
 
 function createIcon(category: Property["category"]): L.DivIcon {
@@ -28,6 +31,21 @@ function createIcon(category: Property["category"]): L.DivIcon {
       width:28px;height:28px;border-radius:50%;
       background:${color};border:3px solid white;
       box-shadow:0 2px 6px rgba(0,0,0,0.3);
+    "></div>`,
+  });
+}
+
+function createStoreIcon(category: string): L.DivIcon {
+  const color = STORE_CATEGORY_COLORS[category] ?? "#6b7280";
+  return L.divIcon({
+    className: "",
+    iconSize: [22, 22],
+    iconAnchor: [11, 11],
+    popupAnchor: [0, -11],
+    html: `<div style="
+      width:22px;height:22px;border-radius:4px;
+      background:${color};border:2px solid white;
+      box-shadow:0 2px 4px rgba(0,0,0,0.3);
     "></div>`,
   });
 }
@@ -95,6 +113,50 @@ function PopupContent({ p }: { p: Property }) {
           {p.description}
         </p>
       )}
+
+      {p.website && (
+        <a
+          href={p.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 inline-block text-xs text-blue-600 hover:underline"
+        >
+          Besøk nettside &rarr;
+        </a>
+      )}
+    </div>
+  );
+}
+
+function StorePopupContent({ s }: { s: StoreLocation }) {
+  return (
+    <div className="min-w-[200px] max-w-[260px] text-sm">
+      <h3 className="text-base font-semibold mb-1">{s.name}</h3>
+      <div className="flex gap-2 mb-2 flex-wrap">
+        <span
+          className="text-xs px-2 py-0.5 rounded text-white font-medium"
+          style={{ background: STORE_CATEGORY_COLORS[s.category] ?? "#6b7280" }}
+        >
+          {s.category}
+        </span>
+        <span className="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600">
+          {s.topCategory}
+        </span>
+      </div>
+      <table className="w-full text-xs">
+        <tbody>
+          <Row label="Adresse" value={s.address} />
+          <Row label="Omsetning" value={formatCurrency(s.revenue)} />
+          <Row label="Ansatte" value={String(s.employees)} />
+          {s.yoyGrowth !== null && (
+            <Row
+              label="Vekst (YoY)"
+              value={`${s.yoyGrowth > 0 ? "+" : ""}${s.yoyGrowth}%`}
+            />
+          )}
+          <Row label="Markedsandel" value={`${s.marketShare}%`} />
+        </tbody>
+      </table>
     </div>
   );
 }
@@ -108,7 +170,7 @@ function Row({ label, value }: { label: string; value: string }) {
   );
 }
 
-export default function PropertyMap({ properties }: Props) {
+export default function PropertyMap({ properties, stores }: Props) {
   return (
     <MapContainer
       center={MAP_CENTER}
@@ -117,6 +179,7 @@ export default function PropertyMap({ properties }: Props) {
       zoomControl={true}
     >
       <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} />
+
       <MarkerClusterGroup maxClusterRadius={MAX_CLUSTER_RADIUS} chunkedLoading>
         {properties.map((p) => (
           <Marker
@@ -130,6 +193,40 @@ export default function PropertyMap({ properties }: Props) {
           </Marker>
         ))}
       </MarkerClusterGroup>
+
+      {stores.length > 0 && (
+        <MarkerClusterGroup
+          maxClusterRadius={40}
+          chunkedLoading
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          iconCreateFunction={(cluster: any) => {
+            const count = cluster.getChildCount();
+            return L.divIcon({
+              className: "",
+              iconSize: [36, 36],
+              html: `<div style="
+                width:36px;height:36px;border-radius:6px;
+                background:#475569;border:2px solid white;
+                box-shadow:0 2px 6px rgba(0,0,0,0.3);
+                display:flex;align-items:center;justify-content:center;
+                color:white;font-size:12px;font-weight:600;
+              ">${count}</div>`,
+            });
+          }}
+        >
+          {stores.map((s) => (
+            <Marker
+              key={s.id}
+              position={[s.lat, s.lng]}
+              icon={createStoreIcon(s.category)}
+            >
+              <Popup>
+                <StorePopupContent s={s} />
+              </Popup>
+            </Marker>
+          ))}
+        </MarkerClusterGroup>
+      )}
     </MapContainer>
   );
 }
