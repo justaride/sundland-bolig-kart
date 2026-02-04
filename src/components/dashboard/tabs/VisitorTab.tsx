@@ -116,7 +116,7 @@ export default function VisitorTab({ visitors, onDrillDown }: Props) {
             <BarChart
               data={topOrigins}
               layout="vertical"
-              onClick={(e) => {
+              onClick={(e: any) => {
                 if (e?.activePayload?.[0]) {
                   const origin = e.activePayload[0].payload;
                   onDrillDown({
@@ -139,7 +139,7 @@ export default function VisitorTab({ visitors, onDrillDown }: Props) {
                 width={160}
               />
               <Tooltip
-                formatter={(v: number) => formatNumber(v)}
+                formatter={(v) => formatNumber(Number(v))}
                 labelFormatter={(l) => String(l)}
               />
               <Bar

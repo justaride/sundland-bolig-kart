@@ -17,8 +17,8 @@ import keyMetricsRaw from "../data/plaace/keyMetrics.json";
 const demographics = demographicsRaw as DemographicsData;
 const visitors = visitorsRaw as VisitorsData;
 const commerce = commerceRaw as CommerceData;
-const cardTransactions = cardTransactionsRaw as CardTransactionsData;
-const growth = growthRaw as GrowthData;
+const cardTransactions = cardTransactionsRaw as unknown as CardTransactionsData;
+const growth = growthRaw as unknown as GrowthData;
 
 export function usePlaaceData(filters: PlaaceFilters) {
   const filteredGrowth = useMemo(() => {

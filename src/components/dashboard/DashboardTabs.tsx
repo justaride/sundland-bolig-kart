@@ -77,7 +77,7 @@ export default function DashboardTabs({ properties }: Props) {
               <div>{formatNumber(Number(s.employees))}</div>
               <div className="text-gray-500">Markedsandel</div>
               <div>{Number(s.marketShare)}%</div>
-              {s.chainEmployees && (
+              {s.chainEmployees != null && (
                 <>
                   <div className="text-gray-500">Kjede total</div>
                   <div>

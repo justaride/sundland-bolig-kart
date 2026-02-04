@@ -67,17 +67,17 @@ export default function DemographicsTab({
           <ResponsiveContainer width="100%" height={260}>
             <BarChart
               data={ageData}
-              onClick={(e) => {
+              onClick={(e: any) => {
                 if (e?.activePayload?.[0]) {
                   onDrillDown({
                     type: "ageGroup",
                     payload: {
                       group: e.activePayload[0].payload.group,
                       resident: demographics.ageDistribution.find(
-                        (a) => a.group === e.activePayload![0].payload.group,
+                        (a) => a.group === e.activePayload[0].payload.group,
                       ),
                       visitor: visitors.ageDistribution.find(
-                        (a) => a.group === e.activePayload![0].payload.group,
+                        (a) => a.group === e.activePayload[0].payload.group,
                       ),
                     },
                   });
@@ -135,8 +135,8 @@ export default function DemographicsTab({
                 cy="50%"
                 innerRadius={50}
                 outerRadius={90}
-                label={({ type, count }) =>
-                  `${type.length > 15 ? type.slice(0, 13) + "..." : type} (${formatNumber(count)})`
+                label={(props: any) =>
+                  `${props.type.length > 15 ? props.type.slice(0, 13) + "..." : props.type} (${formatNumber(props.count)})`
                 }
                 labelLine={false}
               >
@@ -153,7 +153,7 @@ export default function DemographicsTab({
           <ResponsiveContainer width="100%" height={260}>
             <BarChart
               data={incomeData}
-              onClick={(e) => {
+              onClick={(e: any) => {
                 if (e?.activePayload?.[0]) {
                   const bracket = e.activePayload[0].payload.bracket;
                   onDrillDown({

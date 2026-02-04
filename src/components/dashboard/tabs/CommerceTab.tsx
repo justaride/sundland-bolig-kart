@@ -157,7 +157,7 @@ export default function CommerceTab({ commerce, onDrillDown }: Props) {
                   <Cell key={i} fill={COLORS[i % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip formatter={(v: number) => `${v.toFixed(1)}%`} />
+              <Tooltip formatter={(v) => `${Number(v).toFixed(1)}%`} />
             </PieChart>
           </ResponsiveContainer>
         </ChartCard>
@@ -168,7 +168,7 @@ export default function CommerceTab({ commerce, onDrillDown }: Props) {
               <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
               <XAxis dataKey="year" tick={{ fontSize: 11 }} />
               <YAxis tick={{ fontSize: 11 }} domain={[0, 100]} unit="%" />
-              <Tooltip formatter={(v: number) => `${v.toFixed(1)}%`} />
+              <Tooltip formatter={(v) => `${Number(v).toFixed(1)}%`} />
               <Legend />
               <Area
                 type="monotone"
@@ -202,7 +202,7 @@ export default function CommerceTab({ commerce, onDrillDown }: Props) {
               tick={{ fontSize: 11 }}
               width={140}
             />
-            <Tooltip formatter={(v: number) => `${v.toFixed(2)}%`} />
+            <Tooltip formatter={(v) => `${Number(v).toFixed(2)}%`} />
             <Bar dataKey="value" radius={[0, 4, 4, 0]}>
               {commerce.overUnderRepresentation.map((d, i) => (
                 <Cell key={i} fill={d.value >= 0 ? "#16a34a" : "#ef4444"} />

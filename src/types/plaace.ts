@@ -131,7 +131,7 @@ export type WeeklyCardEntry = {
 
 export type WeekdayCardEntry = {
   day: string;
-  [year: string]: string | number;
+  [year: string]: string | number | null;
 };
 
 export type CardTransactionsData = {
@@ -145,8 +145,8 @@ export type AnnualGrowthEntry = {
   gulskogenNok: number;
   drammenPct: number;
   drammenNok: number;
-  norwayPct: number;
-  norwayNok: number;
+  norwayPct: number | null;
+  norwayNok: number | null;
 };
 
 export type IndexedGrowthEntry = {

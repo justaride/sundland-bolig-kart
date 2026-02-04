@@ -59,7 +59,7 @@ export default function GrowthTab({
         <ResponsiveContainer width="100%" height={280}>
           <BarChart
             data={growth.annualGrowth}
-            onClick={(e) => {
+            onClick={(e: any) => {
               if (e?.activePayload?.[0]) {
                 const row = e.activePayload[0].payload;
                 onDrillDown({
@@ -77,7 +77,7 @@ export default function GrowthTab({
             <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
             <XAxis dataKey="year" tick={{ fontSize: 11 }} />
             <YAxis tick={{ fontSize: 11 }} unit="%" />
-            <Tooltip formatter={(v: number) => `${v}%`} />
+            <Tooltip formatter={(v) => `${v}%`} />
             <Legend />
             <Bar dataKey="gulskogenPct" name="Gulskogen" fill="#3b82f6" />
             <Bar dataKey="drammenPct" name="Drammen" fill="#8b5cf6" />
@@ -102,7 +102,7 @@ export default function GrowthTab({
             <YAxis tick={{ fontSize: 11 }} />
             <Tooltip
               labelFormatter={(d) => String(d)}
-              formatter={(v: number) => v.toFixed(1)}
+              formatter={(v) => Number(v).toFixed(1)}
             />
             <Line
               type="monotone"
@@ -122,7 +122,7 @@ export default function GrowthTab({
               <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
               <XAxis dataKey="year" tick={{ fontSize: 11 }} />
               <YAxis tick={{ fontSize: 11 }} />
-              <Tooltip formatter={(v: number) => `${v.toFixed(1)} mNOK`} />
+              <Tooltip formatter={(v) => `${Number(v).toFixed(1)} mNOK`} />
               <Legend />
               <Area
                 type="monotone"
@@ -156,7 +156,7 @@ export default function GrowthTab({
           <ResponsiveContainer width="100%" height={280}>
             <LineChart
               data={cardTransactions.weekly}
-              onClick={(e) => {
+              onClick={(e: any) => {
                 if (e?.activePayload?.[0]) {
                   const row = e.activePayload[0].payload;
                   onDrillDown({
@@ -186,7 +186,7 @@ export default function GrowthTab({
                 labelFormatter={(_, payload) =>
                   payload?.[0]?.payload?.week ?? ""
                 }
-                formatter={(v: number) => `${v} mNOK`}
+                formatter={(v) => `${v} mNOK`}
               />
               <Line
                 type="monotone"
@@ -206,7 +206,7 @@ export default function GrowthTab({
             <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
             <XAxis dataKey="day" tick={{ fontSize: 11 }} />
             <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip formatter={(v: number) => `${v} mNOK`} />
+            <Tooltip formatter={(v) => `${v} mNOK`} />
             <Legend />
             {years.map((year) => (
               <Bar
