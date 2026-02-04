@@ -16,9 +16,14 @@ import {
 } from "recharts";
 import type { Property } from "../../../types/property";
 import type { Developer } from "../../../types/developer";
-import { CATEGORY_COLORS } from "../../../constants/designSystem";
-import { formatNumber } from "../../../utils/format";
-import MetricCard from "../../ui/MetricCard";
+import {
+  CATEGORY_COLORS,
+  CHART_CONFIG,
+  CHART_COLORS,
+} from "../../../constants/designSystem";
+import { BYDEL_LABELS } from "../../../constants/labels";
+import { formatNumber, formatCurrency, formatSqm } from "../../../utils/format";
+import MetricPill from "../../ui/MetricPill";
 import ChartCard from "../../ui/ChartCard";
 import keyMetrics from "../../../data/plaace/keyMetrics.json";
 import visitorsData from "../../../data/plaace/visitors.json";
@@ -30,13 +35,6 @@ const demographics = demographicsData as DemographicsData;
 const visitors = visitorsData as VisitorsData;
 
 const typedDevelopers = developers as Developer[];
-
-const BYDEL_LABELS: Record<string, string> = {
-  Sundland: "Sundland",
-  Stromsoe: "Strømsø",
-  Groenland: "Grønland",
-  Tangen: "Tangen",
-};
 
 const STATUS_COLORS: Record<string, string> = {
   Ferdigstilt: "#16a34a",
@@ -99,6 +97,17 @@ export default function OverviewTab({ properties }: Props) {
     }));
   }, []);
 
+  const totalUnits = properties.reduce((sum, p) => sum + (p.units ?? 0), 0);
+  const totalSqm = properties.reduce((sum, p) => sum + (p.sqmTotal ?? 0), 0);
+  const withPrice = properties.filter((p) => p.pricePerSqm != null);
+  const avgPrice =
+    withPrice.length > 0
+      ? Math.round(
+          withPrice.reduce((sum, p) => sum + p.pricePerSqm!, 0) /
+            withPrice.length,
+        )
+      : 0;
+
   const totalEmployees = typedDevelopers.reduce(
     (sum, d) => sum + (d.employees ?? 0),
     0,
@@ -114,44 +123,74 @@ export default function OverviewTab({ properties }: Props) {
   }));
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 animate-fade-slide-in">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <MetricCard
+        <MetricPill
+          label="Prosjekter"
+          value={String(properties.length)}
+          variant="hero"
+        />
+        <MetricPill
+          label="Enheter"
+          value={formatNumber(totalUnits)}
+          variant="hero"
+        />
+        <MetricPill
+          label="Snitt pris/m²"
+          value={formatCurrency(avgPrice)}
+          variant="hero"
+        />
+        <MetricPill
+          label="Total areal"
+          value={formatSqm(totalSqm)}
+          variant="hero"
+        />
+      </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <MetricPill
           label="Befolkning"
           value={formatNumber(keyMetrics.demography.population)}
         />
-        <MetricCard
+        <MetricPill
           label="Tetthet (per km²)"
           value={formatNumber(keyMetrics.demography.density)}
         />
-        <MetricCard
+        <MetricPill
           label="Daglige besøk"
           value={formatNumber(keyMetrics.movement.dailyVisits)}
         />
-        <MetricCard
+        <MetricPill
           label="Butikker"
           value={String(keyMetrics.cardTransactions.totalStores)}
         />
       </div>
 
       <div className="grid grid-cols-3 gap-4">
-        <MetricCard label="Utviklere" value={String(typedDevelopers.length)} />
-        <MetricCard
+        <MetricPill label="Utviklere" value={String(typedDevelopers.length)} />
+        <MetricPill
           label="Totalt ansatte"
           value={formatNumber(totalEmployees)}
         />
-        <MetricCard label="Styreroller" value={String(totalRoles)} />
+        <MetricPill label="Styreroller" value={String(totalRoles)} />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <ChartCard title="Enheter per bydel">
+        <ChartCard
+          title="Enheter per bydel"
+          subtitle="Fordelt på bydeler i Sundland"
+        >
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={bydelData}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
-              <XAxis dataKey="name" tick={{ fontSize: 12 }} />
-              <YAxis tick={{ fontSize: 12 }} />
+              <CartesianGrid {...CHART_CONFIG.grid} />
+              <XAxis dataKey="name" tick={CHART_CONFIG.axis} />
+              <YAxis tick={CHART_CONFIG.axis} />
               <Tooltip />
-              <Bar dataKey="units" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+              <Bar
+                dataKey="units"
+                fill={CHART_COLORS.primary}
+                radius={CHART_CONFIG.bar.radius}
+              />
             </BarChart>
           </ResponsiveContainer>
         </ChartCard>
@@ -187,8 +226,8 @@ export default function OverviewTab({ properties }: Props) {
         <ChartCard title="Prosjekter per status">
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={statusData} layout="vertical">
-              <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
-              <XAxis type="number" tick={{ fontSize: 12 }} />
+              <CartesianGrid {...CHART_CONFIG.grid} />
+              <XAxis type="number" tick={CHART_CONFIG.axis} />
               <YAxis
                 dataKey="name"
                 type="category"
@@ -196,7 +235,7 @@ export default function OverviewTab({ properties }: Props) {
                 width={100}
               />
               <Tooltip />
-              <Bar dataKey="count" radius={[0, 4, 4, 0]}>
+              <Bar dataKey="count" radius={CHART_CONFIG.barHorizontal.radius}>
                 {statusData.map((d) => (
                   <Cell
                     key={d.name}
@@ -208,26 +247,27 @@ export default function OverviewTab({ properties }: Props) {
           </ResponsiveContainer>
         </ChartCard>
 
-        <ChartCard title="Besøk per kvartal (2025)">
+        <ChartCard title="Besøk per kvartal" badge="2025">
           <ResponsiveContainer width="100%" height={220}>
             <AreaChart data={quarterlyTotals}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
-              <XAxis dataKey="quarter" tick={{ fontSize: 12 }} />
-              <YAxis tick={{ fontSize: 12 }} />
+              <CartesianGrid {...CHART_CONFIG.grid} />
+              <XAxis dataKey="quarter" tick={CHART_CONFIG.axis} />
+              <YAxis tick={CHART_CONFIG.axis} />
               <Tooltip formatter={(v) => formatNumber(Number(v))} />
               <Area
                 type="monotone"
                 dataKey="total"
                 name="Daglig snitt"
-                stroke="#8b5cf6"
-                fill="#8b5cf680"
+                stroke={CHART_COLORS.secondary}
+                fill={CHART_COLORS.secondary}
+                fillOpacity={CHART_CONFIG.area.fillOpacity}
               />
             </AreaChart>
           </ResponsiveContainer>
         </ChartCard>
       </div>
 
-      <ChartCard title="Aldersfordeling (Plaace)">
+      <ChartCard title="Aldersfordeling" badge="Plaace">
         <ResponsiveContainer width="100%" height={200}>
           <BarChart
             data={demographics.ageDistribution.map((d) => ({
@@ -235,27 +275,27 @@ export default function OverviewTab({ properties }: Props) {
               total: d.male + d.female,
             }))}
           >
-            <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
-            <XAxis dataKey="group" tick={{ fontSize: 12 }} />
-            <YAxis tick={{ fontSize: 12 }} />
+            <CartesianGrid {...CHART_CONFIG.grid} />
+            <XAxis dataKey="group" tick={CHART_CONFIG.axis} />
+            <YAxis tick={CHART_CONFIG.axis} />
             <Tooltip />
             <Legend />
             <Bar
               dataKey="total"
               name="Antall"
-              fill="#16a34a"
-              radius={[4, 4, 0, 0]}
+              fill={CHART_COLORS.positive}
+              radius={CHART_CONFIG.bar.radius}
             />
           </BarChart>
         </ResponsiveContainer>
       </ChartCard>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <ChartCard title="Ansatte per utvikler (Brreg)">
+        <ChartCard title="Ansatte per utvikler" badge="Brreg">
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={developerData} layout="vertical">
-              <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
-              <XAxis type="number" tick={{ fontSize: 12 }} />
+              <CartesianGrid {...CHART_CONFIG.grid} />
+              <XAxis type="number" tick={CHART_CONFIG.axis} />
               <YAxis
                 dataKey="name"
                 type="category"
@@ -267,13 +307,13 @@ export default function OverviewTab({ properties }: Props) {
                 dataKey="employees"
                 name="Ansatte"
                 fill="#0ea5e9"
-                radius={[0, 4, 4, 0]}
+                radius={CHART_CONFIG.barHorizontal.radius}
               />
             </BarChart>
           </ResponsiveContainer>
         </ChartCard>
 
-        <ChartCard title="Bransjefordeling (Brreg)">
+        <ChartCard title="Bransjefordeling" badge="Brreg">
           <ResponsiveContainer width="100%" height={220}>
             <PieChart>
               <Pie
@@ -290,9 +330,13 @@ export default function OverviewTab({ properties }: Props) {
                   <Cell
                     key={i}
                     fill={
-                      ["#3b82f6", "#16a34a", "#d97706", "#8b5cf6", "#ef4444"][
-                        i % 5
-                      ]
+                      [
+                        CHART_COLORS.primary,
+                        CHART_COLORS.positive,
+                        CHART_COLORS.warning,
+                        CHART_COLORS.secondary,
+                        CHART_COLORS.negative,
+                      ][i % 5]
                     }
                   />
                 ))}

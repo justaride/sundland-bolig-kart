@@ -2,6 +2,7 @@ import React, { useState, useMemo } from "react";
 import type { Property } from "../types/property";
 import type { Developer } from "../types/developer";
 import { CATEGORY_COLORS } from "../constants/designSystem";
+import { BYDEL_LABELS } from "../constants/labels";
 import { formatNumber, formatCurrency, formatSqm } from "../utils/format";
 import developers from "../data/developers.json";
 
@@ -24,13 +25,6 @@ type SortKey =
   | "pricePerSqm"
   | "developer";
 type SortDir = "asc" | "desc";
-
-const BYDEL_LABELS: Record<string, string> = {
-  Sundland: "Sundland",
-  Stromsoe: "Strømsø",
-  Groenland: "Grønland",
-  Tangen: "Tangen",
-};
 
 const COLUMNS: { key: SortKey; label: string; align?: "right" }[] = [
   { key: "name", label: "Navn" },

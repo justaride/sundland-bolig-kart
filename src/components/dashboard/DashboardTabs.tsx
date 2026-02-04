@@ -211,8 +211,14 @@ export default function DashboardTabs({ properties }: Props) {
   };
 
   return (
-    <div className="p-6 space-y-4 overflow-auto h-full">
-      <div className="flex items-center gap-4">
+    <div className="p-6 space-y-4 overflow-auto h-full scrollbar-thin">
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="font-display text-3xl text-gray-900">Dashboard</h2>
+          <p className="text-xs uppercase tracking-widest text-gray-400 mt-1">
+            Sundland Bolig Analyse
+          </p>
+        </div>
         <TabBar
           tabs={TABS}
           active={tab}

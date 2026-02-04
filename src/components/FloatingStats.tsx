@@ -1,5 +1,6 @@
 import type { Property } from "../types/property";
 import { formatNumber, formatCurrency, formatSqm } from "../utils/format";
+import MetricPill from "./ui/MetricPill";
 
 type Props = {
   properties: Property[];
@@ -17,28 +18,26 @@ export default function FloatingStats({ properties }: Props) {
         )
       : null;
 
-  const stats = [
-    { label: "Prosjekter", value: String(properties.length) },
-    { label: "Enheter", value: formatNumber(totalUnits) },
-    { label: "Totalt areal", value: formatSqm(totalSqm) },
-    ...(avgPrice != null
-      ? [{ label: "Snitt pris/m²", value: formatCurrency(avgPrice) }]
-      : []),
-  ];
-
   return (
-    <div className="absolute top-3 left-1/2 -translate-x-1/2 z-[1000] flex gap-2 pointer-events-none">
-      {stats.map((s) => (
-        <div
-          key={s.label}
-          className="bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-md border border-gray-100 pointer-events-auto"
-        >
-          <div className="text-[10px] text-gray-400 uppercase tracking-wider">
-            {s.label}
-          </div>
-          <div className="text-sm font-semibold text-gray-900">{s.value}</div>
+    <div className="absolute top-3 right-3 z-[1000] flex flex-col gap-2 pointer-events-none animate-fade-slide-in">
+      <div className="pointer-events-auto">
+        <MetricPill
+          label="Prosjekter"
+          value={String(properties.length)}
+          variant="hero"
+        />
+      </div>
+      <div className="pointer-events-auto">
+        <MetricPill label="Enheter" value={formatNumber(totalUnits)} />
+      </div>
+      <div className="pointer-events-auto">
+        <MetricPill label="Totalt areal" value={formatSqm(totalSqm)} />
+      </div>
+      {avgPrice != null && (
+        <div className="pointer-events-auto">
+          <MetricPill label="Snitt pris/m²" value={formatCurrency(avgPrice)} />
         </div>
-      ))}
+      )}
     </div>
   );
 }

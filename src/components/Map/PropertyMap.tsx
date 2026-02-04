@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import L from "leaflet";
@@ -13,7 +14,9 @@ import {
   TILE_URL,
   TILE_ATTRIBUTION,
 } from "../../constants/designSystem";
+import { BYDEL_LABELS } from "../../constants/labels";
 import { formatNumber, formatCurrency, formatSqm } from "../../utils/format";
+import { CornersOut, CornersIn } from "@phosphor-icons/react";
 
 type Props = {
   properties: Property[];
@@ -50,16 +53,6 @@ function createStoreIcon(category: string): L.DivIcon {
   });
 }
 
-function bydelLabel(b: string): string {
-  const map: Record<string, string> = {
-    Sundland: "Sundland",
-    Stromsoe: "Strømsø",
-    Groenland: "Grønland",
-    Tangen: "Tangen",
-  };
-  return map[b] ?? b;
-}
-
 function PopupContent({ p }: { p: Property }) {
   return (
     <div className="min-w-[220px] max-w-[280px] text-sm">
@@ -76,37 +69,40 @@ function PopupContent({ p }: { p: Property }) {
         </span>
       </div>
 
-      <table className="w-full text-xs">
-        <tbody>
-          <Row label="Bydel" value={bydelLabel(p.bydel)} />
-          {p.address && <Row label="Adresse" value={p.address} />}
-          {p.developer && <Row label="Utvikler" value={p.developer.name} />}
-          {p.units && <Row label="Enheter" value={formatNumber(p.units)} />}
-          {p.sqmTotal && <Row label="Areal" value={formatSqm(p.sqmTotal)} />}
-          {p.sqmPerUnit && (
-            <Row
-              label="m²/enhet"
-              value={`${p.sqmPerUnit.min}–${p.sqmPerUnit.max}`}
-            />
-          )}
-          {p.pricePerSqm && (
-            <Row label="Pris/m²" value={formatCurrency(p.pricePerSqm)} />
-          )}
-          {p.estimatedPrice && (
-            <Row
-              label="Prisestimat"
-              value={`${formatCurrency(p.estimatedPrice.min)} – ${formatCurrency(p.estimatedPrice.max)}`}
-            />
-          )}
-          {p.floors && <Row label="Etasjer" value={String(p.floors)} />}
-          {p.yearCompleted && (
-            <Row label="Ferdigstilt" value={String(p.yearCompleted)} />
-          )}
-          {p.yearPlanned && (
-            <Row label="Planlagt" value={String(p.yearPlanned)} />
-          )}
-        </tbody>
-      </table>
+      <div className="space-y-1">
+        <PopupRow label="Bydel" value={BYDEL_LABELS[p.bydel] ?? p.bydel} />
+        {p.address && <PopupRow label="Adresse" value={p.address} />}
+        {p.developer && <PopupRow label="Utvikler" value={p.developer.name} />}
+        {p.units && <PopupRow label="Enheter" value={formatNumber(p.units)} />}
+        {p.sqmTotal && <PopupRow label="Areal" value={formatSqm(p.sqmTotal)} />}
+        {p.sqmPerUnit && (
+          <PopupRow
+            label="m²/enhet"
+            value={`${p.sqmPerUnit.min}–${p.sqmPerUnit.max}`}
+          />
+        )}
+        {p.pricePerSqm && (
+          <PopupRow
+            label="Pris/m²"
+            value={formatCurrency(p.pricePerSqm)}
+            mono
+          />
+        )}
+        {p.estimatedPrice && (
+          <PopupRow
+            label="Prisestimat"
+            value={`${formatCurrency(p.estimatedPrice.min)} – ${formatCurrency(p.estimatedPrice.max)}`}
+            mono
+          />
+        )}
+        {p.floors && <PopupRow label="Etasjer" value={String(p.floors)} />}
+        {p.yearCompleted && (
+          <PopupRow label="Ferdigstilt" value={String(p.yearCompleted)} />
+        )}
+        {p.yearPlanned && (
+          <PopupRow label="Planlagt" value={String(p.yearPlanned)} />
+        )}
+      </div>
 
       {p.description && (
         <p className="mt-2 text-xs text-gray-600 leading-relaxed">
@@ -135,7 +131,9 @@ function StorePopupContent({ s }: { s: StoreLocation }) {
       <div className="flex gap-2 mb-2 flex-wrap">
         <span
           className="text-xs px-2 py-0.5 rounded text-white font-medium"
-          style={{ background: STORE_CATEGORY_COLORS[s.category] ?? "#6b7280" }}
+          style={{
+            background: STORE_CATEGORY_COLORS[s.category] ?? "#6b7280",
+          }}
         >
           {s.category}
         </span>
@@ -143,90 +141,130 @@ function StorePopupContent({ s }: { s: StoreLocation }) {
           {s.topCategory}
         </span>
       </div>
-      <table className="w-full text-xs">
-        <tbody>
-          <Row label="Adresse" value={s.address} />
-          <Row label="Omsetning" value={formatCurrency(s.revenue)} />
-          <Row label="Ansatte" value={String(s.employees)} />
-          {s.yoyGrowth !== null && (
-            <Row
-              label="Vekst (YoY)"
-              value={`${s.yoyGrowth > 0 ? "+" : ""}${s.yoyGrowth}%`}
-            />
-          )}
-          <Row label="Markedsandel" value={`${s.marketShare}%`} />
-        </tbody>
-      </table>
+      <div className="space-y-1">
+        <PopupRow label="Adresse" value={s.address} />
+        <PopupRow label="Omsetning" value={formatCurrency(s.revenue)} mono />
+        <PopupRow label="Ansatte" value={String(s.employees)} />
+        {s.yoyGrowth !== null && (
+          <PopupRow
+            label="Vekst (YoY)"
+            value={`${s.yoyGrowth > 0 ? "+" : ""}${s.yoyGrowth}%`}
+            positive={s.yoyGrowth >= 0}
+          />
+        )}
+        <PopupRow label="Markedsandel" value={`${s.marketShare}%`} />
+      </div>
     </div>
   );
 }
 
-function Row({ label, value }: { label: string; value: string }) {
+function PopupRow({
+  label,
+  value,
+  mono,
+  positive,
+}: {
+  label: string;
+  value: string;
+  mono?: boolean;
+  positive?: boolean;
+}) {
   return (
-    <tr>
-      <td className="py-0.5 pr-2 text-gray-500 whitespace-nowrap">{label}</td>
-      <td className="py-0.5 font-medium">{value}</td>
-    </tr>
+    <div className="flex justify-between text-xs gap-4">
+      <span className="text-gray-500 whitespace-nowrap">{label}</span>
+      <span
+        className={`font-medium text-right ${mono ? "font-mono tabular-nums" : ""} ${positive === true ? "text-green-600" : positive === false ? "text-red-600" : ""}`}
+      >
+        {value}
+      </span>
+    </div>
   );
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function createClusterIcon(cluster: any) {
+  const count = cluster.getChildCount();
+  const size = count < 10 ? 40 : count < 50 ? 48 : 56;
+  return L.divIcon({
+    className: "",
+    iconSize: [size, size],
+    html: `<div style="
+      width:${size}px;height:${size}px;border-radius:6px;
+      background:linear-gradient(135deg,#1e3a5f,#2d4a6f);
+      border:2px solid white;
+      box-shadow:0 2px 6px rgba(0,0,0,0.3);
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-size:${size < 48 ? 12 : 14}px;font-weight:600;
+      font-family:'JetBrains Mono',monospace;
+    ">${count}</div>`,
+  });
+}
+
 export default function PropertyMap({ properties, stores }: Props) {
+  const [fullscreen, setFullscreen] = useState(false);
+
   return (
-    <MapContainer
-      center={MAP_CENTER}
-      zoom={MAP_ZOOM}
-      className="h-full w-full"
-      zoomControl={true}
+    <div
+      className={
+        fullscreen ? "fixed inset-0 z-[1000]" : "h-full w-full relative"
+      }
     >
-      <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} />
+      <button
+        onClick={() => setFullscreen((f) => !f)}
+        className="absolute top-3 left-3 z-[1001] glass-panel rounded-lg p-2 shadow-md hover:bg-white/90 transition-colors"
+      >
+        {fullscreen ? (
+          <CornersIn size={18} weight="bold" />
+        ) : (
+          <CornersOut size={18} weight="bold" />
+        )}
+      </button>
 
-      <MarkerClusterGroup maxClusterRadius={MAX_CLUSTER_RADIUS} chunkedLoading>
-        {properties.map((p) => (
-          <Marker
-            key={p.id}
-            position={[p.lat, p.lng]}
-            icon={createIcon(p.category)}
-          >
-            <Popup>
-              <PopupContent p={p} />
-            </Popup>
-          </Marker>
-        ))}
-      </MarkerClusterGroup>
+      <MapContainer
+        center={MAP_CENTER}
+        zoom={MAP_ZOOM}
+        className="h-full w-full"
+        zoomControl={true}
+      >
+        <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} />
 
-      {stores.length > 0 && (
         <MarkerClusterGroup
-          maxClusterRadius={40}
+          maxClusterRadius={MAX_CLUSTER_RADIUS}
           chunkedLoading
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          iconCreateFunction={(cluster: any) => {
-            const count = cluster.getChildCount();
-            return L.divIcon({
-              className: "",
-              iconSize: [36, 36],
-              html: `<div style="
-                width:36px;height:36px;border-radius:6px;
-                background:#475569;border:2px solid white;
-                box-shadow:0 2px 6px rgba(0,0,0,0.3);
-                display:flex;align-items:center;justify-content:center;
-                color:white;font-size:12px;font-weight:600;
-              ">${count}</div>`,
-            });
-          }}
         >
-          {stores.map((s) => (
+          {properties.map((p) => (
             <Marker
-              key={s.id}
-              position={[s.lat, s.lng]}
-              icon={createStoreIcon(s.category)}
+              key={p.id}
+              position={[p.lat, p.lng]}
+              icon={createIcon(p.category)}
             >
               <Popup>
-                <StorePopupContent s={s} />
+                <PopupContent p={p} />
               </Popup>
             </Marker>
           ))}
         </MarkerClusterGroup>
-      )}
-    </MapContainer>
+
+        {stores.length > 0 && (
+          <MarkerClusterGroup
+            maxClusterRadius={40}
+            chunkedLoading
+            iconCreateFunction={createClusterIcon}
+          >
+            {stores.map((s) => (
+              <Marker
+                key={s.id}
+                position={[s.lat, s.lng]}
+                icon={createStoreIcon(s.category)}
+              >
+                <Popup>
+                  <StorePopupContent s={s} />
+                </Popup>
+              </Marker>
+            ))}
+          </MarkerClusterGroup>
+        )}
+      </MapContainer>
+    </div>
   );
 }

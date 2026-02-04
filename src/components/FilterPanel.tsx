@@ -1,67 +1,27 @@
 import type { Filters } from "../hooks/useFilteredProperties";
 import type { StoreFilters } from "../types/store";
-import type {
-  Bydel,
-  PropertyCategory,
-  DevelopmentStatus,
-} from "../types/property";
 import {
   CATEGORY_COLORS,
   STORE_CATEGORY_COLORS,
   MAX_REVENUE,
 } from "../constants/designSystem";
+import {
+  BYDELER,
+  CATEGORIES,
+  STATUSES,
+  STORE_CATEGORIES,
+} from "../constants/labels";
 import { formatNumber } from "../utils/format";
+import ToggleSwitch from "./ui/ToggleSwitch";
 
 type Props = {
   filters: Filters;
   onChange: (filters: Filters) => void;
   storeFilters: StoreFilters;
   onStoreFiltersChange: (filters: StoreFilters) => void;
+  totalCount?: number;
+  filteredCount?: number;
 };
-
-const BYDELER: { value: Bydel; label: string }[] = [
-  { value: "Sundland", label: "Sundland" },
-  { value: "Stromsoe", label: "Strømsø" },
-  { value: "Groenland", label: "Grønland" },
-  { value: "Tangen", label: "Tangen" },
-];
-
-const CATEGORIES: PropertyCategory[] = [
-  "Rekkehus",
-  "Leilighet",
-  "Enebolig",
-  "Naering",
-  "Offentlig",
-  "Under utvikling",
-];
-
-const STATUSES: DevelopmentStatus[] = [
-  "Ferdigstilt",
-  "Under bygging",
-  "Planlagt",
-  "Regulering",
-  "Konsept",
-];
-
-const STORE_CATEGORIES = [
-  "Mat og drikke",
-  "Klesbutikker",
-  "Hus og bygg",
-  "Elektrobutikker",
-  "Sport og fritid",
-  "Hjem og interiør",
-  "Smykker og parfyme",
-  "Restaurant",
-  "Bakeri og kafé",
-  "Skjønnhet og velvære",
-  "Profesjoner",
-  "Annen handel",
-  "Bil og Båt",
-  "Barer",
-  "Byråer",
-  "Treningssentre",
-  "Andre tjenester",
-];
 
 function toggleItem<T>(arr: T[], item: T): T[] {
   return arr.includes(item) ? arr.filter((i) => i !== item) : [...arr, item];
@@ -72,6 +32,8 @@ export default function FilterPanel({
   onChange,
   storeFilters,
   onStoreFiltersChange,
+  totalCount,
+  filteredCount,
 }: Props) {
   const hasPropertyFilters =
     filters.bydeler.length > 0 ||
@@ -81,8 +43,16 @@ export default function FilterPanel({
   const hasStoreFilters =
     storeFilters.categories.length > 0 || storeFilters.minRevenue > 0;
 
+  const hasAnyFilter = hasPropertyFilters || hasStoreFilters;
+
   return (
     <div className="p-4 space-y-5 text-sm">
+      {totalCount != null && filteredCount != null && (
+        <div className="text-xs text-gray-400 font-mono tabular-nums">
+          Viser {filteredCount} / {totalCount}
+        </div>
+      )}
+
       <Section title="Bydel">
         {BYDELER.map(({ value, label }) => (
           <label key={value} className="flex items-center gap-2 cursor-pointer">
@@ -115,13 +85,17 @@ export default function FilterPanel({
                     categories: toggleItem(filters.categories, cat),
                   })
                 }
-                className="px-2.5 py-1 rounded-full text-xs font-medium transition-opacity"
+                className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium transition-opacity"
                 style={{
                   background: active ? CATEGORY_COLORS[cat] : "#e5e7eb",
                   color: active ? "#fff" : "#6b7280",
                   opacity: active ? 1 : 0.7,
                 }}
               >
+                <span
+                  className="w-2 h-2 rounded-full inline-block"
+                  style={{ background: CATEGORY_COLORS[cat] }}
+                />
                 {cat}
               </button>
             );
@@ -166,25 +140,21 @@ export default function FilterPanel({
         </button>
       )}
 
-      <div className="border-t border-gray-200 pt-4">
+      <div className="border-t border-white/20 pt-4">
         <div className="flex items-center justify-between mb-3">
           <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
             Næring
           </h3>
-          <label className="flex items-center gap-1.5 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={storeFilters.enabled}
-              onChange={() =>
-                onStoreFiltersChange({
-                  ...storeFilters,
-                  enabled: !storeFilters.enabled,
-                })
-              }
-              className="rounded border-gray-300 text-emerald-600 focus:ring-emerald-500"
-            />
-            <span className="text-xs text-gray-500">Vis på kart</span>
-          </label>
+          <ToggleSwitch
+            checked={storeFilters.enabled}
+            onChange={() =>
+              onStoreFiltersChange({
+                ...storeFilters,
+                enabled: !storeFilters.enabled,
+              })
+            }
+            label="Vis på kart"
+          />
         </div>
 
         {storeFilters.enabled && (
@@ -204,13 +174,17 @@ export default function FilterPanel({
                           categories: toggleItem(storeFilters.categories, cat),
                         })
                       }
-                      className="px-2 py-0.5 rounded text-[10px] font-medium transition-opacity"
+                      className="flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-medium transition-opacity"
                       style={{
                         background: active ? color : "#f3f4f6",
                         color: active ? "#fff" : "#6b7280",
                         opacity: active ? 1 : 0.7,
                       }}
                     >
+                      <span
+                        className="w-1.5 h-1.5 rounded-full inline-block"
+                        style={{ background: color }}
+                      />
                       {cat}
                     </button>
                   );
@@ -221,7 +195,7 @@ export default function FilterPanel({
             <div className="mt-3 space-y-1">
               <div className="flex justify-between text-xs text-gray-500">
                 <span>Min. omsetning</span>
-                <span className="font-medium text-gray-700">
+                <span className="font-medium font-mono tabular-nums text-gray-700">
                   {storeFilters.minRevenue > 0
                     ? `${formatNumber(storeFilters.minRevenue)} kr`
                     : "Alle"}
@@ -264,6 +238,22 @@ export default function FilterPanel({
           </>
         )}
       </div>
+
+      {hasAnyFilter && (
+        <button
+          onClick={() => {
+            onChange({ bydeler: [], categories: [], statuses: [] });
+            onStoreFiltersChange({
+              ...storeFilters,
+              categories: [],
+              minRevenue: 0,
+            });
+          }}
+          className="w-full text-xs text-red-500 hover:text-red-700 py-2 border-t border-white/20"
+        >
+          Nullstill alle filtre
+        </button>
+      )}
     </div>
   );
 }
