@@ -3,40 +3,20 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import type { Property } from "../../types/property";
 import type { StoreLocation } from "../../types/store";
 import {
-  CATEGORY_COLORS,
   STORE_CATEGORY_COLORS,
   MAP_CENTER,
   MAP_ZOOM,
-  MAX_CLUSTER_RADIUS,
   TILE_URL,
   TILE_ATTRIBUTION,
 } from "../../constants/designSystem";
-import { BYDEL_LABELS } from "../../constants/labels";
-import { formatNumber, formatCurrency, formatSqm } from "../../utils/format";
+import { formatCurrency } from "../../utils/format";
 import { CornersOut, CornersIn } from "@phosphor-icons/react";
 
 type Props = {
-  properties: Property[];
-  stores?: StoreLocation[];
+  stores: StoreLocation[];
 };
-
-function createIcon(category: Property["category"]): L.DivIcon {
-  const color = CATEGORY_COLORS[category];
-  return L.divIcon({
-    className: "",
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
-    popupAnchor: [0, -14],
-    html: `<div style="
-      width:28px;height:28px;border-radius:50%;
-      background:${color};border:3px solid white;
-      box-shadow:0 2px 6px rgba(0,0,0,0.3);
-    "></div>`,
-  });
-}
 
 function createStoreIcon(category: string): L.DivIcon {
   const color = STORE_CATEGORY_COLORS[category] ?? "#6b7280";
@@ -53,77 +33,6 @@ function createStoreIcon(category: string): L.DivIcon {
   });
 }
 
-function PopupContent({ p }: { p: Property }) {
-  return (
-    <div className="min-w-[220px] max-w-[280px] text-sm">
-      <h3 className="text-base font-semibold mb-1">{p.name}</h3>
-      <div className="flex gap-2 mb-2 flex-wrap">
-        <span
-          className="text-xs px-2 py-0.5 rounded-full text-white font-medium"
-          style={{ background: CATEGORY_COLORS[p.category] }}
-        >
-          {p.category}
-        </span>
-        <span className="text-xs px-2 py-0.5 rounded-full bg-gray-200 text-gray-700">
-          {p.status}
-        </span>
-      </div>
-
-      <div className="space-y-1">
-        <PopupRow label="Bydel" value={BYDEL_LABELS[p.bydel] ?? p.bydel} />
-        {p.address && <PopupRow label="Adresse" value={p.address} />}
-        {p.developer && <PopupRow label="Utvikler" value={p.developer.name} />}
-        {p.units && <PopupRow label="Enheter" value={formatNumber(p.units)} />}
-        {p.sqmTotal && <PopupRow label="Areal" value={formatSqm(p.sqmTotal)} />}
-        {p.sqmPerUnit && (
-          <PopupRow
-            label="m²/enhet"
-            value={`${p.sqmPerUnit.min}–${p.sqmPerUnit.max}`}
-          />
-        )}
-        {p.pricePerSqm && (
-          <PopupRow
-            label="Pris/m²"
-            value={formatCurrency(p.pricePerSqm)}
-            mono
-          />
-        )}
-        {p.estimatedPrice && (
-          <PopupRow
-            label="Prisestimat"
-            value={`${formatCurrency(p.estimatedPrice.min)} – ${formatCurrency(p.estimatedPrice.max)}`}
-            mono
-          />
-        )}
-        {p.floors && <PopupRow label="Etasjer" value={String(p.floors)} />}
-        {p.yearCompleted && (
-          <PopupRow label="Ferdigstilt" value={String(p.yearCompleted)} />
-        )}
-        {p.yearPlanned && (
-          <PopupRow label="Planlagt" value={String(p.yearPlanned)} />
-        )}
-      </div>
-
-      {p.description && (
-        <p className="mt-2 text-xs text-gray-600 leading-relaxed">
-          {p.description}
-        </p>
-      )}
-
-      {p.website && (
-        <a
-          href={p.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-2 inline-block text-xs text-blue-600 hover:underline"
-        >
-          Besøk nettside &rarr;
-        </a>
-      )}
-    </div>
-  );
-}
-
 function StorePopupContent({ s }: { s: StoreLocation }) {
   return (
     <div className="min-w-[200px] max-w-[260px] text-sm">
@@ -131,9 +40,7 @@ function StorePopupContent({ s }: { s: StoreLocation }) {
       <div className="flex gap-2 mb-2 flex-wrap">
         <span
           className="text-xs px-2 py-0.5 rounded text-white font-medium"
-          style={{
-            background: STORE_CATEGORY_COLORS[s.category] ?? "#6b7280",
-          }}
+          style={{ background: STORE_CATEGORY_COLORS[s.category] ?? "#6b7280" }}
         >
           {s.category}
         </span>
@@ -200,7 +107,7 @@ function createClusterIcon(cluster: any) {
   });
 }
 
-export default function PropertyMap({ properties, stores }: Props) {
+export default function NaeringMap({ stores }: Props) {
   const [fullscreen, setFullscreen] = useState(false);
 
   return (
@@ -229,41 +136,22 @@ export default function PropertyMap({ properties, stores }: Props) {
         <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} />
 
         <MarkerClusterGroup
-          maxClusterRadius={MAX_CLUSTER_RADIUS}
+          maxClusterRadius={40}
           chunkedLoading
+          iconCreateFunction={createClusterIcon}
         >
-          {properties.map((p) => (
+          {stores.map((s) => (
             <Marker
-              key={p.id}
-              position={[p.lat, p.lng]}
-              icon={createIcon(p.category)}
+              key={s.id}
+              position={[s.lat, s.lng]}
+              icon={createStoreIcon(s.category)}
             >
               <Popup>
-                <PopupContent p={p} />
+                <StorePopupContent s={s} />
               </Popup>
             </Marker>
           ))}
         </MarkerClusterGroup>
-
-        {stores && stores.length > 0 && (
-          <MarkerClusterGroup
-            maxClusterRadius={40}
-            chunkedLoading
-            iconCreateFunction={createClusterIcon}
-          >
-            {stores.map((s) => (
-              <Marker
-                key={s.id}
-                position={[s.lat, s.lng]}
-                icon={createStoreIcon(s.category)}
-              >
-                <Popup>
-                  <StorePopupContent s={s} />
-                </Popup>
-              </Marker>
-            ))}
-          </MarkerClusterGroup>
-        )}
       </MapContainer>
     </div>
   );

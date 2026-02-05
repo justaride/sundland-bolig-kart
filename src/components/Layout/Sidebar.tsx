@@ -1,14 +1,14 @@
 import { useState, type ReactNode } from "react";
 import {
   MapPin,
-  Table,
   ChartBar,
+  Buildings,
   CaretLeft,
   CaretRight,
 } from "@phosphor-icons/react";
 import { CATEGORY_COLORS } from "../../constants/designSystem";
 
-type View = "kart" | "tabell" | "dashboard";
+type View = "naering" | "dashboard" | "bolig";
 
 type NavItem = {
   value: View;
@@ -17,9 +17,9 @@ type NavItem = {
 };
 
 const NAV_ITEMS: NavItem[] = [
-  { value: "kart", label: "Kart", icon: MapPin },
-  { value: "tabell", label: "Tabell", icon: Table },
+  { value: "naering", label: "Næring", icon: MapPin },
   { value: "dashboard", label: "Dashboard", icon: ChartBar },
+  { value: "bolig", label: "Bolig", icon: Buildings },
 ];
 
 const categories = Object.entries(CATEGORY_COLORS) as [string, string][];
@@ -45,7 +45,7 @@ export default function Sidebar({ view, onViewChange, filterPanel }: Props) {
             </div>
           ) : (
             <h1 className="text-xl font-semibold text-gray-900 font-display">
-              Sundland Bolig
+              Sundland
             </h1>
           )}
         </div>

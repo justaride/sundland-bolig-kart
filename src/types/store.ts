@@ -14,7 +14,6 @@ export type StoreLocation = {
 };
 
 export type StoreFilters = {
-  enabled: boolean;
   categories: string[];
   minRevenue: number;
 };
