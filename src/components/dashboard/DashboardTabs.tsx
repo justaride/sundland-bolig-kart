@@ -14,6 +14,7 @@ import DemographicsTab from "./tabs/DemographicsTab";
 import VisitorTab from "./tabs/VisitorTab";
 import CommerceTab from "./tabs/CommerceTab";
 import GrowthTab from "./tabs/GrowthTab";
+import DeveloperTab from "./tabs/DeveloperTab";
 import { formatNumber, formatCurrency } from "../../utils/format";
 
 const TABS = [
@@ -22,6 +23,7 @@ const TABS = [
   { key: "besokende", label: "Besøkende" },
   { key: "handel", label: "Handel" },
   { key: "vekst", label: "Vekst" },
+  { key: "utviklere", label: "Utviklere" },
 ];
 
 type Props = {
@@ -205,6 +207,74 @@ export default function DashboardTabs({ properties }: Props) {
           </div>
         );
       }
+      case "developer": {
+        const d = payload as any;
+        const financials = d.financials;
+        const revenue = financials?.resultatregnskapResultat?.driftsresultat?.driftsinntekter?.sumDriftsinntekter;
+        const result = financials?.resultatregnskapResultat?.aarsresultat;
+        
+        return (
+          <div className="space-y-4 text-sm max-h-[70vh] overflow-auto pr-2">
+            <div>
+              <h3 className="font-semibold text-lg text-gray-900">{d.name}</h3>
+              <p className="text-gray-500">{d.orgNumber}</p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-y-2 py-2 border-y border-gray-100">
+              <div className="text-gray-500">Adresse</div>
+              <div>{d.address}</div>
+              <div className="text-gray-500">Bransje</div>
+              <div>{d.industry}</div>
+              <div className="text-gray-500">Ansatte</div>
+              <div>{d.employees ? formatNumber(d.employees) : "–"}</div>
+            </div>
+
+            {revenue != null && (
+              <div>
+                <h4 className="font-medium text-gray-900 mb-2">Finansielt (2024)</h4>
+                <div className="grid grid-cols-2 gap-y-1">
+                  <div className="text-gray-500">Driftsinntekter</div>
+                  <div className="font-mono">{formatCurrency(revenue)}</div>
+                  <div className="text-gray-500">Årsresultat</div>
+                  <div className={`font-mono ${result >= 0 ? "text-green-600" : "text-red-600"}`}>
+                    {formatCurrency(result)}
+                  </div>
+                  <div className="text-gray-500">Sum eiendeler</div>
+                  <div className="font-mono">{formatCurrency(financials?.eiendeler?.sumEiendeler)}</div>
+                </div>
+              </div>
+            )}
+
+            {d.roles?.length > 0 && (
+              <div>
+                <h4 className="font-medium text-gray-900 mb-2">Roller ({d.roles.length})</h4>
+                <div className="space-y-1 max-h-32 overflow-auto bg-gray-50 p-2 rounded">
+                  {d.roles.map((r: any, i: number) => (
+                    <div key={i} className="flex justify-between text-xs">
+                      <span className="text-gray-700">{r.name}</span>
+                      <span className="text-gray-400 italic">{r.role}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {d.shareholders?.length > 0 && (
+              <div>
+                <h4 className="font-medium text-gray-900 mb-2">Eiere</h4>
+                <div className="space-y-1 bg-gray-50 p-2 rounded">
+                  {d.shareholders.map((s: any, i: number) => (
+                    <div key={i} className="flex justify-between text-xs">
+                      <span className="text-gray-700">{s.name}</span>
+                      <span className="text-gray-900 font-medium">{s.percentage?.toFixed(1)}%</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      }
       default:
         return null;
     }
@@ -250,6 +320,7 @@ export default function DashboardTabs({ properties }: Props) {
           onDrillDown={setDrillDown}
         />
       )}
+      {tab === "utviklere" && <DeveloperTab onDrillDown={setDrillDown} />}
 
       <DrillDownModal
         open={drillDown !== null}
@@ -267,7 +338,9 @@ export default function DashboardTabs({ properties }: Props) {
                     ? "Vekstdetaljer"
                     : drillDown?.type === "cardTransaction"
                       ? "Korttransaksjon"
-                      : "Detaljer"
+                      : drillDown?.type === "developer"
+                        ? "Utviklerdetaljer"
+                        : "Detaljer"
         }
       >
         {renderDrillDown()}

@@ -9,9 +9,22 @@ const OUTPUT_PATH = resolve(__dirname, '../src/data/storeLocations.json')
 const KARTVERKET_URL = 'https://ws.geonorge.no/adresser/v1/sok'
 const RATE_LIMIT_MS = 200
 
+const GULSKOGEN_SENTER = { lat: 59.7423, lng: 10.1576 }
+
+const SHOPPING_CENTER_OVERRIDES = {
+  'PROFESSOR SMITHS ALLE': GULSKOGEN_SENTER,
+  'GULDLISTEN': GULSKOGEN_SENTER,
+}
+
 const MANUAL_FALLBACKS = {
   'LIERSTRANDA': { lat: 59.7517, lng: 10.2530 },
   'STORGATA 6 A': { lat: 59.7429, lng: 10.2068 },
+  'DRAMMEN': GULSKOGEN_SENTER,
+}
+
+const DRAMMEN_BOUNDS = {
+  latMin: 59.70, latMax: 59.78,
+  lngMin: 10.10, lngMax: 10.30,
 }
 
 function sleep(ms) {
@@ -34,6 +47,23 @@ function simplifyCategory(fullCategory) {
 
 function topCategory(fullCategory) {
   return fullCategory.split(' / ')[0]
+}
+
+function isInDrammenBounds(lat, lng) {
+  return (
+    lat >= DRAMMEN_BOUNDS.latMin && lat <= DRAMMEN_BOUNDS.latMax &&
+    lng >= DRAMMEN_BOUNDS.lngMin && lng <= DRAMMEN_BOUNDS.lngMax
+  )
+}
+
+function matchesShoppingCenter(address) {
+  const upper = address.trim().toUpperCase()
+  for (const [prefix, coords] of Object.entries(SHOPPING_CENTER_OVERRIDES)) {
+    if (upper === prefix || (upper.startsWith(prefix) && !upper.slice(prefix.length).trim().match(/^\d/))) {
+      return coords
+    }
+  }
+  return null
 }
 
 async function geocodeKartverket(address) {
@@ -61,36 +91,55 @@ async function main() {
   const addressCounts = {}
   let geocodedCount = 0
   let failedCount = 0
+  let overrideCount = 0
 
   console.log(`Geocoding ${stores.length} stores via Kartverket...\n`)
 
   for (const store of stores) {
     const addr = store.address.trim().toUpperCase()
     let coords = null
+    let coordinateSource = 'kartverket'
 
     if (addressCache[addr]) {
       addressCounts[addr] = (addressCounts[addr] || 1) + 1
       coords = addJitter(addressCache[addr].lat, addressCache[addr].lng, addressCounts[addr])
-    } else if (MANUAL_FALLBACKS[addr]) {
-      const fb = MANUAL_FALLBACKS[addr]
-      addressCache[addr] = fb
-      addressCounts[addr] = 1
-      coords = addJitter(fb.lat, fb.lng, 1)
-      console.log(`  ~ ${store.address} → ${fb.lat.toFixed(5)}, ${fb.lng.toFixed(5)} (manual)`)
+      coordinateSource = addressCache[addr]._source || 'kartverket'
     } else {
-      await sleep(RATE_LIMIT_MS)
-      const result = await geocodeKartverket(store.address)
-      geocodedCount++
-
-      if (result) {
-        addressCache[addr] = result
+      const centerCoords = matchesShoppingCenter(addr)
+      if (centerCoords) {
+        addressCache[addr] = { ...centerCoords, _source: 'shopping_center' }
         addressCounts[addr] = 1
-        coords = addJitter(result.lat, result.lng, 1)
-        console.log(`  ✓ ${store.address} → ${result.lat.toFixed(5)}, ${result.lng.toFixed(5)}`)
+        coords = addJitter(centerCoords.lat, centerCoords.lng, 1)
+        coordinateSource = 'shopping_center'
+        overrideCount++
+        console.log(`  ● ${store.address} → ${centerCoords.lat.toFixed(5)}, ${centerCoords.lng.toFixed(5)} (shopping center)`)
+      } else if (MANUAL_FALLBACKS[addr]) {
+        const fb = MANUAL_FALLBACKS[addr]
+        addressCache[addr] = { ...fb, _source: 'manual' }
+        addressCounts[addr] = 1
+        coords = addJitter(fb.lat, fb.lng, 1)
+        coordinateSource = 'manual'
+        console.log(`  ~ ${store.address} → ${fb.lat.toFixed(5)}, ${fb.lng.toFixed(5)} (manual)`)
       } else {
-        console.log(`  ✗ Could not geocode: ${store.name} (${store.address})`)
-        failedCount++
-        coords = null
+        await sleep(RATE_LIMIT_MS)
+        const result = await geocodeKartverket(store.address)
+        geocodedCount++
+
+        if (result && isInDrammenBounds(result.lat, result.lng)) {
+          addressCache[addr] = { ...result, _source: 'kartverket' }
+          addressCounts[addr] = 1
+          coords = addJitter(result.lat, result.lng, 1)
+          coordinateSource = 'kartverket'
+          console.log(`  ✓ ${store.address} → ${result.lat.toFixed(5)}, ${result.lng.toFixed(5)}`)
+        } else if (result) {
+          console.log(`  ✗ Out of bounds: ${store.name} (${store.address}) → ${result.lat.toFixed(5)}, ${result.lng.toFixed(5)}`)
+          failedCount++
+          coords = null
+        } else {
+          console.log(`  ✗ Could not geocode: ${store.name} (${store.address})`)
+          failedCount++
+          coords = null
+        }
       }
     }
 
@@ -109,6 +158,13 @@ async function main() {
       yoyGrowth: store.yoyGrowth,
       marketShare: store.marketShare,
       chainLocations: store.chainLocations,
+      coordinateSource,
+      orgNr: null,
+      website: null,
+      phone: null,
+      email: null,
+      facebook: null,
+      instagram: null,
     })
 
     if (results.length % 20 === 0) {
@@ -119,6 +175,7 @@ async function main() {
   writeFileSync(OUTPUT_PATH, JSON.stringify(results, null, 2))
   console.log(`\nDone! ${results.length} stores geocoded.`)
   console.log(`  API lookups: ${geocodedCount}`)
+  console.log(`  Shopping center overrides: ${overrideCount}`)
   console.log(`  Failed: ${failedCount}`)
   console.log(`\nOutput: ${OUTPUT_PATH}`)
 }

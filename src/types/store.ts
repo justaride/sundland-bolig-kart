@@ -1,3 +1,9 @@
+export type CoordinateSource =
+  | "kartverket"
+  | "manual"
+  | "shopping_center"
+  | "nominatim";
+
 export type StoreLocation = {
   id: string;
   name: string;
@@ -11,6 +17,13 @@ export type StoreLocation = {
   yoyGrowth: number | null;
   marketShare: number;
   chainLocations: number | null;
+  coordinateSource: CoordinateSource;
+  orgNr: string | null;
+  website: string | null;
+  phone: string | null;
+  email: string | null;
+  facebook: string | null;
+  instagram: string | null;
 };
 
 export type StoreFilters = {

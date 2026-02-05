@@ -7,7 +7,10 @@
     "dev": "vite --port 3041",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "geocode:stores": "node scripts/geocodeStores.mjs",
+    "enrich:brreg": "node scripts/enrichFromBrreg.mjs",
+    "verify:coords": "node scripts/verifyCoordinates.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

@@ -4,11 +4,7 @@ export type Developer = {
   address: string | null;
   industry: string | null;
   employees: number | null;
-  financials: {
-    revenue: number | null;
-    operatingResult: number | null;
-    year: number;
-  } | null;
+  financials: any | null;
   roles: { name: string; role: string }[];
-  shareholders: { name: string; share: number }[];
+  shareholders: { name: string; percentage: number; type: string }[];
 };

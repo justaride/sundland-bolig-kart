@@ -11,7 +11,14 @@
     "employees": 7,
     "yoyGrowth": 12,
     "marketShare": 6.77,
-    "chainLocations": 13
+    "chainLocations": 13,
+    "coordinateSource": "kartverket",
+    "orgNr": "934290224",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-2",
@@ -25,7 +32,14 @@
     "employees": 41,
     "yoyGrowth": -3,
     "marketShare": 5.71,
-    "chainLocations": 130
+    "chainLocations": 130,
+    "coordinateSource": "kartverket",
+    "orgNr": "980654745",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-3",
@@ -39,7 +53,14 @@
     "employees": 25,
     "yoyGrowth": 0.9,
     "marketShare": 4.78,
-    "chainLocations": 672
+    "chainLocations": 672,
+    "coordinateSource": "kartverket",
+    "orgNr": "883409442",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-4",
@@ -53,7 +74,14 @@
     "employees": 40,
     "yoyGrowth": 4,
     "marketShare": 4.51,
-    "chainLocations": 184
+    "chainLocations": 184,
+    "coordinateSource": "kartverket",
+    "orgNr": "977066727",
+    "website": "www.meny.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-5",
@@ -67,7 +95,14 @@
     "employees": 0,
     "yoyGrowth": 5,
     "marketShare": 4.33,
-    "chainLocations": 227
+    "chainLocations": 227,
+    "coordinateSource": "kartverket",
+    "orgNr": "894112832",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-6",
@@ -81,7 +116,14 @@
     "employees": 16,
     "yoyGrowth": -8,
     "marketShare": 3.91,
-    "chainLocations": 160
+    "chainLocations": 160,
+    "coordinateSource": "kartverket",
+    "orgNr": "925822213",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-7",
@@ -95,7 +137,14 @@
     "employees": 44,
     "yoyGrowth": -11,
     "marketShare": 3.2,
-    "chainLocations": 42
+    "chainLocations": 42,
+    "coordinateSource": "kartverket",
+    "orgNr": "881932792",
+    "website": "www.xxl.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-8",
@@ -109,7 +158,14 @@
     "employees": 23,
     "yoyGrowth": 1,
     "marketShare": 3.13,
-    "chainLocations": 447
+    "chainLocations": 447,
+    "coordinateSource": "kartverket",
+    "orgNr": "916328109",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-9",
@@ -123,7 +179,14 @@
     "employees": 12,
     "yoyGrowth": null,
     "marketShare": 2.94,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "manual",
+    "orgNr": "831753242",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-10",
@@ -137,7 +200,14 @@
     "employees": 20,
     "yoyGrowth": -4,
     "marketShare": 2.72,
-    "chainLocations": 447
+    "chainLocations": 447,
+    "coordinateSource": "kartverket",
+    "orgNr": "916328109",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-11",
@@ -151,7 +221,14 @@
     "employees": 13,
     "yoyGrowth": 6,
     "marketShare": 2.38,
-    "chainLocations": 728
+    "chainLocations": 728,
+    "coordinateSource": "kartverket",
+    "orgNr": null,
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-12",
@@ -165,7 +242,14 @@
     "employees": 43,
     "yoyGrowth": -14,
     "marketShare": 2.4,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "936298141",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-13",
@@ -179,7 +263,14 @@
     "employees": 10,
     "yoyGrowth": -6,
     "marketShare": 2.21,
-    "chainLocations": 26
+    "chainLocations": 26,
+    "coordinateSource": "kartverket",
+    "orgNr": "981642511",
+    "website": "www.eplehuset.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-14",
@@ -187,13 +278,20 @@
     "category": "Klesbutikker",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739437,
-    "lng": 10.174603,
+    "lat": 59.742116,
+    "lng": 10.157769,
     "revenue": 42000000,
     "employees": 28,
     "yoyGrowth": 0.3,
     "marketShare": 2.05,
-    "chainLocations": 102
+    "chainLocations": 102,
+    "coordinateSource": "shopping_center",
+    "orgNr": "912618900",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-15",
@@ -207,7 +305,14 @@
     "employees": 17,
     "yoyGrowth": 41,
     "marketShare": 2.03,
-    "chainLocations": 36
+    "chainLocations": 36,
+    "coordinateSource": "kartverket",
+    "orgNr": "978658059",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-16",
@@ -221,7 +326,14 @@
     "employees": 18,
     "yoyGrowth": 6,
     "marketShare": 1.93,
-    "chainLocations": 102
+    "chainLocations": 102,
+    "coordinateSource": "kartverket",
+    "orgNr": "937402198",
+    "website": "www.clasohlson.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-17",
@@ -229,13 +341,20 @@
     "category": "Sport og fritid",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739648,
-    "lng": 10.174135,
+    "lat": 59.742326,
+    "lng": 10.157301,
     "revenue": 36000000,
     "employees": 24,
     "yoyGrowth": -4,
     "marketShare": 1.75,
-    "chainLocations": 51
+    "chainLocations": 51,
+    "coordinateSource": "shopping_center",
+    "orgNr": "951376477",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-18",
@@ -249,7 +368,14 @@
     "employees": 13,
     "yoyGrowth": 2,
     "marketShare": 1.31,
-    "chainLocations": 68
+    "chainLocations": 68,
+    "coordinateSource": "kartverket",
+    "orgNr": "931737562",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-19",
@@ -257,13 +383,20 @@
     "category": "Klesbutikker",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739835,
-    "lng": 10.174712,
+    "lat": 59.742513,
+    "lng": 10.157878,
     "revenue": 23000000,
     "employees": 19,
     "yoyGrowth": 0.7,
     "marketShare": 1.11,
-    "chainLocations": 96
+    "chainLocations": 96,
+    "coordinateSource": "shopping_center",
+    "orgNr": "819282102",
+    "website": "www.lindex.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-20",
@@ -277,7 +410,14 @@
     "employees": 27,
     "yoyGrowth": -14,
     "marketShare": 1.15,
-    "chainLocations": 83
+    "chainLocations": 83,
+    "coordinateSource": "kartverket",
+    "orgNr": null,
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-21",
@@ -291,7 +431,14 @@
     "employees": 11,
     "yoyGrowth": 70,
     "marketShare": 1.07,
-    "chainLocations": 39
+    "chainLocations": 39,
+    "coordinateSource": "kartverket",
+    "orgNr": "892380082",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-22",
@@ -305,7 +452,14 @@
     "employees": 14,
     "yoyGrowth": -21,
     "marketShare": 1.09,
-    "chainLocations": 164
+    "chainLocations": 164,
+    "coordinateSource": "kartverket",
+    "orgNr": "918976620",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-23",
@@ -319,7 +473,14 @@
     "employees": 14,
     "yoyGrowth": 3,
     "marketShare": 0.98,
-    "chainLocations": 81
+    "chainLocations": 81,
+    "coordinateSource": "kartverket",
+    "orgNr": "914386543",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-24",
@@ -333,7 +494,14 @@
     "employees": 15,
     "yoyGrowth": -19,
     "marketShare": 0.99,
-    "chainLocations": 200
+    "chainLocations": 200,
+    "coordinateSource": "kartverket",
+    "orgNr": "935798337",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-25",
@@ -347,7 +515,14 @@
     "employees": 9,
     "yoyGrowth": -11,
     "marketShare": 0.99,
-    "chainLocations": 12
+    "chainLocations": 12,
+    "coordinateSource": "kartverket",
+    "orgNr": "931416111",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-26",
@@ -361,7 +536,14 @@
     "employees": 8,
     "yoyGrowth": 272,
     "marketShare": 1,
-    "chainLocations": 24
+    "chainLocations": 24,
+    "coordinateSource": "kartverket",
+    "orgNr": "914787521",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-27",
@@ -375,7 +557,14 @@
     "employees": 13,
     "yoyGrowth": 11,
     "marketShare": 0.86,
-    "chainLocations": 99
+    "chainLocations": 99,
+    "coordinateSource": "kartverket",
+    "orgNr": "947659138",
+    "website": "www.kappahl.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-28",
@@ -389,7 +578,14 @@
     "employees": 11,
     "yoyGrowth": 599,
     "marketShare": 0.81,
-    "chainLocations": 177
+    "chainLocations": 177,
+    "coordinateSource": "kartverket",
+    "orgNr": "922242674",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-29",
@@ -397,13 +593,20 @@
     "category": "Klesbutikker",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739228,
-    "lng": 10.174364,
+    "lat": 59.741906,
+    "lng": 10.15753,
     "revenue": 17000000,
     "employees": 12,
     "yoyGrowth": -19,
     "marketShare": 0.81,
-    "chainLocations": 176
+    "chainLocations": 176,
+    "coordinateSource": "shopping_center",
+    "orgNr": "939522719",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-30",
@@ -411,13 +614,20 @@
     "category": "Hjem og interiør",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.740002,
-    "lng": 10.174192,
+    "lat": 59.74268,
+    "lng": 10.157358,
     "revenue": 17000000,
     "employees": 11,
     "yoyGrowth": 13,
     "marketShare": 0.83,
-    "chainLocations": 157
+    "chainLocations": 157,
+    "coordinateSource": "shopping_center",
+    "orgNr": "958467095",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-31",
@@ -431,7 +641,14 @@
     "employees": 15,
     "yoyGrowth": -3,
     "marketShare": 0.74,
-    "chainLocations": 53
+    "chainLocations": 53,
+    "coordinateSource": "kartverket",
+    "orgNr": "925608440",
+    "website": "beautyrituals.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-32",
@@ -445,7 +662,14 @@
     "employees": 9,
     "yoyGrowth": -8,
     "marketShare": 0.68,
-    "chainLocations": 26
+    "chainLocations": 26,
+    "coordinateSource": "kartverket",
+    "orgNr": "915024815",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-33",
@@ -453,13 +677,20 @@
     "category": "Klesbutikker",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739492,
-    "lng": 10.174917,
+    "lat": 59.74217,
+    "lng": 10.158083,
     "revenue": 13000000,
     "employees": 10,
     "yoyGrowth": 25,
     "marketShare": 0.62,
-    "chainLocations": 135
+    "chainLocations": 135,
+    "coordinateSource": "shopping_center",
+    "orgNr": "934347412",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-34",
@@ -473,7 +704,14 @@
     "employees": 6,
     "yoyGrowth": 6,
     "marketShare": 0.62,
-    "chainLocations": 29
+    "chainLocations": 29,
+    "coordinateSource": "kartverket",
+    "orgNr": "815420292",
+    "website": "www.kjell.com",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-35",
@@ -487,7 +725,14 @@
     "employees": 0,
     "yoyGrowth": null,
     "marketShare": 0.63,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "922370818",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-36",
@@ -501,7 +746,14 @@
     "employees": 9,
     "yoyGrowth": 22,
     "marketShare": 0.63,
-    "chainLocations": 180
+    "chainLocations": 180,
+    "coordinateSource": "kartverket",
+    "orgNr": "913820509",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-37",
@@ -515,7 +767,14 @@
     "employees": 20,
     "yoyGrowth": 3,
     "marketShare": 0.57,
-    "chainLocations": 34
+    "chainLocations": 34,
+    "coordinateSource": "kartverket",
+    "orgNr": "912399095",
+    "website": "www.bakerhansen.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-38",
@@ -523,13 +782,20 @@
     "category": "Bakeri og kafé",
     "topCategory": "Mat og opplevelser",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.73953,
-    "lng": 10.174257,
+    "lat": 59.742208,
+    "lng": 10.157423,
     "revenue": 12000000,
     "employees": 9,
     "yoyGrowth": -0.9,
     "marketShare": 0.59,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "shopping_center",
+    "orgNr": "887740852",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-39",
@@ -543,7 +809,14 @@
     "employees": 9,
     "yoyGrowth": -10,
     "marketShare": 0.6,
-    "chainLocations": 136
+    "chainLocations": 136,
+    "coordinateSource": "kartverket",
+    "orgNr": "994496093",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-40",
@@ -557,7 +830,14 @@
     "employees": 8,
     "yoyGrowth": -13,
     "marketShare": 0.6,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "929294696",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-41",
@@ -571,7 +851,14 @@
     "employees": 8,
     "yoyGrowth": 14,
     "marketShare": 0.61,
-    "chainLocations": 63
+    "chainLocations": 63,
+    "coordinateSource": "kartverket",
+    "orgNr": "990809437",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-42",
@@ -579,13 +866,20 @@
     "category": "Sport og fritid",
     "topCategory": "Handel",
     "address": "DRAMMEN",
-    "lat": 59.750599,
-    "lng": 10.171275,
+    "lat": 59.742116,
+    "lng": 10.157769,
     "revenue": 11000000,
     "employees": 18,
     "yoyGrowth": -8,
     "marketShare": 0.51,
-    "chainLocations": 46
+    "chainLocations": 46,
+    "coordinateSource": "manual",
+    "orgNr": "932244543",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-43",
@@ -599,7 +893,14 @@
     "employees": 8,
     "yoyGrowth": -6,
     "marketShare": 0.53,
-    "chainLocations": 134
+    "chainLocations": 134,
+    "coordinateSource": "kartverket",
+    "orgNr": "913807146",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-44",
@@ -613,7 +914,14 @@
     "employees": 17,
     "yoyGrowth": 2,
     "marketShare": 0.54,
-    "chainLocations": 45
+    "chainLocations": 45,
+    "coordinateSource": "kartverket",
+    "orgNr": "997077237",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-45",
@@ -627,7 +935,14 @@
     "employees": 10,
     "yoyGrowth": -1,
     "marketShare": 0.54,
-    "chainLocations": 35
+    "chainLocations": 35,
+    "coordinateSource": "kartverket",
+    "orgNr": "930479772",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-46",
@@ -641,7 +956,14 @@
     "employees": 10,
     "yoyGrowth": -3,
     "marketShare": 0.55,
-    "chainLocations": 151
+    "chainLocations": 151,
+    "coordinateSource": "kartverket",
+    "orgNr": "976711556",
+    "website": "www.kitchn.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-47",
@@ -655,7 +977,14 @@
     "employees": 8,
     "yoyGrowth": 8,
     "marketShare": 0.55,
-    "chainLocations": 7
+    "chainLocations": 7,
+    "coordinateSource": "kartverket",
+    "orgNr": "994465406",
+    "website": "www.smakavitalia.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-48",
@@ -669,7 +998,14 @@
     "employees": 8,
     "yoyGrowth": null,
     "marketShare": 0.56,
-    "chainLocations": 74
+    "chainLocations": 74,
+    "coordinateSource": "kartverket",
+    "orgNr": "998741556",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-49",
@@ -683,7 +1019,14 @@
     "employees": 7,
     "yoyGrowth": 17,
     "marketShare": 0.47,
-    "chainLocations": 71
+    "chainLocations": 71,
+    "coordinateSource": "kartverket",
+    "orgNr": null,
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-50",
@@ -697,7 +1040,14 @@
     "employees": 10,
     "yoyGrowth": 7,
     "marketShare": 0.48,
-    "chainLocations": 36
+    "chainLocations": 36,
+    "coordinateSource": "kartverket",
+    "orgNr": "917424888",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-51",
@@ -711,7 +1061,14 @@
     "employees": 7,
     "yoyGrowth": 0.7,
     "marketShare": 0.48,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "917825130",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-52",
@@ -725,7 +1082,14 @@
     "employees": 13,
     "yoyGrowth": 3,
     "marketShare": 0.48,
-    "chainLocations": 315
+    "chainLocations": 315,
+    "coordinateSource": "kartverket",
+    "orgNr": "918468919",
+    "website": "www.nille.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-53",
@@ -739,7 +1103,14 @@
     "employees": 9,
     "yoyGrowth": 1,
     "marketShare": 0.49,
-    "chainLocations": 149
+    "chainLocations": 149,
+    "coordinateSource": "kartverket",
+    "orgNr": "933944522",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-54",
@@ -753,7 +1124,14 @@
     "employees": 0,
     "yoyGrowth": 0,
     "marketShare": 0.49,
-    "chainLocations": 78
+    "chainLocations": 78,
+    "coordinateSource": "kartverket",
+    "orgNr": null,
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-55",
@@ -767,7 +1145,14 @@
     "employees": 15,
     "yoyGrowth": 1,
     "marketShare": 0.5,
-    "chainLocations": 11
+    "chainLocations": 11,
+    "coordinateSource": "kartverket",
+    "orgNr": null,
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-56",
@@ -781,7 +1166,14 @@
     "employees": 7,
     "yoyGrowth": 7,
     "marketShare": 0.51,
-    "chainLocations": 38
+    "chainLocations": 38,
+    "coordinateSource": "kartverket",
+    "orgNr": "929107357",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-57",
@@ -789,13 +1181,20 @@
     "category": "Profesjoner",
     "topCategory": "Tjenester",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739857,
-    "lng": 10.17452,
+    "lat": 59.742535,
+    "lng": 10.157686,
     "revenue": 10000000,
     "employees": 7,
     "yoyGrowth": -6,
     "marketShare": 0.51,
-    "chainLocations": 42
+    "chainLocations": 42,
+    "coordinateSource": "shopping_center",
+    "orgNr": "946026492",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-58",
@@ -803,13 +1202,20 @@
     "category": "Elektrobutikker",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739345,
-    "lng": 10.174548,
+    "lat": 59.742023,
+    "lng": 10.157714,
     "revenue": 9000000,
     "employees": 6,
     "yoyGrowth": 10,
     "marketShare": 0.43,
-    "chainLocations": 41
+    "chainLocations": 41,
+    "coordinateSource": "shopping_center",
+    "orgNr": "956019710",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-59",
@@ -817,13 +1223,20 @@
     "category": "Klesbutikker",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.73977,
-    "lng": 10.174117,
+    "lat": 59.742448,
+    "lng": 10.157283,
     "revenue": 9000000,
     "employees": 9,
     "yoyGrowth": -5,
     "marketShare": 0.43,
-    "chainLocations": 75
+    "chainLocations": 75,
+    "coordinateSource": "shopping_center",
+    "orgNr": "957984312",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-60",
@@ -837,7 +1250,14 @@
     "employees": 12,
     "yoyGrowth": 33,
     "marketShare": 0.43,
-    "chainLocations": 9
+    "chainLocations": 9,
+    "coordinateSource": "kartverket",
+    "orgNr": "915930816",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-61",
@@ -851,7 +1271,14 @@
     "employees": 9,
     "yoyGrowth": 0.5,
     "marketShare": 0.43,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "922941645",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-62",
@@ -865,7 +1292,14 @@
     "employees": 7,
     "yoyGrowth": 9,
     "marketShare": 0.44,
-    "chainLocations": 77
+    "chainLocations": 77,
+    "coordinateSource": "kartverket",
+    "orgNr": "823844352",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-63",
@@ -879,7 +1313,14 @@
     "employees": 2,
     "yoyGrowth": 19,
     "marketShare": 0.44,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "manual",
+    "orgNr": "922567433",
+    "website": "www.keo.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-64",
@@ -893,7 +1334,14 @@
     "employees": 5,
     "yoyGrowth": 1,
     "marketShare": 0.45,
-    "chainLocations": 65
+    "chainLocations": 65,
+    "coordinateSource": "kartverket",
+    "orgNr": null,
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-65",
@@ -907,7 +1355,14 @@
     "employees": 6,
     "yoyGrowth": 15,
     "marketShare": 0.46,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "920992013",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-66",
@@ -921,7 +1376,14 @@
     "employees": 7,
     "yoyGrowth": -4,
     "marketShare": 0.37,
-    "chainLocations": 52
+    "chainLocations": 52,
+    "coordinateSource": "kartverket",
+    "orgNr": "840207412",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-67",
@@ -935,7 +1397,14 @@
     "employees": 7,
     "yoyGrowth": -13,
     "marketShare": 0.37,
-    "chainLocations": 34
+    "chainLocations": 34,
+    "coordinateSource": "kartverket",
+    "orgNr": "913163567",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-68",
@@ -949,7 +1418,14 @@
     "employees": 6,
     "yoyGrowth": -37,
     "marketShare": 0.39,
-    "chainLocations": 23
+    "chainLocations": 23,
+    "coordinateSource": "kartverket",
+    "orgNr": "993449474",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-69",
@@ -957,13 +1433,20 @@
     "category": "Annen handel",
     "topCategory": "Handel",
     "address": "GULDLISTEN",
-    "lat": 59.742933,
-    "lng": 10.160776,
+    "lat": 59.742116,
+    "lng": 10.157769,
     "revenue": 8000000,
     "employees": 16,
     "yoyGrowth": -8,
     "marketShare": 0.41,
-    "chainLocations": 30
+    "chainLocations": 30,
+    "coordinateSource": "shopping_center",
+    "orgNr": "997427173",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-70",
@@ -977,7 +1460,14 @@
     "employees": 9,
     "yoyGrowth": 0.2,
     "marketShare": 0.33,
-    "chainLocations": 45
+    "chainLocations": 45,
+    "coordinateSource": "kartverket",
+    "orgNr": "927257335",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-71",
@@ -991,7 +1481,14 @@
     "employees": 11,
     "yoyGrowth": 1,
     "marketShare": 0.33,
-    "chainLocations": 66
+    "chainLocations": 66,
+    "coordinateSource": "kartverket",
+    "orgNr": "913398254",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-72",
@@ -1005,7 +1502,14 @@
     "employees": 7,
     "yoyGrowth": 11,
     "marketShare": 0.33,
-    "chainLocations": 88
+    "chainLocations": 88,
+    "coordinateSource": "kartverket",
+    "orgNr": "921618964",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-73",
@@ -1019,7 +1523,14 @@
     "employees": 6,
     "yoyGrowth": 23,
     "marketShare": 0.34,
-    "chainLocations": 92
+    "chainLocations": 92,
+    "coordinateSource": "kartverket",
+    "orgNr": "981457072",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-74",
@@ -1033,7 +1544,14 @@
     "employees": 5,
     "yoyGrowth": -8,
     "marketShare": 0.35,
-    "chainLocations": 33
+    "chainLocations": 33,
+    "coordinateSource": "kartverket",
+    "orgNr": "921238746",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-75",
@@ -1047,7 +1565,14 @@
     "employees": 5,
     "yoyGrowth": -8,
     "marketShare": 0.35,
-    "chainLocations": 33
+    "chainLocations": 33,
+    "coordinateSource": "kartverket",
+    "orgNr": "934385519",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-76",
@@ -1061,7 +1586,14 @@
     "employees": 5,
     "yoyGrowth": 2,
     "marketShare": 0.36,
-    "chainLocations": 159
+    "chainLocations": 159,
+    "coordinateSource": "kartverket",
+    "orgNr": "913779908",
+    "website": "www.plussark.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-77",
@@ -1075,7 +1607,14 @@
     "employees": 12,
     "yoyGrowth": -18,
     "marketShare": 0.36,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "981018540",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-78",
@@ -1089,7 +1628,14 @@
     "employees": 9,
     "yoyGrowth": 6,
     "marketShare": 0.28,
-    "chainLocations": 50
+    "chainLocations": 50,
+    "coordinateSource": "kartverket",
+    "orgNr": "918504273",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-79",
@@ -1097,13 +1643,20 @@
     "category": "Elektrobutikker",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739742,
-    "lng": 10.174816,
+    "lat": 59.74242,
+    "lng": 10.157982,
     "revenue": 6000000,
     "employees": 9,
     "yoyGrowth": -40,
     "marketShare": 0.29,
-    "chainLocations": 53
+    "chainLocations": 53,
+    "coordinateSource": "shopping_center",
+    "orgNr": "912009556",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-80",
@@ -1117,7 +1670,14 @@
     "employees": 6,
     "yoyGrowth": 0.5,
     "marketShare": 0.31,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "999125026",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-81",
@@ -1125,13 +1685,20 @@
     "category": "Klesbutikker",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739232,
-    "lng": 10.174208,
+    "lat": 59.741911,
+    "lng": 10.157374,
     "revenue": 6000000,
     "employees": 7,
     "yoyGrowth": 4,
     "marketShare": 0.31,
-    "chainLocations": 88
+    "chainLocations": 88,
+    "coordinateSource": "shopping_center",
+    "orgNr": "981930010",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-82",
@@ -1145,7 +1712,14 @@
     "employees": 10,
     "yoyGrowth": -17,
     "marketShare": 0.22,
-    "chainLocations": 45
+    "chainLocations": 45,
+    "coordinateSource": "kartverket",
+    "orgNr": "915165346",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-83",
@@ -1159,7 +1733,14 @@
     "employees": 10,
     "yoyGrowth": 1,
     "marketShare": 0.23,
-    "chainLocations": 113
+    "chainLocations": 113,
+    "coordinateSource": "kartverket",
+    "orgNr": "921851804",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-84",
@@ -1173,7 +1754,14 @@
     "employees": 10,
     "yoyGrowth": 1,
     "marketShare": 0.23,
-    "chainLocations": 15
+    "chainLocations": 15,
+    "coordinateSource": "kartverket",
+    "orgNr": "987354526",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-85",
@@ -1181,13 +1769,20 @@
     "category": "Annen handel",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.74011,
-    "lng": 10.174327,
+    "lat": 59.742788,
+    "lng": 10.157493,
     "revenue": 5000000,
     "employees": 8,
     "yoyGrowth": 55,
     "marketShare": 0.24,
-    "chainLocations": 52
+    "chainLocations": 52,
+    "coordinateSource": "shopping_center",
+    "orgNr": "828807102",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-86",
@@ -1201,7 +1796,14 @@
     "employees": 6,
     "yoyGrowth": -21,
     "marketShare": 0.24,
-    "chainLocations": 13
+    "chainLocations": 13,
+    "coordinateSource": "kartverket",
+    "orgNr": "899557182",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-87",
@@ -1215,7 +1817,14 @@
     "employees": 10,
     "yoyGrowth": 5,
     "marketShare": 0.25,
-    "chainLocations": 78
+    "chainLocations": 78,
+    "coordinateSource": "kartverket",
+    "orgNr": "975965120",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-88",
@@ -1229,7 +1838,14 @@
     "employees": 9,
     "yoyGrowth": null,
     "marketShare": 0.25,
-    "chainLocations": 287
+    "chainLocations": 287,
+    "coordinateSource": "kartverket",
+    "orgNr": "986762469",
+    "website": "www.europris.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-89",
@@ -1243,7 +1859,14 @@
     "employees": 6,
     "yoyGrowth": null,
     "marketShare": 0.25,
-    "chainLocations": 2
+    "chainLocations": 2,
+    "coordinateSource": "kartverket",
+    "orgNr": "918635343",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-90",
@@ -1251,13 +1874,20 @@
     "category": "Hjem og interiør",
     "topCategory": "Handel",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739507,
-    "lng": 10.174598,
+    "lat": 59.742185,
+    "lng": 10.157764,
     "revenue": 5000000,
     "employees": 6,
     "yoyGrowth": 0.4,
     "marketShare": 0.26,
-    "chainLocations": 169
+    "chainLocations": 169,
+    "coordinateSource": "shopping_center",
+    "orgNr": "921429541",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-91",
@@ -1271,7 +1901,14 @@
     "employees": 7,
     "yoyGrowth": 47,
     "marketShare": 0.26,
-    "chainLocations": 104
+    "chainLocations": 104,
+    "coordinateSource": "kartverket",
+    "orgNr": "916024649",
+    "website": "cutters.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-92",
@@ -1285,7 +1922,14 @@
     "employees": 4,
     "yoyGrowth": -26,
     "marketShare": 0.18,
-    "chainLocations": 34
+    "chainLocations": 34,
+    "coordinateSource": "kartverket",
+    "orgNr": "923856803",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-93",
@@ -1293,13 +1937,20 @@
     "category": "Mat og drikke",
     "topCategory": "Handel",
     "address": "DRAMMEN",
-    "lat": 59.750809,
-    "lng": 10.170807,
+    "lat": 59.742326,
+    "lng": 10.157301,
     "revenue": 4000000,
     "employees": 5,
     "yoyGrowth": 268,
     "marketShare": 0.18,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "manual",
+    "orgNr": "994230174",
+    "website": "www.amundsentrading.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-94",
@@ -1313,7 +1964,14 @@
     "employees": 5,
     "yoyGrowth": null,
     "marketShare": 0.18,
-    "chainLocations": 68
+    "chainLocations": 68,
+    "coordinateSource": "kartverket",
+    "orgNr": "931937502",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-95",
@@ -1327,7 +1985,14 @@
     "employees": 6,
     "yoyGrowth": 527,
     "marketShare": 0.2,
-    "chainLocations": 3
+    "chainLocations": 3,
+    "coordinateSource": "kartverket",
+    "orgNr": "996877388",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-96",
@@ -1341,7 +2006,14 @@
     "employees": 8,
     "yoyGrowth": -10,
     "marketShare": 0.22,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "823792492",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-97",
@@ -1355,7 +2027,14 @@
     "employees": 9,
     "yoyGrowth": 28,
     "marketShare": 0.13,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "996878902",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-98",
@@ -1369,7 +2048,14 @@
     "employees": 8,
     "yoyGrowth": -33,
     "marketShare": 0.13,
-    "chainLocations": 68
+    "chainLocations": 68,
+    "coordinateSource": "kartverket",
+    "orgNr": "931937502",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-99",
@@ -1383,7 +2069,14 @@
     "employees": 11,
     "yoyGrowth": -11,
     "marketShare": 0.14,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "919944919",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-100",
@@ -1397,7 +2090,14 @@
     "employees": 4,
     "yoyGrowth": 52,
     "marketShare": 0.14,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "930897752",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-101",
@@ -1411,7 +2111,14 @@
     "employees": 6,
     "yoyGrowth": -4,
     "marketShare": 0.15,
-    "chainLocations": 58
+    "chainLocations": 58,
+    "coordinateSource": "kartverket",
+    "orgNr": "971579412",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-102",
@@ -1425,7 +2132,14 @@
     "employees": 14,
     "yoyGrowth": -27,
     "marketShare": 0.15,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "923685820",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-103",
@@ -1433,13 +2147,20 @@
     "category": "Skjønnhet og velvære",
     "topCategory": "Tjenester",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.73959,
-    "lng": 10.174186,
+    "lat": 59.742268,
+    "lng": 10.157352,
     "revenue": 3000000,
     "employees": 6,
     "yoyGrowth": 11,
     "marketShare": 0.15,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "shopping_center",
+    "orgNr": "936608612",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-104",
@@ -1447,13 +2168,20 @@
     "category": "Skjønnhet og velvære",
     "topCategory": "Tjenester",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739851,
-    "lng": 10.174627,
+    "lat": 59.742529,
+    "lng": 10.157793,
     "revenue": 3000000,
     "employees": 6,
     "yoyGrowth": 11,
     "marketShare": 0.15,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "shopping_center",
+    "orgNr": "936608612",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-105",
@@ -1467,7 +2195,14 @@
     "employees": 5,
     "yoyGrowth": null,
     "marketShare": 0.16,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "912850757",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-106",
@@ -1481,7 +2216,14 @@
     "employees": 8,
     "yoyGrowth": 2,
     "marketShare": 0.16,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "914595010",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-107",
@@ -1495,7 +2237,14 @@
     "employees": 0,
     "yoyGrowth": null,
     "marketShare": 0.07,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "923268669",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-108",
@@ -1509,7 +2258,14 @@
     "employees": 2,
     "yoyGrowth": -51,
     "marketShare": 0.08,
-    "chainLocations": 35
+    "chainLocations": 35,
+    "coordinateSource": "kartverket",
+    "orgNr": "922607184",
+    "website": "www.hair247.dk",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-109",
@@ -1523,7 +2279,14 @@
     "employees": 5,
     "yoyGrowth": 2167,
     "marketShare": 0.09,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "914726360",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-110",
@@ -1537,7 +2300,14 @@
     "employees": 64,
     "yoyGrowth": -91,
     "marketShare": 0.09,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "925171743",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-111",
@@ -1551,7 +2321,14 @@
     "employees": 4,
     "yoyGrowth": -0.3,
     "marketShare": 0.09,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "927600013",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-112",
@@ -1565,7 +2342,14 @@
     "employees": 0,
     "yoyGrowth": null,
     "marketShare": 0.1,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "899654862",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-113",
@@ -1579,7 +2363,14 @@
     "employees": 8,
     "yoyGrowth": -33,
     "marketShare": 0.1,
-    "chainLocations": 79
+    "chainLocations": 79,
+    "coordinateSource": "kartverket",
+    "orgNr": "952305433",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-114",
@@ -1593,7 +2384,14 @@
     "employees": 5,
     "yoyGrowth": null,
     "marketShare": 0.11,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "932555700",
+    "website": "www.cutngo.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-115",
@@ -1607,7 +2405,14 @@
     "employees": 7,
     "yoyGrowth": -10,
     "marketShare": 0.11,
-    "chainLocations": 127
+    "chainLocations": 127,
+    "coordinateSource": "kartverket",
+    "orgNr": "990196184",
+    "website": "vitavitalis.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-116",
@@ -1621,7 +2426,14 @@
     "employees": 9,
     "yoyGrowth": 884,
     "marketShare": 0.11,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "987526157",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-117",
@@ -1635,7 +2447,14 @@
     "employees": 7,
     "yoyGrowth": -52,
     "marketShare": 0.11,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "918319034",
+    "website": "Tilbords.no",
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-118",
@@ -1649,7 +2468,14 @@
     "employees": 0,
     "yoyGrowth": -5,
     "marketShare": 0.05,
-    "chainLocations": 18
+    "chainLocations": 18,
+    "coordinateSource": "kartverket",
+    "orgNr": "917410119",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-119",
@@ -1663,7 +2489,14 @@
     "employees": 0,
     "yoyGrowth": -5,
     "marketShare": 0.05,
-    "chainLocations": 5
+    "chainLocations": 5,
+    "coordinateSource": "kartverket",
+    "orgNr": "917410119",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-120",
@@ -1677,7 +2510,14 @@
     "employees": 0,
     "yoyGrowth": -29,
     "marketShare": 0.05,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "982725283",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-121",
@@ -1685,13 +2525,20 @@
     "category": "Skjønnhet og velvære",
     "topCategory": "Tjenester",
     "address": "PROFESSOR SMITHS ALLE",
-    "lat": 59.739272,
-    "lng": 10.174448,
+    "lat": 59.74195,
+    "lng": 10.157614,
     "revenue": 500000,
     "employees": 0,
     "yoyGrowth": -22,
     "marketShare": 0.02,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "shopping_center",
+    "orgNr": "970329110",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-122",
@@ -1699,13 +2546,20 @@
     "category": "Restaurant",
     "topCategory": "Mat og opplevelser",
     "address": "DRAMMEN",
-    "lat": 59.750996,
-    "lng": 10.171384,
+    "lat": 59.742513,
+    "lng": 10.157878,
     "revenue": 500000,
     "employees": 0,
     "yoyGrowth": -51,
     "marketShare": 0.02,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "manual",
+    "orgNr": null,
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-123",
@@ -1719,7 +2573,14 @@
     "employees": 9,
     "yoyGrowth": -11,
     "marketShare": 0.02,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "912400867",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-124",
@@ -1733,7 +2594,14 @@
     "employees": 11,
     "yoyGrowth": -90,
     "marketShare": 0.01,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "920573312",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-125",
@@ -1747,7 +2615,14 @@
     "employees": 0,
     "yoyGrowth": -13,
     "marketShare": 0.01,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "934659562",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-126",
@@ -1761,7 +2636,14 @@
     "employees": 7,
     "yoyGrowth": -94,
     "marketShare": 0.01,
-    "chainLocations": 3
+    "chainLocations": 3,
+    "coordinateSource": "kartverket",
+    "orgNr": null,
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   },
   {
     "id": "store-127",
@@ -1775,6 +2657,13 @@
     "employees": 1,
     "yoyGrowth": 30,
     "marketShare": 0.01,
-    "chainLocations": 1
+    "chainLocations": 1,
+    "coordinateSource": "kartverket",
+    "orgNr": "993573701",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null
   }
 ]

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "offentligdata": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://app.offentligdata.com/mcp"]
+    }
+  }
+}

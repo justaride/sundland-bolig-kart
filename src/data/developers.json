@@ -2,189 +2,1198 @@
   {
     "orgNumber": "980374505",
     "name": "Bane NOR Eiendom AS",
-    "address": "Schweigaards gate 33, 0191 Oslo",
-    "industry": "Utvikling og salg av byggeprosjekter",
+    "address": "Schweigaards gate 33",
+    "industry": "Utvikling og salg av egen fast eiendom ellers",
     "employees": null,
-    "financials": null,
+    "financials": {
+      "id": 6231647,
+      "journalnr": "2025593767",
+      "regnskapstype": "SELSKAP",
+      "virksomhet": {
+        "organisasjonsnummer": "980374505",
+        "organisasjonsform": "AS",
+        "morselskap": true
+      },
+      "regnskapsperiode": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+      },
+      "valuta": "NOK",
+      "avviklingsregnskap": false,
+      "oppstillingsplan": "store",
+      "revisjon": {
+        "ikkeRevidertAarsregnskap": false,
+        "fravalgRevisjon": false
+      },
+      "regnkapsprinsipper": {
+        "smaaForetak": false,
+        "regnskapsregler": "regnskapslovenAlminneligRegler"
+      },
+      "egenkapitalGjeld": {
+        "sumEgenkapitalGjeld": 16006165000.0,
+        "egenkapital": {
+          "sumEgenkapital": 3939935000.0,
+          "opptjentEgenkapital": {
+            "sumOpptjentEgenkapital": 3455935000.0
+          },
+          "innskuttEgenkapital": {
+            "sumInnskuttEgenkaptial": 484000000.0
+          }
+        },
+        "gjeldOversikt": {
+          "sumGjeld": 12066230000.0,
+          "kortsiktigGjeld": {
+            "sumKortsiktigGjeld": 2430414000.0
+          },
+          "langsiktigGjeld": {
+            "sumLangsiktigGjeld": 9635816000.0
+          }
+        }
+      },
+      "eiendeler": {
+        "sumEiendeler": 16006165000.0,
+        "omloepsmidler": {
+          "sumOmloepsmidler": 3718550000.0
+        },
+        "anleggsmidler": {
+          "sumAnleggsmidler": 12287615000.0
+        }
+      },
+      "resultatregnskapResultat": {
+        "ordinaertResultatFoerSkattekostnad": 166409000.0,
+        "aarsresultat": 163236000.0,
+        "finansresultat": {
+          "nettoFinans": -119223000.0,
+          "finansinntekt": {
+            "sumFinansinntekter": 402716000.0
+          },
+          "finanskostnad": {
+            "sumFinanskostnad": 521939000.0
+          }
+        },
+        "driftsresultat": {
+          "driftsresultat": 285632000.0,
+          "driftsinntekter": {
+            "sumDriftsinntekter": 1397268000.0
+          },
+          "driftskostnad": {
+            "sumDriftskostnad": 1111636000.0
+          }
+        }
+      }
+    },
     "roles": [
-      { "name": "Jon-Erik Lunøe", "role": "Daglig leder" },
-      { "name": "Anders Riiber", "role": "Styreleder" },
-      { "name": "Hans Kristian Voldstad", "role": "Styremedlem" },
-      { "name": "Helga Nes", "role": "Styremedlem" },
-      { "name": "Martin Mæland", "role": "Styremedlem" },
-      { "name": "Trine-Marie Hagen", "role": "Styremedlem" }
+      {
+        "name": "Jon-Erik Lunøe",
+        "role": "Daglig leder"
+      },
+      {
+        "name": "Anders Riiber",
+        "role": "Styreleder"
+      },
+      {
+        "name": "Hans Kristian Voldstad",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Helga Nes",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Martin Mæland",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Trine-Marie Hagen",
+        "role": "Styremedlem"
+      }
     ],
     "shareholders": []
   },
   {
     "orgNumber": "968757954",
     "name": "OBOS Block Watne AS",
-    "address": "Standardveien 1, 0581 Oslo",
-    "industry": "Oppføring av bygninger",
-    "employees": 87,
-    "financials": null,
+    "address": "Hammersborg torg 3",
+    "industry": "OppfÃ¸ring av bygninger",
+    "employees": 90,
+    "financials": {
+      "id": 6215379,
+      "journalnr": "2025705306",
+      "regnskapstype": "SELSKAP",
+      "virksomhet": {
+        "organisasjonsnummer": "968757954",
+        "organisasjonsform": "AS",
+        "morselskap": true
+      },
+      "regnskapsperiode": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+      },
+      "valuta": "NOK",
+      "avviklingsregnskap": false,
+      "oppstillingsplan": "store",
+      "revisjon": {
+        "ikkeRevidertAarsregnskap": false,
+        "fravalgRevisjon": false
+      },
+      "regnkapsprinsipper": {
+        "smaaForetak": false,
+        "regnskapsregler": "regnskapslovenAlminneligRegler"
+      },
+      "egenkapitalGjeld": {
+        "sumEgenkapitalGjeld": 5782748000.0,
+        "egenkapital": {
+          "sumEgenkapital": 1374526000.0,
+          "opptjentEgenkapital": {
+            "sumOpptjentEgenkapital": 1108717000.0
+          },
+          "innskuttEgenkapital": {
+            "sumInnskuttEgenkaptial": 265808000.0
+          }
+        },
+        "gjeldOversikt": {
+          "sumGjeld": 4408222000.0,
+          "kortsiktigGjeld": {
+            "sumKortsiktigGjeld": 4368746000.0
+          },
+          "langsiktigGjeld": {
+            "sumLangsiktigGjeld": 39476000.0
+          }
+        }
+      },
+      "eiendeler": {
+        "sumEiendeler": 5782748000.0,
+        "omloepsmidler": {
+          "sumOmloepsmidler": 5248130000.0
+        },
+        "anleggsmidler": {
+          "sumAnleggsmidler": 534617000.0
+        }
+      },
+      "resultatregnskapResultat": {
+        "ordinaertResultatFoerSkattekostnad": -319787000.0,
+        "aarsresultat": -248693000.0,
+        "totalresultat": -248693000.0,
+        "finansresultat": {
+          "nettoFinans": -172674000.0,
+          "finansinntekt": {
+            "sumFinansinntekter": 27106000.0
+          },
+          "finanskostnad": {
+            "sumFinanskostnad": 199780000.0
+          }
+        },
+        "driftsresultat": {
+          "driftsresultat": -147113000.0,
+          "driftsinntekter": {
+            "sumDriftsinntekter": 1900686000.0
+          },
+          "driftskostnad": {
+            "sumDriftskostnad": 2047799000.0
+          }
+        }
+      }
+    },
     "roles": [
-      { "name": "Bjørn Einar Skoglund", "role": "Daglig leder" },
-      { "name": "Marianne Gjertsen Ebbesen", "role": "Styreleder" },
-      { "name": "Øystein-Magnus Søvik Høgholen", "role": "Nestleder" },
-      { "name": "Torunn Kverneland Thiemer", "role": "Styremedlem" },
-      { "name": "Trond Stabekk", "role": "Styremedlem" },
-      { "name": "Anders Gogstad", "role": "Styremedlem" }
+      {
+        "name": "Bjørn Einar Skoglund",
+        "role": "Daglig leder"
+      },
+      {
+        "name": "Marianne Gjertsen Ebbesen",
+        "role": "Styreleder"
+      },
+      {
+        "name": "Øystein-Magnus Søvik Høgholen",
+        "role": "Nestleder"
+      },
+      {
+        "name": "Torunn Kverneland Thiemer",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Trond Stabekk",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Anders Gogstad",
+        "role": "Styremedlem"
+      }
     ],
     "shareholders": []
   },
   {
     "orgNumber": "937052766",
     "name": "OBOS BBL",
-    "address": "Standardveien 1, 0581 Oslo",
-    "industry": "Utvikling og salg av byggeprosjekter",
-    "employees": 425,
-    "financials": null,
+    "address": "Hammersborg torg 1",
+    "industry": "Boligbyggelag",
+    "employees": 588,
+    "financials": {
+      "id": 6294309,
+      "journalnr": "2025725047",
+      "regnskapstype": "SELSKAP",
+      "virksomhet": {
+        "organisasjonsnummer": "937052766",
+        "organisasjonsform": "BBL",
+        "morselskap": true
+      },
+      "regnskapsperiode": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+      },
+      "valuta": "NOK",
+      "avviklingsregnskap": false,
+      "oppstillingsplan": "store",
+      "revisjon": {
+        "ikkeRevidertAarsregnskap": false,
+        "fravalgRevisjon": false
+      },
+      "regnkapsprinsipper": {
+        "smaaForetak": false,
+        "regnskapsregler": "forenkletAnvendelseIFRS"
+      },
+      "egenkapitalGjeld": {
+        "sumEgenkapitalGjeld": 33169000000.0,
+        "egenkapital": {
+          "sumEgenkapital": 22557000000.0,
+          "opptjentEgenkapital": {
+            "sumOpptjentEgenkapital": 22414000000.0
+          },
+          "innskuttEgenkapital": {
+            "sumInnskuttEgenkaptial": 143000000.0
+          }
+        },
+        "gjeldOversikt": {
+          "sumGjeld": 10612000000.0,
+          "kortsiktigGjeld": {
+            "sumKortsiktigGjeld": 3802000000.0
+          },
+          "langsiktigGjeld": {
+            "sumLangsiktigGjeld": 6810000000.0
+          }
+        }
+      },
+      "eiendeler": {
+        "sumEiendeler": 33168000000.0,
+        "omloepsmidler": {
+          "sumOmloepsmidler": 3802000000.0
+        },
+        "anleggsmidler": {
+          "sumAnleggsmidler": 29366000000.0
+        }
+      },
+      "resultatregnskapResultat": {
+        "ordinaertResultatFoerSkattekostnad": 1662000000.0,
+        "aarsresultat": 1536000000.0,
+        "totalresultat": 1449000000.0,
+        "finansresultat": {
+          "nettoFinans": 2471000000.0,
+          "finansinntekt": {
+            "sumFinansinntekter": 2897000000.0
+          },
+          "finanskostnad": {
+            "sumFinanskostnad": 426000000.0
+          }
+        },
+        "driftsresultat": {
+          "driftsresultat": -809000000.0,
+          "driftsinntekter": {
+            "sumDriftsinntekter": 4001000000.0
+          },
+          "driftskostnad": {
+            "sumDriftskostnad": 4810000000.0
+          }
+        }
+      }
+    },
     "roles": [
-      { "name": "Marianne Gjertsen Ebbesen", "role": "Daglig leder" },
-      { "name": "Roar Engeland", "role": "Styreleder" },
-      { "name": "Daniel Matthias Walter", "role": "Styremedlem" },
-      { "name": "Lars Ørjan Kenneth Reinholdsson", "role": "Styremedlem" },
-      { "name": "Heidi Ulmo", "role": "Styremedlem" },
-      { "name": "Ragnhild Borchgrevink", "role": "Styremedlem" },
-      { "name": "Anne Lise Ryel", "role": "Styremedlem" },
-      { "name": "Thor Gjermund Eriksen", "role": "Styremedlem" }
+      {
+        "name": "Marianne Gjertsen Ebbesen",
+        "role": "Daglig leder"
+      },
+      {
+        "name": "Roar Engeland",
+        "role": "Styreleder"
+      },
+      {
+        "name": "Daniel Matthias Walter",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Lars Ørjan Kenneth Reinholdsson",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Heidi Ulmo",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Ragnhild Borchgrevink",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Anne Lise Ryel",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Thor Gjermund Eriksen",
+        "role": "Styremedlem"
+      }
     ],
     "shareholders": []
   },
   {
     "orgNumber": "876820722",
     "name": "Drammen Eiendom KF",
-    "address": "Hans Kiærs gate 1E, 3041 Drammen",
-    "industry": "Kombinerte tjenester tilknyttet eiendomsdrift",
-    "employees": 145,
+    "address": "Hans KiÃ¦rs gate 1E",
+    "industry": "Andre kombinerte tjenester tilknyttet eiendomsdrift",
+    "employees": 141,
     "financials": null,
     "roles": [
-      { "name": "Gjermund Riise Brekke", "role": "Daglig leder" },
-      { "name": "George Harold Fulford", "role": "Styreleder" },
-      { "name": "Gerd Barth Thorsby", "role": "Nestleder" },
-      { "name": "Kjell Ole Gjestemoen", "role": "Styremedlem" },
-      { "name": "Astrid Reikvam", "role": "Styremedlem" },
-      { "name": "Linn Bjørhuus Sevre", "role": "Styremedlem" }
+      {
+        "name": "Gjermund Riise Brekke",
+        "role": "Daglig leder"
+      },
+      {
+        "name": "George Harold Fulford",
+        "role": "Styreleder"
+      },
+      {
+        "name": "Gerd Barth Thorsby",
+        "role": "Nestleder"
+      },
+      {
+        "name": "Kjell Ole Gjestemoen",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Astrid Reikvam",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Linn Bjørhuus Sevre",
+        "role": "Styremedlem"
+      }
     ],
     "shareholders": []
   },
   {
     "orgNumber": "829350122",
     "name": "JM Norge AS",
-    "address": "Mustads vei 1A, 0283 Oslo",
-    "industry": "Oppføring av bygninger",
-    "employees": 273,
-    "financials": null,
+    "address": "Mustads vei 1A",
+    "industry": "OppfÃ¸ring av bygninger",
+    "employees": 284,
+    "financials": {
+      "id": 6113339,
+      "journalnr": "2025542301",
+      "regnskapstype": "SELSKAP",
+      "virksomhet": {
+        "organisasjonsnummer": "829350122",
+        "organisasjonsform": "AS",
+        "morselskap": true
+      },
+      "regnskapsperiode": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+      },
+      "valuta": "NOK",
+      "avviklingsregnskap": false,
+      "oppstillingsplan": "store",
+      "revisjon": {
+        "ikkeRevidertAarsregnskap": false,
+        "fravalgRevisjon": false
+      },
+      "regnkapsprinsipper": {
+        "smaaForetak": false,
+        "regnskapsregler": "regnskapslovenAlminneligRegler"
+      },
+      "egenkapitalGjeld": {
+        "sumEgenkapitalGjeld": 4197891000.0,
+        "egenkapital": {
+          "sumEgenkapital": 1506634000.0,
+          "opptjentEgenkapital": {
+            "sumOpptjentEgenkapital": 1450134000.0
+          },
+          "innskuttEgenkapital": {
+            "sumInnskuttEgenkaptial": 56500000.0
+          }
+        },
+        "gjeldOversikt": {
+          "sumGjeld": 2691257000.0,
+          "kortsiktigGjeld": {
+            "sumKortsiktigGjeld": 2597107000.0
+          },
+          "langsiktigGjeld": {
+            "sumLangsiktigGjeld": 94150000.0
+          }
+        }
+      },
+      "eiendeler": {
+        "sumEiendeler": 4197891000.0,
+        "omloepsmidler": {
+          "sumOmloepsmidler": 3606532000.0
+        },
+        "anleggsmidler": {
+          "sumAnleggsmidler": 591359000.0
+        }
+      },
+      "resultatregnskapResultat": {
+        "ordinaertResultatFoerSkattekostnad": 133717000.0,
+        "aarsresultat": 137259000.0,
+        "finansresultat": {
+          "nettoFinans": 128918000.0,
+          "finansinntekt": {
+            "sumFinansinntekter": 161228000.0
+          },
+          "finanskostnad": {
+            "sumFinanskostnad": 32310000.0
+          }
+        },
+        "driftsresultat": {
+          "driftsresultat": 4799000.0,
+          "driftsinntekter": {
+            "sumDriftsinntekter": 2076174000.0
+          },
+          "driftskostnad": {
+            "sumDriftskostnad": 2071375000.0
+          }
+        }
+      }
+    },
     "roles": [
-      { "name": "Hilde Vatne", "role": "Daglig leder" },
-      { "name": "Pia Susanne Persson", "role": "Styreleder" },
-      { "name": "Jørgen Teige", "role": "Styremedlem" },
-      { "name": "Eirik Wold", "role": "Styremedlem" },
-      { "name": "Nina Pedersen", "role": "Styremedlem" },
-      { "name": "Carl Tobias Bjurling", "role": "Styremedlem" }
+      {
+        "name": "Hilde Vatne",
+        "role": "Daglig leder"
+      },
+      {
+        "name": "Pia Susanne Persson",
+        "role": "Styreleder"
+      },
+      {
+        "name": "Jørgen Teige",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Eirik Wold",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Nina Pedersen",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Carl Tobias Bjurling",
+        "role": "Styremedlem"
+      }
     ],
     "shareholders": []
   },
   {
     "orgNumber": "921234554",
     "name": "Drammen Kommune",
-    "address": "Engene 1, 3015 Drammen",
+    "address": "Engene 1",
     "industry": "Generell offentlig administrasjon",
-    "employees": 10413,
+    "employees": 10336,
     "financials": null,
     "roles": [
-      { "name": "Trude Andresen", "role": "Daglig leder" },
-      { "name": "Svein Hilding Aasen", "role": "Forretningsfører" }
+      {
+        "name": "Trude Andresen",
+        "role": "Daglig leder"
+      },
+      {
+        "name": "Svein Hilding Aasen",
+        "role": "Forretningsfører"
+      }
     ],
     "shareholders": []
   },
   {
     "orgNumber": "992587776",
     "name": "Selvaag Bolig ASA",
-    "address": "Silurveien 2, 0380 Oslo",
-    "industry": "Utvikling og salg av byggeprosjekter",
-    "employees": 59,
-    "financials": null,
+    "address": "Silurveien 2",
+    "industry": "Utvikling og salg av egen fast eiendom ellers",
+    "employees": 57,
+    "financials": {
+      "id": 6296809,
+      "journalnr": "2025744764",
+      "regnskapstype": "SELSKAP",
+      "virksomhet": {
+        "organisasjonsnummer": "992587776",
+        "organisasjonsform": "ASA",
+        "morselskap": true
+      },
+      "regnskapsperiode": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+      },
+      "valuta": "NOK",
+      "avviklingsregnskap": false,
+      "oppstillingsplan": "store",
+      "revisjon": {
+        "ikkeRevidertAarsregnskap": false,
+        "fravalgRevisjon": false
+      },
+      "regnkapsprinsipper": {
+        "smaaForetak": false,
+        "regnskapsregler": "regnskapslovenAlminneligRegler"
+      },
+      "egenkapitalGjeld": {
+        "sumEgenkapitalGjeld": 3096427000.0,
+        "egenkapital": {
+          "sumEgenkapital": 1964148000.0,
+          "opptjentEgenkapital": {},
+          "innskuttEgenkapital": {
+            "sumInnskuttEgenkaptial": 1964148000.0
+          }
+        },
+        "gjeldOversikt": {
+          "sumGjeld": 1132279000.0,
+          "kortsiktigGjeld": {
+            "sumKortsiktigGjeld": 319574000.0
+          },
+          "langsiktigGjeld": {
+            "sumLangsiktigGjeld": 812705000.0
+          }
+        }
+      },
+      "eiendeler": {
+        "sumEiendeler": 3096427000.0,
+        "omloepsmidler": {
+          "sumOmloepsmidler": 480095000.0
+        },
+        "anleggsmidler": {
+          "sumAnleggsmidler": 2616332000.0
+        }
+      },
+      "resultatregnskapResultat": {
+        "ordinaertResultatFoerSkattekostnad": 112889000.0,
+        "aarsresultat": 64653000.0,
+        "finansresultat": {
+          "nettoFinans": 236372000.0,
+          "finansinntekt": {
+            "sumFinansinntekter": 410916000.0
+          },
+          "finanskostnad": {
+            "sumFinanskostnad": 174544000.0
+          }
+        },
+        "driftsresultat": {
+          "driftsresultat": -123483000.0,
+          "driftsinntekter": {
+            "sumDriftsinntekter": 83009000.0
+          },
+          "driftskostnad": {
+            "sumDriftskostnad": 206492000.0
+          }
+        }
+      }
+    },
     "roles": [
-      { "name": "Sverre Molvik", "role": "Daglig leder" },
-      { "name": "Olav Hindahl Selvaag", "role": "Styreleder" },
-      { "name": "Liv Gisele Marchand", "role": "Nestleder" },
-      { "name": "Tore Myrvold", "role": "Styremedlem" },
-      { "name": "Øystein Frederik Thorup", "role": "Styremedlem" },
-      { "name": "Petra Anna Veronica Krüger", "role": "Styremedlem" },
-      { "name": "Andrea Utne Tveter", "role": "Styremedlem" },
-      { "name": "Bengt Patrik Eriksson", "role": "Styremedlem" }
+      {
+        "name": "Sverre Molvik",
+        "role": "Daglig leder"
+      },
+      {
+        "name": "Olav Hindahl Selvaag",
+        "role": "Styreleder"
+      },
+      {
+        "name": "Liv Gisele Marchand",
+        "role": "Nestleder"
+      },
+      {
+        "name": "Tore Myrvold",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Øystein Frederik Thorup",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Petra Anna Veronica Krüger",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Andrea Utne Tveter",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Bengt Patrik Eriksson",
+        "role": "Styremedlem"
+      }
     ],
-    "shareholders": []
+    "shareholders": [
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      }
+    ]
   },
   {
     "orgNumber": "976121562",
     "name": "DPEND Eiendom AS",
-    "address": "Strømsø torg 4, 3044 Drammen",
-    "industry": "Utvikling og salg av byggeprosjekter",
-    "employees": 16,
-    "financials": null,
+    "address": "StrÃ¸msÃ¸ torg 4",
+    "industry": "Utvikling og salg av egen fast eiendom ellers",
+    "employees": 14,
+    "financials": {
+      "id": 6175013,
+      "journalnr": "2025565567",
+      "regnskapstype": "SELSKAP",
+      "virksomhet": {
+        "organisasjonsnummer": "976121562",
+        "organisasjonsform": "AS",
+        "morselskap": true
+      },
+      "regnskapsperiode": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+      },
+      "valuta": "NOK",
+      "avviklingsregnskap": false,
+      "oppstillingsplan": "store",
+      "revisjon": {
+        "ikkeRevidertAarsregnskap": false,
+        "fravalgRevisjon": false
+      },
+      "regnkapsprinsipper": {
+        "smaaForetak": false,
+        "regnskapsregler": "regnskapslovenAlminneligRegler"
+      },
+      "egenkapitalGjeld": {
+        "sumEgenkapitalGjeld": 383251970.0,
+        "egenkapital": {
+          "sumEgenkapital": 244792751.0,
+          "opptjentEgenkapital": {
+            "sumOpptjentEgenkapital": 235040912.0
+          },
+          "innskuttEgenkapital": {
+            "sumInnskuttEgenkaptial": 9751839.0
+          }
+        },
+        "gjeldOversikt": {
+          "sumGjeld": 138459219.0,
+          "kortsiktigGjeld": {
+            "sumKortsiktigGjeld": 43185291.0
+          },
+          "langsiktigGjeld": {
+            "sumLangsiktigGjeld": 95273928.0
+          }
+        }
+      },
+      "eiendeler": {
+        "sumEiendeler": 383251970.0,
+        "omloepsmidler": {
+          "sumOmloepsmidler": 13590141.0
+        },
+        "anleggsmidler": {
+          "sumAnleggsmidler": 369661829.0
+        }
+      },
+      "resultatregnskapResultat": {
+        "ordinaertResultatFoerSkattekostnad": 1228555.0,
+        "aarsresultat": 951604.0,
+        "finansresultat": {
+          "nettoFinans": 2674334.0,
+          "finansinntekt": {
+            "sumFinansinntekter": 6626534.0
+          },
+          "finanskostnad": {
+            "sumFinanskostnad": 3952200.0
+          }
+        },
+        "driftsresultat": {
+          "driftsresultat": -1445779.0,
+          "driftsinntekter": {
+            "sumDriftsinntekter": 29031375.0
+          },
+          "driftskostnad": {
+            "sumDriftskostnad": 30477154.0
+          }
+        }
+      }
+    },
     "roles": [
-      { "name": "Amund Drønen Ringdal", "role": "Daglig leder" },
-      { "name": "Sverre Smedberg", "role": "Styreleder" },
-      { "name": "Ola Semb", "role": "Styremedlem" }
+      {
+        "name": "Amund Drønen Ringdal",
+        "role": "Daglig leder"
+      },
+      {
+        "name": "Sverre Smedberg",
+        "role": "Styreleder"
+      },
+      {
+        "name": "Ola Semb",
+        "role": "Styremedlem"
+      }
     ],
     "shareholders": []
   },
   {
     "orgNumber": "995041650",
     "name": "Brække Eiendom AS",
-    "address": "Tollbugata 115, 3041 Drammen",
-    "industry": "Utvikling og salg av byggeprosjekter",
-    "employees": 30,
-    "financials": null,
+    "address": "Tollbugata 115",
+    "industry": "Utvikling og salg av egen fast eiendom ellers",
+    "employees": 20,
+    "financials": {
+      "id": 6207569,
+      "journalnr": "2025700664",
+      "regnskapstype": "SELSKAP",
+      "virksomhet": {
+        "organisasjonsnummer": "995041650",
+        "organisasjonsform": "AS",
+        "morselskap": false
+      },
+      "regnskapsperiode": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+      },
+      "valuta": "NOK",
+      "avviklingsregnskap": false,
+      "oppstillingsplan": "store",
+      "revisjon": {
+        "ikkeRevidertAarsregnskap": false,
+        "fravalgRevisjon": false
+      },
+      "regnkapsprinsipper": {
+        "smaaForetak": true,
+        "regnskapsregler": "regnskapslovenAlminneligRegler"
+      },
+      "egenkapitalGjeld": {
+        "sumEgenkapitalGjeld": 17089457.0,
+        "egenkapital": {
+          "sumEgenkapital": 2225154.0,
+          "opptjentEgenkapital": {
+            "sumOpptjentEgenkapital": 2123154.0
+          },
+          "innskuttEgenkapital": {
+            "sumInnskuttEgenkaptial": 102000.0
+          }
+        },
+        "gjeldOversikt": {
+          "sumGjeld": 14864303.0,
+          "kortsiktigGjeld": {
+            "sumKortsiktigGjeld": 3796572.0
+          },
+          "langsiktigGjeld": {
+            "sumLangsiktigGjeld": 11067731.0
+          }
+        }
+      },
+      "eiendeler": {
+        "sumEiendeler": 17089457.0,
+        "omloepsmidler": {
+          "sumOmloepsmidler": 3358240.0
+        },
+        "anleggsmidler": {
+          "sumAnleggsmidler": 13731217.0
+        }
+      },
+      "resultatregnskapResultat": {
+        "ordinaertResultatFoerSkattekostnad": -397589.0,
+        "aarsresultat": -358143.0,
+        "totalresultat": -358143.0,
+        "finansresultat": {
+          "nettoFinans": -527986.0,
+          "finansinntekt": {
+            "sumFinansinntekter": 66176.0
+          },
+          "finanskostnad": {
+            "sumFinanskostnad": 594162.0
+          }
+        },
+        "driftsresultat": {
+          "driftsresultat": 130397.0,
+          "driftsinntekter": {
+            "sumDriftsinntekter": 23222571.0
+          },
+          "driftskostnad": {
+            "sumDriftskostnad": 23092175.0
+          }
+        }
+      }
+    },
     "roles": [
-      { "name": "Jan Eirik Berntsen", "role": "Daglig leder" },
-      { "name": "Kristoffer Brække", "role": "Styreleder" },
-      { "name": "Pia Christin Brække Lislerud", "role": "Styremedlem" }
+      {
+        "name": "Jan Eirik Berntsen",
+        "role": "Daglig leder"
+      },
+      {
+        "name": "Kristoffer Brække",
+        "role": "Styreleder"
+      },
+      {
+        "name": "Pia Christin Brække Lislerud",
+        "role": "Styremedlem"
+      }
     ],
     "shareholders": []
   },
   {
     "orgNumber": "966177810",
     "name": "Arbo Entreprenør AS",
-    "address": "Sundlandveien 7, 3048 Drammen",
-    "industry": "Oppføring av bygninger",
-    "employees": 12,
-    "financials": null,
+    "address": "Sundlandveien 7",
+    "industry": "OppfÃ¸ring av bygninger",
+    "employees": 11,
+    "financials": {
+      "id": 6318755,
+      "journalnr": "2025754195",
+      "regnskapstype": "SELSKAP",
+      "virksomhet": {
+        "organisasjonsnummer": "966177810",
+        "organisasjonsform": "AS",
+        "morselskap": false
+      },
+      "regnskapsperiode": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+      },
+      "valuta": "NOK",
+      "avviklingsregnskap": false,
+      "oppstillingsplan": "store",
+      "revisjon": {
+        "ikkeRevidertAarsregnskap": false,
+        "fravalgRevisjon": false
+      },
+      "regnkapsprinsipper": {
+        "smaaForetak": true,
+        "regnskapsregler": "regnskapslovenAlminneligRegler"
+      },
+      "egenkapitalGjeld": {
+        "sumEgenkapitalGjeld": 42609978.0,
+        "egenkapital": {
+          "sumEgenkapital": -6609100.0,
+          "opptjentEgenkapital": {
+            "sumOpptjentEgenkapital": -8693056.0
+          },
+          "innskuttEgenkapital": {
+            "sumInnskuttEgenkaptial": 2083956.0
+          }
+        },
+        "gjeldOversikt": {
+          "sumGjeld": 49219078.0,
+          "kortsiktigGjeld": {
+            "sumKortsiktigGjeld": 37036296.0
+          },
+          "langsiktigGjeld": {
+            "sumLangsiktigGjeld": 12182782.0
+          }
+        }
+      },
+      "eiendeler": {
+        "sumEiendeler": 42609978.0,
+        "omloepsmidler": {
+          "sumOmloepsmidler": 40737533.0
+        },
+        "anleggsmidler": {
+          "sumAnleggsmidler": 1872445.0
+        }
+      },
+      "resultatregnskapResultat": {
+        "ordinaertResultatFoerSkattekostnad": -12421439.0,
+        "aarsresultat": -14658401.0,
+        "totalresultat": -14658401.0,
+        "finansresultat": {
+          "nettoFinans": -1540944.0,
+          "finansinntekt": {
+            "sumFinansinntekter": 35925.0
+          },
+          "finanskostnad": {
+            "sumFinanskostnad": 1576870.0
+          }
+        },
+        "driftsresultat": {
+          "driftsresultat": -10880495.0,
+          "driftsinntekter": {
+            "sumDriftsinntekter": 32227646.0
+          },
+          "driftskostnad": {
+            "sumDriftskostnad": 43108141.0
+          }
+        }
+      }
+    },
     "roles": [
-      { "name": "Jostein Johansen", "role": "Daglig leder / Styreleder" }
+      {
+        "name": "Jostein Johansen",
+        "role": "Daglig leder / Styreleder"
+      }
     ],
-    "shareholders": []
+    "shareholders": [
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      }
+    ]
   },
   {
     "orgNumber": "915279724",
     "name": "Glitre Bolig AS",
-    "address": "Grønland 34, 3045 Drammen",
-    "industry": "Utvikling og salg av byggeprosjekter",
+    "address": "GrÃ¸nland 34",
+    "industry": "Utvikling og salg av egen fast eiendom ellers",
     "employees": null,
-    "financials": null,
+    "financials": {
+      "id": 6108597,
+      "journalnr": "2025653991",
+      "regnskapstype": "SELSKAP",
+      "virksomhet": {
+        "organisasjonsnummer": "915279724",
+        "organisasjonsform": "AS",
+        "morselskap": true
+      },
+      "regnskapsperiode": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+      },
+      "valuta": "NOK",
+      "avviklingsregnskap": false,
+      "oppstillingsplan": "store",
+      "revisjon": {
+        "ikkeRevidertAarsregnskap": false,
+        "fravalgRevisjon": false
+      },
+      "regnkapsprinsipper": {
+        "smaaForetak": true,
+        "regnskapsregler": "regnskapslovenAlminneligRegler"
+      },
+      "egenkapitalGjeld": {
+        "sumEgenkapitalGjeld": 68786244.0,
+        "egenkapital": {
+          "sumEgenkapital": 56053253.0,
+          "opptjentEgenkapital": {
+            "sumOpptjentEgenkapital": 43523253.0
+          },
+          "innskuttEgenkapital": {
+            "sumInnskuttEgenkaptial": 12530000.0
+          }
+        },
+        "gjeldOversikt": {
+          "sumGjeld": 12732991.0,
+          "kortsiktigGjeld": {
+            "sumKortsiktigGjeld": 6732991.0
+          },
+          "langsiktigGjeld": {
+            "sumLangsiktigGjeld": 6000000.0
+          }
+        }
+      },
+      "eiendeler": {
+        "sumEiendeler": 68786244.0,
+        "omloepsmidler": {
+          "sumOmloepsmidler": 35969883.0
+        },
+        "anleggsmidler": {
+          "sumAnleggsmidler": 32816361.0
+        }
+      },
+      "resultatregnskapResultat": {
+        "ordinaertResultatFoerSkattekostnad": 7189237.0,
+        "aarsresultat": 6700323.0,
+        "totalresultat": 6700323.0,
+        "finansresultat": {
+          "nettoFinans": 7213622.0,
+          "finansinntekt": {
+            "sumFinansinntekter": 7983645.0
+          },
+          "finanskostnad": {
+            "sumFinanskostnad": 770023.0
+          }
+        },
+        "driftsresultat": {
+          "driftsresultat": -24384.0,
+          "driftsinntekter": {
+            "sumDriftsinntekter": 2808123.0
+          },
+          "driftskostnad": {
+            "sumDriftskostnad": 2832507.0
+          }
+        }
+      }
+    },
     "roles": [
-      { "name": "Morten Corneliussen", "role": "Daglig leder / Styremedlem" },
-      { "name": "Per Inge Haugan", "role": "Styreleder" }
+      {
+        "name": "Morten Corneliussen",
+        "role": "Daglig leder / Styremedlem"
+      },
+      {
+        "name": "Per Inge Haugan",
+        "role": "Styreleder"
+      }
     ],
     "shareholders": []
   },
   {
     "orgNumber": "830078312",
     "name": "Eidos Eiendomsutvikling AS",
-    "address": "Ilebergveien 3, 3011 Drammen",
-    "industry": "Utvikling og salg av byggeprosjekter",
-    "employees": 7,
-    "financials": null,
+    "address": "Ilebergveien 3",
+    "industry": "Utvikling og salg av egen fast eiendom ellers",
+    "employees": 5,
+    "financials": {
+      "id": 6311275,
+      "journalnr": "2025658402",
+      "regnskapstype": "SELSKAP",
+      "virksomhet": {
+        "organisasjonsnummer": "830078312",
+        "organisasjonsform": "AS",
+        "morselskap": true
+      },
+      "regnskapsperiode": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+      },
+      "valuta": "NOK",
+      "avviklingsregnskap": false,
+      "oppstillingsplan": "store",
+      "revisjon": {
+        "ikkeRevidertAarsregnskap": false,
+        "fravalgRevisjon": false
+      },
+      "regnkapsprinsipper": {
+        "smaaForetak": true,
+        "regnskapsregler": "regnskapslovenAlminneligRegler"
+      },
+      "egenkapitalGjeld": {
+        "sumEgenkapitalGjeld": 361006068.0,
+        "egenkapital": {
+          "sumEgenkapital": 66639454.0,
+          "opptjentEgenkapital": {
+            "sumOpptjentEgenkapital": 20954500.0
+          },
+          "innskuttEgenkapital": {
+            "sumInnskuttEgenkaptial": 45684954.0
+          }
+        },
+        "gjeldOversikt": {
+          "sumGjeld": 294366614.0,
+          "kortsiktigGjeld": {
+            "sumKortsiktigGjeld": 7301925.0
+          },
+          "langsiktigGjeld": {
+            "sumLangsiktigGjeld": 287064689.0
+          }
+        }
+      },
+      "eiendeler": {
+        "sumEiendeler": 361006067.0,
+        "omloepsmidler": {
+          "sumOmloepsmidler": 90690177.0
+        },
+        "anleggsmidler": {
+          "sumAnleggsmidler": 270315890.0
+        }
+      },
+      "resultatregnskapResultat": {
+        "ordinaertResultatFoerSkattekostnad": 22274023.0,
+        "aarsresultat": 17330027.0,
+        "finansresultat": {
+          "nettoFinans": 40058786.0,
+          "finansinntekt": {
+            "sumFinansinntekter": 57320366.0
+          },
+          "finanskostnad": {
+            "sumFinanskostnad": 17261580.0
+          }
+        },
+        "driftsresultat": {
+          "driftsresultat": -17784763.0,
+          "driftsinntekter": {
+            "sumDriftsinntekter": 3316704.0
+          },
+          "driftskostnad": {
+            "sumDriftskostnad": 21101467.0
+          }
+        }
+      }
+    },
     "roles": [
-      { "name": "Anders Erling Edbo", "role": "Daglig leder" },
-      { "name": "Eva Hagen", "role": "Styreleder" },
-      { "name": "Morten Austestad", "role": "Styremedlem" },
-      { "name": "Bernt Nordby Skøien", "role": "Styremedlem" },
-      { "name": "Erik Stensli", "role": "Styremedlem" }
+      {
+        "name": "Anders Erling Edbo",
+        "role": "Daglig leder"
+      },
+      {
+        "name": "Eva Hagen",
+        "role": "Styreleder"
+      },
+      {
+        "name": "Morten Austestad",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Bernt Nordby Skøien",
+        "role": "Styremedlem"
+      },
+      {
+        "name": "Erik Stensli",
+        "role": "Styremedlem"
+      }
     ],
-    "shareholders": []
+    "shareholders": [
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      },
+      {
+        "name": null,
+        "percentage": null,
+        "type": null
+      }
+    ]
   }
 ]

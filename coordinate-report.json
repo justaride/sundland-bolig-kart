@@ -1,0 +1,1535 @@
+{
+  "stores": [
+    {
+      "id": "store-1",
+      "name": "Mal Proff Drammen",
+      "address": "SYRETÅRNET 15",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.747154,
+        "lng": 10.149463
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-2",
+      "name": "Elkjøp",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742345,
+        "lng": 10.15814
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-3",
+      "name": "Rema 1000 Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE 54",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.741877,
+        "lng": 10.162376
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-4",
+      "name": "Meny Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742556,
+        "lng": 10.157673
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-5",
+      "name": "Uno-X Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE 56",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.741472,
+        "lng": 10.161644
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-6",
+      "name": "Montér Gulskogen",
+      "address": "SYRETÅRNET 3",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.746755,
+        "lng": 10.147883
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-7",
+      "name": "Xxl Sport & Villmark Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742742,
+        "lng": 10.158249
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-8",
+      "name": "Apotek 1 Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742136,
+        "lng": 10.157902
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-9",
+      "name": "Luxia AS",
+      "address": "LIERSTRANDA",
+      "coordinateSource": "manual",
+      "current": {
+        "lat": 59.751516,
+        "lng": 10.253169
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-10",
+      "name": "Apotek 1 Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742909,
+        "lng": 10.15773
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-11",
+      "name": "Kiwi Minipris Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.7424,
+        "lng": 10.158454
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-12",
+      "name": "Lichi AS",
+      "address": "KNUD SCHARTUMS GATE 7",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742853,
+        "lng": 10.179794
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-13",
+      "name": "Eplehuset Drammen",
+      "address": "BRAGERNES TORG 6",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.744745,
+        "lng": 10.204896
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-14",
+      "name": "Hennes & Mauritz Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742116,
+        "lng": 10.157769
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-15",
+      "name": "Fredrik Og Louisa Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742437,
+        "lng": 10.157794
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-16",
+      "name": "Clas Ohlson Drammen Gulskogen Senter",
+      "address": "PROFESSOR SMITHS ALLE 56",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.741682,
+        "lng": 10.161176
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-17",
+      "name": "G-Sport Gulskogen Drammen",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742326,
+        "lng": 10.157301
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-18",
+      "name": "Kicks Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742764,
+        "lng": 10.158057
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-19",
+      "name": "Lindex Gulskogen Senter",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742513,
+        "lng": 10.157878
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-20",
+      "name": "Mcdonald's Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742252,
+        "lng": 10.158086
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-21",
+      "name": "Gina Tricot Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742678,
+        "lng": 10.157655
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-22",
+      "name": "Normal Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742649,
+        "lng": 10.158353
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-23",
+      "name": "Specsavers Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.74214,
+        "lng": 10.157746
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-24",
+      "name": "Magnussen Eurosko Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.743018,
+        "lng": 10.157864
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-25",
+      "name": "Norrøna Concept Store Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742414,
+        "lng": 10.158135
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-26",
+      "name": "Ikea AS Ikea Planning Studio Dramme",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742497,
+        "lng": 10.157724
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-27",
+      "name": "Kappahl Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742759,
+        "lng": 10.158165
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-28",
+      "name": "Tri Sport Sport1 Gulskogen Senter",
+      "address": "GULDLISTEN 20",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742933,
+        "lng": 10.160776
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-29",
+      "name": "Cubus Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.741906,
+        "lng": 10.15753
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-30",
+      "name": "Kid Interiør Gulskogen Senter",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.74268,
+        "lng": 10.157358
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-31",
+      "name": "Rituals Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.74218,
+        "lng": 10.157986
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-32",
+      "name": "Panduro Hobby Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742813,
+        "lng": 10.157689
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-33",
+      "name": "Dressmann Gulskogen Senter",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.74217,
+        "lng": 10.158083
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-34",
+      "name": "Kjell & Co Norway No024 Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742509,
+        "lng": 10.158421
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-35",
+      "name": "Silsand Is",
+      "address": "NEDRE EIKERVEI 8",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.744278,
+        "lng": 10.181143
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-36",
+      "name": "Norli Libris Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742209,
+        "lng": 10.157588
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-37",
+      "name": "Baker Hansen Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742728,
+        "lng": 10.157998
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-38",
+      "name": "Liang Juan Cafe & Restaurant Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742208,
+        "lng": 10.157423
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-39",
+      "name": "Synsam Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742324,
+        "lng": 10.158114
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-40",
+      "name": "Me & My Cousin Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742595,
+        "lng": 10.157679
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-41",
+      "name": "Vic Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742703,
+        "lng": 10.158275
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-42",
+      "name": "Kozmos Gulskogen Senter",
+      "address": "DRAMMEN",
+      "coordinateSource": "manual",
+      "current": {
+        "lat": 59.742116,
+        "lng": 10.157769
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-43",
+      "name": "Jernia Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE 56",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.741869,
+        "lng": 10.161753
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-44",
+      "name": "Jordbærpikene Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742148,
+        "lng": 10.15785
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-45",
+      "name": "Mestergull Olsen Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742938,
+        "lng": 10.157783
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-46",
+      "name": "Kitch'n Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742336,
+        "lng": 10.158433
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-47",
+      "name": "Smak Av Italia AS Avd Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742462,
+        "lng": 10.157783
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-48",
+      "name": "Sport Outlet Gulskogen 106 AS",
+      "address": "GULDLISTEN 20",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.743143,
+        "lng": 10.160309
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-49",
+      "name": "Skoringen Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742751,
+        "lng": 10.158088
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-50",
+      "name": "Søstrene Grene Drammen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742239,
+        "lng": 10.158048
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-51",
+      "name": "Frost Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742719,
+        "lng": 10.157677
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-52",
+      "name": "Nille Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742597,
+        "lng": 10.158366
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-53",
+      "name": "Mester Grønn Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742174,
+        "lng": 10.157696
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-54",
+      "name": "Telenorbutikken Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.743028,
+        "lng": 10.15793
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-55",
+      "name": "La Baguette Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742394,
+        "lng": 10.158118
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-56",
+      "name": "Volt Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742531,
+        "lng": 10.157722
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-57",
+      "name": "Gull-Funn Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742535,
+        "lng": 10.157686
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-58",
+      "name": "Lampehuset Gulskogen Senter",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742023,
+        "lng": 10.157714
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-59",
+      "name": "Carlings Gulskogen Senter",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742448,
+        "lng": 10.157283
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-60",
+      "name": "Skogstad Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742731,
+        "lng": 10.158194
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-61",
+      "name": "The Vibe",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742181,
+        "lng": 10.157939
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-62",
+      "name": "Bjørklund Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742848,
+        "lng": 10.15773
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-63",
+      "name": "Kjøkkenstudio Lillestrøm AS",
+      "address": "STORGATA 6 A",
+      "coordinateSource": "manual",
+      "current": {
+        "lat": 59.742716,
+        "lng": 10.206969
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-64",
+      "name": "Boys Of Europe Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742449,
+        "lng": 10.158414
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-65",
+      "name": "Merhebia Finest AS",
+      "address": "VINTERGATA 19",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742273,
+        "lng": 10.16634
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-66",
+      "name": "Christiania Glasmagasin Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742263,
+        "lng": 10.157548
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-67",
+      "name": "Zizzi Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742722,
+        "lng": 10.158024
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-68",
+      "name": "Home & Cottage Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742307,
+        "lng": 10.158086
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-69",
+      "name": "Buddy - Zoo Huset Gulskogen",
+      "address": "GULDLISTEN",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742116,
+        "lng": 10.157769
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-70",
+      "name": "Feel Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742634,
+        "lng": 10.15769
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-71",
+      "name": "Espresso House Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742661,
+        "lng": 10.158296
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-72",
+      "name": "B-Young Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742168,
+        "lng": 10.1578
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-73",
+      "name": "Life Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.74296,
+        "lng": 10.157839
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-74",
+      "name": "Dna Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE 56",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.741262,
+        "lng": 10.161405
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-75",
+      "name": "Shoeday Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742277,
+        "lng": 10.158403
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-76",
+      "name": "Ark Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742487,
+        "lng": 10.157776
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-77",
+      "name": "Follestad Trend AS",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742733,
+        "lng": 10.158116
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-78",
+      "name": "Change Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742232,
+        "lng": 10.158009
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-79",
+      "name": "Telia Gulskogen Senter",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.74242,
+        "lng": 10.157982
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-80",
+      "name": "Katana Sushi",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742756,
+        "lng": 10.157705
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-81",
+      "name": "Bik Bok Gulskogen Senter",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.741911,
+        "lng": 10.157374
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-82",
+      "name": "Flying Tiger Copenhagen Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742544,
+        "lng": 10.158371
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-83",
+      "name": "Match Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742214,
+        "lng": 10.157651
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-84",
+      "name": "Mango Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.743029,
+        "lng": 10.157997
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-85",
+      "name": "Morris Gulskogen Senter",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742788,
+        "lng": 10.157493
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-86",
+      "name": "Vila Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742375,
+        "lng": 10.158099
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-87",
+      "name": "Kremmerhuset Ting & Sånt Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE 56",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742036,
+        "lng": 10.161233
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-88",
+      "name": "Europris Gulskogen 641",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742564,
+        "lng": 10.157724
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-89",
+      "name": "Skechers Retail Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.7427,
+        "lng": 10.158219
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-90",
+      "name": "Princess Gulskogen Senter",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742185,
+        "lng": 10.157764
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-91",
+      "name": "Cutters Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742188,
+        "lng": 10.157893
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-92",
+      "name": "Name It Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742878,
+        "lng": 10.157774
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-93",
+      "name": "Amundsen Spesial Gulskogen Senter",
+      "address": "DRAMMEN",
+      "coordinateSource": "manual",
+      "current": {
+        "lat": 59.742326,
+        "lng": 10.157301
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-94",
+      "name": "Jack & Jones Gulskogen Senter 88815",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.74239,
+        "lng": 10.1584
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-95",
+      "name": "Sunkost Butikk AS Sunkost Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742322,
+        "lng": 10.157517
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-96",
+      "name": "Hollywood Nails Gulskogen AS",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742714,
+        "lng": 10.15805
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-97",
+      "name": "Nikita Hair",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742294,
+        "lng": 10.158055
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-98",
+      "name": "Jack & Jones Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.74267,
+        "lng": 10.157707
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-99",
+      "name": "Shopnor Sør AS",
+      "address": "NEDRE EIKERVEI 26",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.744838,
+        "lng": 10.174721
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-100",
+      "name": "Amigos Barbershop AS",
+      "address": "PROFESSOR SMITHS ALLE 55",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.741041,
+        "lng": 10.16144
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-101",
+      "name": "Glitter Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742617,
+        "lng": 10.15831
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-102",
+      "name": "Drammensklinikken Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742194,
+        "lng": 10.157754
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-103",
+      "name": "Salong Hage 2 Etasje Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742268,
+        "lng": 10.157352
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-104",
+      "name": "Salong Hage 1 Etasje Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.742529,
+        "lng": 10.157793
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-105",
+      "name": "London Calling AS Avdeling The Body",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742973,
+        "lng": 10.157898
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-106",
+      "name": "Sprell Butikk AS Avd Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742221,
+        "lng": 10.158365
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-107",
+      "name": "Ice Retail AS Avd Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742514,
+        "lng": 10.157772
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-108",
+      "name": "Sayso Hair & Stile Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742712,
+        "lng": 10.158142
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-109",
+      "name": "Lagerhaus AS Avd 179 Drammen Gulsko",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742229,
+        "lng": 10.157969
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-110",
+      "name": "Party King & Queen AS",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.74279,
+        "lng": 10.157738
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-111",
+      "name": "Smartrens1 AS",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.74249,
+        "lng": 10.15837
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-112",
+      "name": "Funky Kioskdrift AS Avd Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742259,
+        "lng": 10.157612
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-113",
+      "name": "Vero Moda Gulskogen Senter",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.743021,
+        "lng": 10.158064
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-114",
+      "name": "Cut'n Go Gulskogen AS",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.74236,
+        "lng": 10.158077
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-115",
+      "name": "Vita Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742597,
+        "lng": 10.157731
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-116",
+      "name": "Smoothie Xchange AS Avd Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742665,
+        "lng": 10.158239
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-117",
+      "name": "Tilbords Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742202,
+        "lng": 10.157848
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-118",
+      "name": "Th. Ødegaard Dame Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742901,
+        "lng": 10.157823
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-119",
+      "name": "Th. Ødegaard Dame Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742335,
+        "lng": 10.158377
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-120",
+      "name": "Hawaiian Ice",
+      "address": "LEIV ERIKSONS GATE 4",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.743218,
+        "lng": 10.152833
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-121",
+      "name": "Clinique Anina Gulskogen",
+      "address": "PROFESSOR SMITHS ALLE",
+      "coordinateSource": "shopping_center",
+      "current": {
+        "lat": 59.74195,
+        "lng": 10.157614
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-122",
+      "name": "Singsanan Setthasat",
+      "address": "DRAMMEN",
+      "coordinateSource": "manual",
+      "current": {
+        "lat": 59.742513,
+        "lng": 10.157878
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-123",
+      "name": "Crossfit Drammen AS",
+      "address": "VINTERGATA 11",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.741413,
+        "lng": 10.164606
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-124",
+      "name": "Gulskogen Foto AS",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742385,
+        "lng": 10.157493
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-125",
+      "name": "Konnerud Eiendom AS",
+      "address": "LIEBAKKEN 26",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.747661,
+        "lng": 10.154178
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-126",
+      "name": "Park Lane Frisør Gulskogen",
+      "address": "GULDLISTEN 35",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.742701,
+        "lng": 10.158074
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "store-127",
+      "name": "Sigmabad AS",
+      "address": "NEDRE EIKERVEI 26",
+      "coordinateSource": "kartverket",
+      "current": {
+        "lat": 59.745049,
+        "lng": 10.174253
+      },
+      "status": "OK",
+      "issues": []
+    }
+  ],
+  "properties": [],
+  "summary": {
+    "storesOk": 127,
+    "storesIssues": 0,
+    "propertiesOk": 0,
+    "propertiesIssues": 0
+  }
+}

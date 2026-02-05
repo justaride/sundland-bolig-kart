@@ -60,7 +60,54 @@ function StorePopupContent({ s }: { s: StoreLocation }) {
           />
         )}
         <PopupRow label="Markedsandel" value={`${s.marketShare}%`} />
+        {s.orgNr && <PopupRow label="Org.nr" value={s.orgNr} mono />}
       </div>
+      {(s.website || s.phone || s.facebook || s.instagram) && (
+        <div className="mt-2 pt-2 border-t border-gray-100 space-y-1">
+          {s.website && (
+            <div className="flex justify-between text-xs gap-4">
+              <span className="text-gray-500">Nettside</span>
+              <a
+                href={
+                  s.website.startsWith("http")
+                    ? s.website
+                    : `https://${s.website}`
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline truncate max-w-[160px]"
+              >
+                {s.website.replace(/^https?:\/\//, "")}
+              </a>
+            </div>
+          )}
+          {s.phone && <PopupRow label="Telefon" value={s.phone} />}
+          {(s.facebook || s.instagram) && (
+            <div className="flex gap-2 mt-1">
+              {s.facebook && (
+                <a
+                  href={s.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-blue-600 hover:underline"
+                >
+                  Facebook
+                </a>
+              )}
+              {s.instagram && (
+                <a
+                  href={s.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-pink-600 hover:underline"
+                >
+                  Instagram
+                </a>
+              )}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

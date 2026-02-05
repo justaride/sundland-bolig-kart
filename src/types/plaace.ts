@@ -183,7 +183,8 @@ export type DashboardTab =
   | "demografi"
   | "besokende"
   | "handel"
-  | "vekst";
+  | "vekst"
+  | "utviklere";
 
 export type PlaaceFilters = {
   year: number | null;
@@ -199,6 +200,7 @@ export type DrillDownData = {
     | "income"
     | "origin"
     | "growth"
-    | "cardTransaction";
+    | "cardTransaction"
+    | "developer";
   payload: Record<string, unknown>;
 } | null;
