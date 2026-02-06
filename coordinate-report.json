@@ -1525,11 +1525,188 @@
       "issues": []
     }
   ],
-  "properties": [],
+  "properties": [
+    {
+      "id": "sundland-verk",
+      "name": "Sundland Verk",
+      "address": "Martha Sundlands gate 10",
+      "current": {
+        "lat": 59.746208,
+        "lng": 10.155323
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "proffen-hageby",
+      "name": "Proffen Hageby",
+      "address": "Professor Smiths alle 101",
+      "current": {
+        "lat": 59.741677,
+        "lng": 10.156875
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "stroemsoe-brygge",
+      "name": "Strømsø Brygge",
+      "address": "Havnegata 62",
+      "current": {
+        "lat": 59.730241,
+        "lng": 10.238987
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "groenland-torg",
+      "name": "Grønland Torg",
+      "address": "Grønland 46",
+      "current": {
+        "lat": 59.743194,
+        "lng": 10.196017
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "tangen-terrasse",
+      "name": "Tangen Terrasse",
+      "address": "Havnegata 50",
+      "current": {
+        "lat": 59.730539,
+        "lng": 10.235975
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "sundland-skole-boliger",
+      "name": "Sundland Skole-Boliger",
+      "address": "Sundlandveien 22",
+      "current": {
+        "lat": 59.740986,
+        "lng": 10.170719
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "stroemsoe-kunstsenter",
+      "name": "Strømsø Kunstsenter",
+      "address": "Strømsø torg 1C",
+      "current": {
+        "lat": 59.739966,
+        "lng": 10.204632
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "groenland-enebolig-felt",
+      "name": "Grønland Villafelt",
+      "address": "Grønland 70",
+      "current": {
+        "lat": 59.744222,
+        "lng": 10.190905
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "stroemsoe-torg-utvikling",
+      "name": "Strømsø Torg Utvikling",
+      "address": "Strømsø torg 4",
+      "current": {
+        "lat": 59.739282,
+        "lng": 10.202421
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "braekke-tollbugata",
+      "name": "Brække Boligprosjekt",
+      "address": "Tollbugata 115",
+      "current": {
+        "lat": 59.730913,
+        "lng": 10.22288
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "sundland-arbo",
+      "name": "Sundland Boligfelt",
+      "address": "Sundlandveien 7",
+      "current": {
+        "lat": 59.742641,
+        "lng": 10.162637
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "groenland-glitre",
+      "name": "Glitre Grønland Leiligheter",
+      "address": "Grønland 34",
+      "current": {
+        "lat": 59.742417,
+        "lng": 10.196594
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "deciliteren",
+      "name": "Deciliteren",
+      "address": "Tollbugata 41",
+      "current": {
+        "lat": 59.737388,
+        "lng": 10.209224
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "slippen-tangen",
+      "name": "Slippen",
+      "address": "Havnegata 83",
+      "current": {
+        "lat": 59.730513,
+        "lng": 10.23939
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "elvebredden",
+      "name": "Elvebredden",
+      "address": "Landfalløya 37",
+      "current": {
+        "lat": 59.748329,
+        "lng": 10.170397
+      },
+      "status": "OK",
+      "issues": []
+    },
+    {
+      "id": "bangelokka",
+      "name": "Bangeløkka",
+      "address": "Bangeløkka",
+      "current": {
+        "lat": 59.732582,
+        "lng": 10.211043
+      },
+      "status": "OK",
+      "issues": []
+    }
+  ],
   "summary": {
     "storesOk": 127,
     "storesIssues": 0,
-    "propertiesOk": 0,
+    "propertiesOk": 16,
     "propertiesIssues": 0
   }
 }

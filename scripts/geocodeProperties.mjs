@@ -15,15 +15,15 @@ const DRAMMEN_BOUNDS = {
 }
 
 const MANUAL_COORDS = {
-  'proffen-hageby': { lat: 59.7415, lng: 10.1635 },
-  'stroemsoe-brygge': { lat: 59.7400, lng: 10.2090 },
-  'tangen-terrasse': { lat: 59.7310, lng: 10.2360 },
-  'stroemsoe-kunstsenter': { lat: 59.7355, lng: 10.2060 },
-  'groenland-enebolig-felt': { lat: 59.7400, lng: 10.2020 },
-  'stroemsoe-torg-utvikling': { lat: 59.7352, lng: 10.2065 },
-  'deciliteren': { lat: 59.7384, lng: 10.2080 },
-  'slippen-tangen': { lat: 59.7305, lng: 10.2350 },
-  'bangelokka': { lat: 59.7316, lng: 10.2112 },
+  'proffen-hageby': { lat: 59.741677, lng: 10.156875 },
+  'stroemsoe-brygge': { lat: 59.730241, lng: 10.238987 },
+  'tangen-terrasse': { lat: 59.730539, lng: 10.235975 },
+  'stroemsoe-kunstsenter': { lat: 59.739966, lng: 10.204632 },
+  'groenland-enebolig-felt': { lat: 59.744222, lng: 10.190905 },
+  'stroemsoe-torg-utvikling': { lat: 59.739282, lng: 10.202421 },
+  'deciliteren': { lat: 59.737388, lng: 10.209224 },
+  'slippen-tangen': { lat: 59.730513, lng: 10.239390 },
+  'bangelokka': { lat: 59.732582, lng: 10.211043 },
 }
 
 function sleep(ms) {

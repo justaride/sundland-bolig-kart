@@ -7,6 +7,7 @@ const PROPERTIES_PATH = resolve(__dirname, '../src/data/properties.json')
 const STORES_PATH = resolve(__dirname, '../src/data/storeLocations.json')
 
 const NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search'
+const NOMINATIM_REVERSE_URL = 'https://nominatim.openstreetmap.org/reverse'
 const RATE_LIMIT_MS = 1100
 const MAX_DISTANCE_M = 200
 const STORE_MAX_DISTANCE_M = 500
@@ -41,13 +42,88 @@ function haversineDistance(lat1, lng1, lat2, lng2) {
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 }
 
-function isInRiver(lat, lng) {
+function isInRiverBounds(lat, lng) {
   return (
     lat > DRAMMEN_RIVER_BOUNDS.latMin &&
     lat < DRAMMEN_RIVER_BOUNDS.latMax &&
     lng > DRAMMEN_RIVER_BOUNDS.lngMin &&
     lng < DRAMMEN_RIVER_BOUNDS.lngMax
   )
+}
+
+const reverseCache = new Map()
+
+async function reverseGeocode(lat, lng) {
+  const key = `${lat.toFixed(6)},${lng.toFixed(6)}`
+  if (reverseCache.has(key)) return reverseCache.get(key)
+
+  const params = new URLSearchParams({
+    lat: String(lat),
+    lon: String(lng),
+    format: 'jsonv2',
+    zoom: '18',
+  })
+
+  const res = await fetch(`${NOMINATIM_REVERSE_URL}?${params}`, {
+    headers: { 'User-Agent': 'SundlandBoligKart/1.0' },
+  })
+
+  if (!res.ok) {
+    reverseCache.set(key, null)
+    return null
+  }
+
+  const data = await res.json()
+  reverseCache.set(key, data)
+  return data
+}
+
+function isLikelyWaterFeature(reverseResult) {
+  if (!reverseResult) return true
+
+  const merged = `${reverseResult.category || ''} ${reverseResult.type || ''} ${reverseResult.display_name || ''}`.toLowerCase()
+  const waterTokens = [
+    'drammenselva',
+    'river',
+    'water',
+    'stream',
+    'canal',
+    'fjord',
+    'lake',
+    'harbour',
+    'harbor',
+  ]
+  if (waterTokens.some(token => merged.includes(token))) return true
+
+  const landTokens = [
+    'torg',
+    'gate',
+    'gata',
+    'vei',
+    'veien',
+    'allé',
+    'alle',
+    'road',
+    'street',
+    'house',
+    'station',
+    'stasjon',
+    'senter',
+    'building',
+  ]
+  if (landTokens.some(token => merged.includes(token))) return false
+
+  if (reverseResult.type === 'house') return false
+  if (reverseResult.category === 'highway') return false
+  if (reverseResult.category === 'tourism') return false
+
+  return false
+}
+
+async function isLikelyInRiver(lat, lng) {
+  if (!isInRiverBounds(lat, lng)) return false
+  const reverse = await reverseGeocode(lat, lng)
+  return isLikelyWaterFeature(reverse)
 }
 
 function isInDrammenBounds(lat, lng) {
@@ -83,7 +159,7 @@ async function verifyProperties() {
   for (const p of properties) {
     const issues = []
 
-    if (isInRiver(p.lat, p.lng)) {
+    if (await isLikelyInRiver(p.lat, p.lng)) {
       issues.push('RIVER: Coordinates are in Drammenselva!')
       hasIssues = true
     }
@@ -139,7 +215,7 @@ function verifyStores() {
       hasIssues = true
     }
 
-    if (isInRiver(s.lat, s.lng)) {
+    if (isInRiverBounds(s.lat, s.lng)) {
       issues.push('RIVER: Coordinates are in Drammenselva!')
       hasIssues = true
     }

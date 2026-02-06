@@ -2,7 +2,7 @@
   {
     "id": "sundland-verk",
     "name": "Sundland Verk",
-    "address": "Sundland",
+    "address": "Martha Sundlands gate 10",
     "bydel": "Sundland",
     "category": "Under utvikling",
     "status": "Regulering",
@@ -24,17 +24,17 @@
     "reguleringsplan": "Områdeplan Sundland, vedtatt 16.06.2015",
     "description": "Stor transformasjon av tidligere jernbaneverksted (280 mål). 13 historiske bygg, 43 000 m² eksisterende areal. Planlagt 800 boliger, næring, park og offentlige funksjoner over flere tiår. Café Pantografen åpnet januar 2026.",
     "website": "https://www.sundlandverk.no/",
-    "lastUpdated": "2026-02-04"
+    "lastUpdated": "2026-02-06"
   },
   {
     "id": "proffen-hageby",
     "name": "Proffen Hageby",
-    "address": "Professor Smiths Hage",
+    "address": "Professor Smiths alle 101",
     "bydel": "Sundland",
     "category": "Rekkehus",
     "status": "Under bygging",
-    "lat": 59.7415,
-    "lng": 10.1635,
+    "lat": 59.741677,
+    "lng": 10.156875,
     "developer": {
       "name": "Bane NOR Eiendom",
       "orgNumber": "980374505"
@@ -57,17 +57,17 @@
     "reguleringsplan": null,
     "description": "Ca. 300 boliger i rekkehus og leiligheter. Trinn 1 (40 boliger) ferdigstilt 2020. Trinn 2 (65 boliger) ferdigstilt av Consto Øst. 5-6 trinn totalt. Første del av Sundland-transformasjonen.",
     "website": "https://www.banenoreiendom.no/vare-prosjekter/proffen-hageby/",
-    "lastUpdated": "2026-02-04"
+    "lastUpdated": "2026-02-06"
   },
   {
     "id": "stroemsoe-brygge",
     "name": "Strømsø Brygge",
-    "address": "Havnegata 12",
+    "address": "Havnegata 62",
     "bydel": "Stromsoe",
     "category": "Leilighet",
     "status": "Ferdigstilt",
-    "lat": 59.74,
-    "lng": 10.209,
+    "lat": 59.730241,
+    "lng": 10.238987,
     "developer": {
       "name": "OBOS",
       "orgNumber": "937052766"
@@ -90,7 +90,7 @@
     "reguleringsplan": null,
     "description": "Moderne leilighetsbygg ved Drammenselva. Ferdigstilt i 2023.",
     "website": null,
-    "lastUpdated": "2026-02-04"
+    "lastUpdated": "2026-02-06"
   },
   {
     "id": "groenland-torg",
@@ -122,12 +122,12 @@
   {
     "id": "tangen-terrasse",
     "name": "Tangen Terrasse",
-    "address": "Tangenveien 8",
+    "address": "Havnegata 50",
     "bydel": "Tangen",
     "category": "Leilighet",
     "status": "Under bygging",
-    "lat": 59.731,
-    "lng": 10.236,
+    "lat": 59.730539,
+    "lng": 10.235975,
     "developer": {
       "name": "JM Norge",
       "orgNumber": "829350122"
@@ -150,7 +150,7 @@
     "reguleringsplan": null,
     "description": "Terrasserte leiligheter med utsikt mot Drammenselva.",
     "website": null,
-    "lastUpdated": "2026-02-04"
+    "lastUpdated": "2026-02-06"
   },
   {
     "id": "sundland-skole-boliger",
@@ -182,12 +182,12 @@
   {
     "id": "stroemsoe-kunstsenter",
     "name": "Strømsø Kunstsenter",
-    "address": "Strømsø Torg 1",
+    "address": "Strømsø torg 1C",
     "bydel": "Stromsoe",
     "category": "Offentlig",
     "status": "Ferdigstilt",
-    "lat": 59.7355,
-    "lng": 10.206,
+    "lat": 59.739966,
+    "lng": 10.204632,
     "developer": {
       "name": "Drammen Kommune",
       "orgNumber": "921234554"
@@ -204,17 +204,17 @@
     "reguleringsplan": null,
     "description": "Kulturbygg med galleri, verksteder og arrangementsrom.",
     "website": null,
-    "lastUpdated": "2026-02-04"
+    "lastUpdated": "2026-02-06"
   },
   {
     "id": "groenland-enebolig-felt",
     "name": "Grønland Villafelt",
-    "address": "Grønlandsgata 70-80",
+    "address": "Grønland 70",
     "bydel": "Groenland",
     "category": "Enebolig",
     "status": "Planlagt",
-    "lat": 59.74,
-    "lng": 10.202,
+    "lat": 59.744222,
+    "lng": 10.190905,
     "developer": {
       "name": "Selvaag Bolig",
       "orgNumber": "992587776"
@@ -237,17 +237,17 @@
     "reguleringsplan": null,
     "description": "Villafelt med moderne eneboliger nær Grønland sentrum.",
     "website": null,
-    "lastUpdated": "2026-02-04"
+    "lastUpdated": "2026-02-06"
   },
   {
     "id": "stroemsoe-torg-utvikling",
     "name": "Strømsø Torg Utvikling",
-    "address": "Strømsø torg 4-9",
+    "address": "Strømsø torg 4",
     "bydel": "Stromsoe",
     "category": "Naering",
     "status": "Regulering",
-    "lat": 59.7352,
-    "lng": 10.2065,
+    "lat": 59.739282,
+    "lng": 10.202421,
     "developer": {
       "name": "DPEND Eiendom",
       "orgNumber": "976121562"
@@ -264,7 +264,7 @@
     "reguleringsplan": "Strømsø sentrumsplan",
     "description": "Kombinert nærings- og boligutvikling ved Strømsø torg. Lokal utvikler DPEND Eiendom.",
     "website": null,
-    "lastUpdated": "2026-02-04"
+    "lastUpdated": "2026-02-06"
   },
   {
     "id": "braekke-tollbugata",
@@ -359,12 +359,12 @@
   {
     "id": "deciliteren",
     "name": "Deciliteren",
-    "address": "Tollbugata / Dr. Hansteinsgate",
+    "address": "Tollbugata 41",
     "bydel": "Stromsoe",
     "category": "Leilighet",
     "status": "Under bygging",
-    "lat": 59.7384,
-    "lng": 10.208,
+    "lat": 59.737388,
+    "lng": 10.209224,
     "developer": {
       "name": "NBBO / Fevang AS",
       "orgNumber": null
@@ -384,17 +384,17 @@
     "reguleringsplan": null,
     "description": "102 borettslagsleiligheter på Strømsø ved Clarion Hotell Tollboden. 2-4 roms leiligheter med balkong/terrasse. Sedumtak og miljøprofil. Forkjøpsrett for NBBO-medlemmer.",
     "website": "https://deciliteren.no/",
-    "lastUpdated": "2026-02-04"
+    "lastUpdated": "2026-02-06"
   },
   {
     "id": "slippen-tangen",
     "name": "Slippen",
-    "address": "Tangen, Drammen Slip & Verksted",
+    "address": "Havnegata 83",
     "bydel": "Tangen",
     "category": "Leilighet",
     "status": "Under bygging",
-    "lat": 59.7305,
-    "lng": 10.235,
+    "lat": 59.730513,
+    "lng": 10.23939,
     "developer": {
       "name": "Scandinavian Property Group",
       "orgNumber": null
@@ -414,7 +414,7 @@
     "reguleringsplan": null,
     "description": "Ca. 500-700 leiligheter på 45 mål gammelt skipsverft. Trinn 1: 165 leiligheter, byggestart Q4 2025. Over 60% solgt ved lansering. Sandstrand, badebrygge og helårsbadstue planlagt. Betonmast Buskerud-Vestfold som entreprenør.",
     "website": "https://slippendrammen.no/",
-    "lastUpdated": "2026-02-04"
+    "lastUpdated": "2026-02-06"
   },
   {
     "id": "elvebredden",
@@ -449,12 +449,12 @@
   {
     "id": "bangelokka",
     "name": "Bangeløkka",
-    "address": "Bangeløkka, Strømsø",
+    "address": "Bangeløkka",
     "bydel": "Stromsoe",
     "category": "Under utvikling",
     "status": "Regulering",
-    "lat": 59.7316,
-    "lng": 10.2112,
+    "lat": 59.732582,
+    "lng": 10.211043,
     "developer": {
       "name": "Strømsø Utvikling AS",
       "orgNumber": null
@@ -471,6 +471,6 @@
     "reguleringsplan": "Områderegulering Bangeløkka, planprogram fastsatt juni 2025",
     "description": "Områderegulering i samarbeid mellom kommunen og Strømsø Utvikling AS. LINK Arkitektur AS som plankonsulent. Potensial for bolig og næring i sentral beliggenhet.",
     "website": null,
-    "lastUpdated": "2026-02-04"
+    "lastUpdated": "2026-02-06"
   }
 ]
